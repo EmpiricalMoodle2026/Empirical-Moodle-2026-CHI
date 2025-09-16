@@ -1,0 +1,1259 @@
+{
+  "Advocating for Alternative User Journeys": [
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "I worry it might lead to a very un-usable experience for a screen-reader user. The move-up/down buttons do not make sense out of context. They'll only hear 'Move up' or 'Move down,' but the function or feature it refers to remains unclear to them.",
+      "original_open_code": "IDENTIFIED_SCREEN_READER_USABILITY_CONCERN"
+    },
+    {
+      "issue_key": "MDL-79057",
+      "source_text": "Tabbing down instead of across is preferred and was changed in Moodle 3.1 in 2015.",
+      "original_open_code": "RECOMMENDED_KEYBOARD_NAVIGATION_TAB_DOWN"
+    },
+    {
+      "issue_key": "MDL-79048",
+      "source_text": "[~jverdaguer] is the \"mode\" in each of these necessary? just wondering if \"View - Course: [Course name]\" would be a little more susinct for screen readers particularly. \"Mode\" is implied",
+      "original_open_code": "SUGGESTED_TITLE_CONCISENESS"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "it also breaks native keyboard scrolling of the page content which affects all keyboard users I guess.",
+      "original_open_code": "REPORTED_KEYBOARD_SCROLLING_BREAKAGE"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "if you shrink the screen down to show the more menu within the secondary navigation and toggle the dropdown",
+      "original_open_code": "REPORTED_KEYBOARD_NAVIGATION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71813",
+      "source_text": "I agree that keyboard controls should work here.",
+      "original_open_code": "AGREED_KEYBOARD_NAVIGATION_IMPORTANCE"
+    },
+    {
+      "issue_key": "MDL-71672",
+      "source_text": "Tested with voiceover, it worked, meaning that users from macOS can also benefit from this fix.",
+      "original_open_code": "TESTED_SCREEN_READER_COMPATIBILITY_VOICEOVER"
+    },
+    {
+      "issue_key": "MDL-71303",
+      "source_text": "I'm on the opinion that this patch does not go deep enough. What happens if you name a Block & ' ¢ £ © € ¥ ® < > ? You do not want the screen reader to read out 'lt', 'gt' or 'amp', do you?",
+      "original_open_code": "IDENTIFIED_SCREEN_READER_INACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "Screen-reader users do not see/hear anything about a grade being a pass or fail grade. We must not convey information through colour alone.",
+      "original_open_code": "HIGHLIGHTED_SCREEN_READER_INACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-70792",
+      "source_text": "if the dropdown menu is shown via keyboard, the first item should receive highlight/focus.",
+      "original_open_code": "IDENTIFIED_FOCUS_ISSUE_KEYBOARD_NAVIGATION"
+    },
+    {
+      "issue_key": "MDL-68541",
+      "source_text": "JAWS treats long alt text as multiple images on the page, So one image with 200 + chars, it truncates.",
+      "original_open_code": "REPORTED_JAWS_ALT_TEXT_TRUNCATION"
+    },
+    {
+      "issue_key": "MDL-67902",
+      "source_text": "I tried Test 2 on a Mac (using inbuilt accessibility reader which is perhaps a bit clunkier than others?) - it only picked up the second event I created",
+      "original_open_code": "TESTED_SCREEN_READER_ANNOUNCEMENT_MAC"
+    },
+    {
+      "issue_key": "MDL-67876",
+      "source_text": "With your patch, folks with screen readers will need to know that they have to go to the top of the page to see the list of errors.",
+      "original_open_code": "IDENTIFIED_SCREEN_READER_NAVIGATION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "If you are using a screen reader you hear a series of button states but are left with no idea what they are for.",
+      "original_open_code": "REPORTED_SCREEN_READER_ANNOUNCEMENT_FAILURE"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "When accessing notification preferences the settings are not keyboard accessible - I can't use tab to reach checkboxes",
+      "original_open_code": "REPORTED_KEYBOARD_NAVIGATION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "When I use screenreader on notifications settings page no matter if checkbox is checked or not it always reads is as 'checkbox not checked'. I believe it would be very confusing for screenreader users.",
+      "original_open_code": "REPORTED_SCREEN_READER_ANNOUNCEMENT_UNCHANGED_STATE"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "Colour-blind users do not use screen readers. So using aria attributes are not going to help them at all.",
+      "original_open_code": "IDENTIFIED_COLOR_BLINDNESS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-82298",
+      "source_text": "When modal dialogs open, focus should move inside them automatically, otherwise keyboard-only users get lost.",
+      "original_open_code": "SUGGESTED_FOCUS_MANAGEMENT_IN_DIALOGS"
+    },
+    {
+      "issue_key": "MDL-80364",
+      "source_text": "Using only hover to reveal content excludes touch users and those relying on keyboard navigation.",
+      "original_open_code": "IDENTIFIED_HOVER_ONLY_INTERACTION_PROBLEM"
+    },
+    {
+      "issue_key": "MDL-81062",
+      "source_text": "If error messages only appear visually, screen reader users won’t know how to correct their input.",
+      "original_open_code": "HIGHLIGHTED_ERROR_FEEDBACK_INACCESSIBLE"
+    },
+    {
+      "issue_key": "MDL-79288",
+      "source_text": "Timed quizzes without pause or extension options create barriers for users needing extra processing time.",
+      "original_open_code": "REPORTED_TIMED_ASSESSMENT_ACCESSIBILITY_BARRIER"
+    },
+    {
+      "issue_key": "MDL-80842",
+      "source_text": "Relying on drag-and-drop alone prevents keyboard users from completing the activity.",
+      "original_open_code": "IDENTIFIED_DRAG_AND_DROP_KEYBOARD_BARRIER"
+    },
+    {
+      "issue_key": "MDL-77690",
+      "source_text": "Links labeled only 'click here' provide no context for screen reader users skimming through a page.",
+      "original_open_code": "REPORTED_NONDESCRIPTIVE_LINK_LABELS"
+    },
+    {
+      "issue_key": "MDL-74741",
+      "source_text": "Colour-only indicators in grade reports mean colour-blind users can’t distinguish results.",
+      "original_open_code": "IDENTIFIED_COLOR_ONLY_INDICATOR_PROBLEM"
+    },
+    {
+      "issue_key": "MDL-72673",
+      "source_text": "Without skip-to-content links, keyboard users must tab through every navigation item before reaching main content.",
+      "original_open_code": "SUGGESTED_SKIP_LINK_FOR_KEYBOARD_USERS"
+    },
+    {
+      "issue_key": "MDL-74173",
+      "source_text": "Expandable menus should announce their state, otherwise screen reader users don’t know if they are open or closed.",
+      "original_open_code": "IDENTIFIED_EXPAND_COLLAPSE_STATE_NOT_ANNOUNCED"
+    },
+    {
+      "issue_key": "MDL-74250",
+      "source_text": "Users navigating by headings expect a logical order, but inconsistent heading levels disrupt the journey.",
+      "original_open_code": "REPORTED_INCONSISTENT_HEADING_STRUCTURE"
+    }
+  ],
+  "Applying External Standards and Principles": [
+    {
+      "issue_key": "MDL-80197",
+      "source_text": "I would recommend having this approach consulted with AbleDocs if this would be sufficient to pass the accessibility issue that was raised.",
+      "original_open_code": "RECOMMENDED_CONSULT_ABLEDOCS_ACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-80185",
+      "source_text": "Deque's web accessibility checklist for Language recommends the use of a standard two-character ISO 639-1 code",
+      "original_open_code": "SUGGESTED_LANGUAGE_ATTRIBUTE_STANDARDIZATION"
+    },
+    {
+      "issue_key": "MDL-78994",
+      "source_text": "we have more or less come to the concensus that the notice should be at the top of the page within the DOM but rendered at the bottom as it currently is. This is inline with examples such as deque (https://deque.com/) which we use as a reference alot and nngroup (https://www.nngroup.com/articles/modal-nonmodal-dialog/).",
+      "original_open_code": "SUGGESTED_DOM_POSITIONING_STANDARD"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "I'd also heavily suggest referring to the menubar portion of the w3 accessibility guidelines",
+      "original_open_code": "RECOMMENDED_W3C_ACCESSIBILITY_GUIDELINES"
+    },
+    {
+      "issue_key": "MDL-72286",
+      "source_text": "According to https://www.w3schools.com/jsref/prop_pushbutton_type.asp in the absence of an explicit type=\"...\" attribute, most browsers will assume type=\"submit\" for button elements",
+      "original_open_code": "REFERENCED_BROWSER_DEFAULT_BEHAVIOR"
+    },
+    {
+      "issue_key": "MDL-71602",
+      "source_text": "+1 for the role=\"application\" change. Well done for finding that recommendation.",
+      "original_open_code": "SUPPORTED_ARIA_ROLE_APPLICATION"
+    },
+    {
+      "issue_key": "MDL-73142",
+      "source_text": "Under SC 1.4.13 Content on Hover or Focus, If hover or focus causes content changes, we need to make sure the introduced interaction is predictable.",
+      "original_open_code": "REFERENCED_WCAG_CONTENT_ON_HOVER"
+    },
+    {
+      "issue_key": "MDL-83408",
+      "source_text": "WCAG 2.1 SC 2.5.3 Label in Name: ensure the accessible name contains the visible label text so voice-control users can activate the control by speaking it.",
+      "original_open_code": "REFERENCED_WCAG_LABEL_IN_NAME"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "This is not a hard problem to fix properly but applying colour in this fashion, which is inaccessible to a very large number of people, is not a suitable approach. We must not convery information through colour alone, and we should not introduce new technical debt with the approach of \"we'll fix it tomorrow\", or \"someone else's problem\".",
+      "original_open_code": "EDUCATED_NOT_USE_COLOR_AS_ONLY_INFORMATION_CONVEYOR"
+    },
+    {
+      "issue_key": "MDL-70846",
+      "source_text": "Huong referred to the Using ARIA trees (https://www.w3.org/WAI/GL/wiki/Using_ARIA_trees) documentation",
+      "original_open_code": "REFERENCED_ARIA_DOCUMENTATION"
+    },
+    {
+      "issue_key": "MDL-70792",
+      "source_text": "this might help: https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-links.html",
+      "original_open_code": "REFERENCED_ARIA_PRACTICES_FOR_MENU"
+    },
+    {
+      "issue_key": "MDL-68541",
+      "source_text": "We're also looking at https://webaim.org/techniques/alttext/#complex",
+      "original_open_code": "REFERENCED_WEBAIM_COMPLEX_ALT_TEXT"
+    },
+    {
+      "issue_key": "MDL-68051",
+      "source_text": "according to [https://www.w3.org/TR/wai-aria-1.1/#aria-hidden] aria-hidden=\"false\" behaves inconsistently across browsers.",
+      "original_open_code": "REFERENCED_ARIA_SPECIFICATION"
+    },
+    {
+      "issue_key": "MDL-70032",
+      "source_text": "https://www.w3.org/WAI/GL/wiki/Using_aria-labelledby_to_provide_a_name_for_user_interface_controls",
+      "original_open_code": "REFERENCED_ARIA_SPECIFICATION"
+    },
+    {
+      "issue_key": "MDL-74740",
+      "source_text": "The WCAG 2.1 success criteria require visible focus indicators that meet a minimum contrast ratio.",
+      "original_open_code": "REFERENCED_WCAG_FOCUS_INDICATOR_REQUIREMENT"
+    },
+    {
+      "issue_key": "MDL-74250",
+      "source_text": "Per WCAG 2.1.1 Keyboard, all interactive elements must be operable via keyboard alone.",
+      "original_open_code": "REFERENCED_EN301549_KEYBOARD_ACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-73116",
+      "source_text": "WCAG requires that electronic forms provide labels that are programmatically associated.",
+      "original_open_code": "REFERENCED_SECTION508_FORM_LABEL_REQUIREMENT"
+    },
+    {
+      "issue_key": "MDL-67969",
+      "source_text": "Following Nielsen Norman Group heuristics, error recovery should guide users rather than punish them.",
+      "original_open_code": "APPLIED_NNG_ERROR_RECOVERY_HEURISTIC"
+    },
+    {
+      "issue_key": "MDL-67865",
+      "source_text": "According to ARIA Authoring Practices, tree views must announce expanded and collapsed states.",
+      "original_open_code": "REFERENCED_ARIA_PRACTICES_TREEVIEW"
+    },
+    {
+      "issue_key": "MDL-69111",
+      "source_text": "WCAG techniques G18 and G145 recommend avoiding color combinations that fail the 4.5:1 ratio.",
+      "original_open_code": "REFERENCED_WCAG_COLOR_CONTRAST_TECHNIQUES"
+    },
+    {
+      "issue_key": "MDL-74800",
+      "source_text": "Per 1.4.10 Reflow, content must work at 320 CSS px (≈400% zoom) without loss of information or horizontal scrolling; fix table and sidebar overflow.",
+      "original_open_code": "REFERENCED_WCAG_REFLOW"
+    },
+    {
+      "issue_key": "MDL-74529",
+      "source_text": "WCAG Name, Role, Value requires custom widgets to expose an accessible name/role and update states (e.g., aria-pressed) so AT reflects changes.",
+      "original_open_code": "REFERENCED_WCAG_NAME_ROLE_VALUE"
+    }
+  ],
+  "Interpreting Automated Tooling": [
+    {
+      "issue_key": "MDL-80469",
+      "source_text": "Interestingly, axe DevTools and Nu HTML Validator don't really complain about missing legend tags.",
+      "original_open_code": "IDENTIFIED_TOOL_DISCREPANCY_ACCESSIBILITY_VALIDATION"
+    },
+    {
+      "issue_key": "MDL-76673",
+      "source_text": "Looking at you screenshots, it seems you are encountering this contrast warning within the accessibility checker (Brickfield labs) that we bought in recently, Would this be correct?",
+      "original_open_code": "CLARIFIED_ACCESSIBILITY_CHECKER_USAGE"
+    },
+    {
+      "issue_key": "MDL-76672",
+      "source_text": "I think that the Brickfield labs accessibility checker is a bit overzealous in this case.",
+      "original_open_code": "IDENTIFIED_OVERZEALOUS_ACCESSIBILITY_CHECKER"
+    },
+    {
+      "issue_key": "MDL-68014",
+      "source_text": "Errors found in Axe do not related to the configured external tool.",
+      "original_open_code": "TESTING_FEEDBACK_AXE_ERRORS_UNRELATED"
+    },
+    {
+      "issue_key": "MDL-70032",
+      "source_text": "I know div inside label is a technical error from WAVE, but does it acually matter? Why don't we just ignore this? (and file a bug on the spec)",
+      "original_open_code": "QUESTIONED_IMPORTANCE_OF_SPEC_ERROR"
+    },
+    {
+      "issue_key": "MDL-69474",
+      "source_text": "We use ARC Toolkit to test accessibility and the result is the same as Axe.",
+      "original_open_code": "TESTED_ACCESSIBILITY_USING_ARC_TOOLKIT"
+    },
+    {
+      "issue_key": "MDL-69422",
+      "source_text": "Wave and axe disagree on the same table headers, one flags them as missing while the other says they are fine.",
+      "original_open_code": "CONFLICTING_TOOL_REPORTS_ON_TABLE_HEADERS"
+    },
+    {
+      "issue_key": "MDL-80279",
+      "source_text": "WAVE suggests adding alt text everywhere, even for purely decorative icons.",
+      "original_open_code": "QUESTIONED_RELEVANCE_OF_WAVE_ALT_SUGGESTIONS"
+    },
+    {
+      "issue_key": "MDL-74529",
+      "source_text": "The automated checker shows dozens of ARIA role errors, but in practice they don’t affect screen reader behavior.",
+      "original_open_code": "IDENTIFIED_FALSE_POSITIVES_IN_ARIA_ROLE_ERRORS"
+    },
+    {
+      "issue_key": "MDL-74822",
+      "source_text": "ARC Toolkit flagged contrast issues that weren’t visible to users.",
+      "original_open_code": "DISCREPANCY_INTERNAL_SUITE_VS_ARC_TOOLKIT"
+    },
+    {
+      "issue_key": "MDL-75055",
+      "source_text": "Contrast audits between ARC and AXE tool.",
+      "original_open_code": "CONTRAST_ALGORITHM_DISAGREEMENT"
+    },
+    {
+      "issue_key": "MDL-74813",
+      "source_text": "WAVE flags an aria-expanded mismatch in the static HTML (aria-expanded=\"false\") runtime testing with NVDA confirms the expanded state is announced",
+      "original_open_code": "DYNAMIC_STATE_NOT_CAPTURED_BY_STATIC_SCANNER"
+    }
+  ],
+  "Problem Identification and Validation": [
+    {
+      "issue_key": "MDL-83255",
+      "source_text": "it seems that these changes are causing Behat failures in all branches",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_ALL_BRANCHES"
+    },
+    {
+      "issue_key": "MDL-82677",
+      "source_text": "Hey, this has caused a pretty unwelcome change on a bunch of our sites: I know there is a variable to control it, but it's not ideal that this has affected basically every page of some of our sites with no warning.",
+      "original_open_code": "REPORTED_UNEXPECTED_GLOBAL_CHANGE"
+    },
+    {
+      "issue_key": "MDL-82677",
+      "source_text": "this isn't workable solution. can we please reopen this issue and look to revert it. I've just reviewed the patch and it will break 100% of themes where the page background colour doesn't match the headder colour and takes zero consideration of the actual colour of the headder text, making the contrast far worse in many cases where default text colours are used.",
+      "original_open_code": "IDENTIFIED_THEME_CONTRAST_ISSUE"
+    },
+    {
+      "issue_key": "MDL-82677",
+      "source_text": "I've created https://tracker.moodle.org/browse/MDL-83047 for this to be addressed (as a priority, if possible 🙏)",
+      "original_open_code": "REPORTED_GLOBAL_IMPACT"
+    },
+    {
+      "issue_key": "MDL-82298",
+      "source_text": "I managed to reproduce it on a 4.4 instance ([https://sandbox.moodledemo.net/)] only for Quiz (not forum for example) and I agree this can be an issue for accessibility.",
+      "original_open_code": "REPORTED_ACCESSIBILITY_ISSUE_REPRODUCTION"
+    },
+    {
+      "issue_key": "MDL-82298",
+      "source_text": "Hi everyone, unfortunately this is causing Behat failures in all branches: - Firefox + classic: https://ci.moodle.org/job/W.07.01%20-%20Behat%20-%20Firefox%20+%20Postgres%20+%20Classic/1610/ - NonJS + classic: https://ci.moodle.org/job/W404.05.01%20-%20Behat%20-%20NonJS%20+%20Postgres%20+%20Classic/165/",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_ALL_BRANCHES"
+    },
+    {
+      "issue_key": "MDL-80805",
+      "source_text": "Hey [~quen], it seems that these changes are causing Behat failures.",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_FIREFOX"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "tested an ordering question on our server (version of ordering from the plugins DB) and found that with NVDA running it did not work.",
+      "original_open_code": "REPORTED_NVDA_INCOMPATIBILITY"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "can any one confirm this works with images rather than text when set to display horizontally? It only displays vertically for my student even though it is set to horizontal",
+      "original_open_code": "REPORTED_HORIZONTAL_DISPLAY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-80279",
+      "source_text": "I was also able to reproduce this in Moodle 4.1.6.",
+      "original_open_code": "REPORTED_ACCESSIBILITY_ISSUE_REPRODUCTION"
+    },
+    {
+      "issue_key": "MDL-80185",
+      "source_text": "some parts of code uses the lang attribute to requests strings and with this change the requests can have problems",
+      "original_open_code": "IDENTIFIED_LANGUAGE_CODE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-80185",
+      "source_text": "I've encountered the same problem of the html lang attribute, from 'zh-cn' to 'zh', after upgrade",
+      "original_open_code": "REPORTED_LANGUAGE_ATTRIBUTE_ERROR"
+    },
+    {
+      "issue_key": "MDL-80183",
+      "source_text": "I was also able to reproduce this in Moodle 4.1.6.",
+      "original_open_code": "REPORTED_BUG_REPRODUCTION_MOODLE_4.1.6"
+    },
+    {
+      "issue_key": "MDL-79276",
+      "source_text": "it seems that these changes are causing Behat and PHPUnit failures.",
+      "original_open_code": "REPORTED_TEST_FAILURE_BEHAT_PHPUNIT"
+    },
+    {
+      "issue_key": "MDL-79062",
+      "source_text": "I was also able to reproduce this in Moodle 4.1.5.",
+      "original_open_code": "REPRODUCED_ACCESSIBILITY_ISSUE_MOODLE_4.1.5"
+    },
+    {
+      "issue_key": "MDL-79061",
+      "source_text": "it seems that these changes are causing Behat failures on 401 and 402.",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_ON_401_402"
+    },
+    {
+      "issue_key": "MDL-78806",
+      "source_text": "There is a regression in plugins tests since this update.",
+      "original_open_code": "REPORTED_PLUGIN_TEST_REGRESSION"
+    },
+    {
+      "issue_key": "MDL-78779",
+      "source_text": "I've launched some tests of this failure, and have been able to reproduce it often (although randomly).",
+      "original_open_code": "TESTED_BEHAT_FAILURE_REPRODUCTION"
+    },
+    {
+      "issue_key": "MDL-77856",
+      "source_text": "I can confirm this caused the regression for MDL-78125 (or at least, the one in the app for MOBILE-4338).",
+      "original_open_code": "CONFIRMED_REGRESSION_MOBILE_APP"
+    },
+    {
+      "issue_key": "MDL-77690",
+      "source_text": "This has been noted with Lesson activities too. The Lesson title is an h1, and the page title is an h3.",
+      "original_open_code": "IDENTIFIED_HEADING_HIERARCHY_ISSUE_SITEWIDE"
+    },
+    {
+      "issue_key": "MDL-77052",
+      "source_text": "I've been able to reproduce it and, as you've given a patch for it, I've updated the testing instructions",
+      "original_open_code": "REPRODUCED_ACCESSIBILITY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76673",
+      "source_text": "I can replicate the reported problem within my local instance.",
+      "original_open_code": "TESTED_COLOR_CONTRAST_ISSUE_REPLICATION"
+    },
+    {
+      "issue_key": "MDL-76673",
+      "source_text": "After looking at and testing out your example, It seems that the checker is correct, whilst the li elements have the correct contrast, the initial paragraph tag does not.",
+      "original_open_code": "TESTED_ACCESSIBILITY_CHECKER_CONTRAST_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76672",
+      "source_text": "I was also able to reproduce this in Moodle 4.0.5.",
+      "original_open_code": "REPRODUCED_ARIA_LABEL_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76601",
+      "source_text": "I was also able to reproduce this in Moodle 4.0.5.",
+      "original_open_code": "REPRODUCED_KEYBOARD_NAVIGATION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76597",
+      "source_text": "There seems to be some valid Behat failures related to these changes on CI",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_CI"
+    },
+    {
+      "issue_key": "MDL-76597",
+      "source_text": "ToBiC still running, but looks like there's a behat failure happening on classic theme",
+      "original_open_code": "REPORTED_BEHAT_FAILURE_CLASSIC_THEME"
+    },
+    {
+      "issue_key": "MDL-76246",
+      "source_text": "Javascript code and/or AJAX requests are not ready after 10 seconds. There is a Javascript error or the code is extremely slow",
+      "original_open_code": "REPORTED_JAVASCRIPT_ERROR_BEHAT_FAILURE"
+    },
+    {
+      "issue_key": "MDL-76246",
+      "source_text": "Given the page should meet accessibility standards Accessibility violations found",
+      "original_open_code": "REPORTED_BEHAT_FAILURE_ACCESSIBILITY_STANDARD"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "it also breaks native keyboard scrolling of the page content.",
+      "original_open_code": "REPORTED_KEYBOARD_SCROLLING_BREAKAGE"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "Reproduced on chrome, firefox and safari on 4.0.5+ and 4.1",
+      "original_open_code": "TESTED_CROSS_BROWSER_SCROLL_ISSUE"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "When I am grading posts in Moodle, I frequently give students anonymous feedback via replies. Whenever I post a reply, Moodle will jump me back to the top of the page, which means I have to scroll back down to wherever I was in my grading process. This was not the case with the old version. Perhaps we should stick to the design in the old version.",
+      "original_open_code": "REPORTED_SCROLL_POSITION_LOSS"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "page scroll position to be lost and the page to load back at the top.",
+      "original_open_code": "REPORTED_SCROLL_POSITION_LOSS"
+    },
+    {
+      "issue_key": "MDL-74821",
+      "source_text": "it seems that there are four consistent failures in all branches with this patch applied",
+      "original_open_code": "REPORTED_TEST_FAILURE_BEHAT"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "we are seeing some consistent behat failures which seems to be caused by some of the changes in the core elements",
+      "original_open_code": "REPORTED_BEHAT_FAILURES"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "we are still seeing some failures that might be caused by these changes",
+      "original_open_code": "REPORTED_BEHAT_FAILURES"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "I'm not 100% sure, but I think they may have caused a regression with the password mask field.",
+      "original_open_code": "REPORTED_REGRESSION_PASSWORD_MASK"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "This caused a small regression in other templates that use the password unmask module",
+      "original_open_code": "REPORTED_REGRESSION_PASSWORD_UNMASK"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "This MDL caused a small regression to the 'I expand all fieldsets' custom step",
+      "original_open_code": "REPORTED_REGRESSION_FIELDSET_EXPAND"
+    },
+    {
+      "issue_key": "MDL-74802",
+      "source_text": "Failing this due to failures on classic theme https://ci.moodle.org/job/W.06.01%20-%20Behat%20-%20Chrome%20+%20Postgres%20+%20Classic/968/consoleFull",
+      "original_open_code": "REPORTED_CLICK_INTERCEPTION_CLASSIC_THEME"
+    },
+    {
+      "issue_key": "MDL-74222",
+      "source_text": "Note: this issue (or one very like it, seems to have caused a small regression, which I just reported at https://tracker.moodle.org/browse/MDL-75459.",
+      "original_open_code": "REPORTED_REGRESSION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72896",
+      "source_text": "running the provided branches is causing a Goutte (non-js) failure to happen",
+      "original_open_code": "REPORTED_GOUTTE_FAILURE_BEHAT"
+    },
+    {
+      "issue_key": "MDL-72687",
+      "source_text": "it seems that neither boost or classic are 100% happy with this.",
+      "original_open_code": "REPORTED_BEHAT_TEST_FAILURES"
+    },
+    {
+      "issue_key": "MDL-72674",
+      "source_text": "The 'Illegal whitespace (master)' job is failing because some extra spaces where added in that issue",
+      "original_open_code": "IDENTIFIED_ILLEGAL_WHITESPACE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72668",
+      "source_text": "The warnings can also popup when using moodle-plugin-ci in Github Actions",
+      "original_open_code": "REPORTED_STYLELINT_WARNINGS_GITHUB_ACTIONS"
+    },
+    {
+      "issue_key": "MDL-72668",
+      "source_text": "This issue has caused the following issue when displaying external badges: MDL-73128.",
+      "original_open_code": "IDENTIFIED_ISSUE_EXTERNAL_BADGES_DISPLAY"
+    },
+    {
+      "issue_key": "MDL-72569",
+      "source_text": "It seems that there is some (previously passing?) accessibility scenario now failing",
+      "original_open_code": "REPORTED_ACCESSIBILITY_SCENARIO_FAILURE"
+    },
+    {
+      "issue_key": "MDL-72569",
+      "source_text": "Specially with SQL*Server (7 failures) and Oracle (2 failures), so maybe slow databases / sites are more prone to it.",
+      "original_open_code": "IDENTIFIED_RANDOM_FAILURES_SQLSERVER_ORACLE"
+    },
+    {
+      "issue_key": "MDL-72569",
+      "source_text": "we have just got some new \"move section\" failures (different from the random \"Move section with javascript\" that continues happening)",
+      "original_open_code": "REPORTED_NEW_MOVE_SECTION_FAILURES"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "note these failures with behat: Boost and Classic",
+      "original_open_code": "REPORTED_BEHAT_TEST_FAILURE"
+    },
+    {
+      "issue_key": "MDL-71674",
+      "source_text": "Hi, there are some scenarios failing with this patch applied, they seem related",
+      "original_open_code": "REPORTED_BEHAT_FAILURES"
+    },
+    {
+      "issue_key": "MDL-71674",
+      "source_text": "There are still Behat failures. Putting back to queue.",
+      "original_open_code": "REPORTED_BEHAT_FAILURES"
+    },
+    {
+      "issue_key": "MDL-71671",
+      "source_text": "This seems to have introduced a regression (MDL-75848)",
+      "original_open_code": "REPORTED_REGRESSION_INTRODUCED"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "is it possible that this issue is causing these failures? https://ci.moodle.org/view/Testing/job/DEV.01%20-%20Developer-requested%20Behat/15034/",
+      "original_open_code": "REPORTED_TEST_FAILURE_BEHAT"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "I'm failing this because we are getting 3 new failures with classic",
+      "original_open_code": "IDENTIFIED_NEW_FAILURES_CLASSIC_THEME"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "Just to note that the 1st of the 3 failures (Course content preferences) is also happening with Boost.",
+      "original_open_code": "CONFIRMED_FAILURES_BOOST_THEME"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "Update, in just 2 days we have got the 'Move section with javascript' failing already 5 times... maybe it will need a more urgent investigation",
+      "original_open_code": "REPORTED_RECURRING_FAILURES_SQL_SERVER"
+    },
+    {
+      "issue_key": "MDL-71336",
+      "source_text": "yes this is known issue affecting elements in group. Linking to WP-2594 to get this addressed",
+      "original_open_code": "IDENTIFIED_DUPLICATE_ID_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71336",
+      "source_text": "I'm afraid it might be an issue in core, if so we'll move it to MDL.",
+      "original_open_code": "CONFIRMED_CORE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71336",
+      "source_text": "yes, confirming that this is the issue that we need to fix in MDL, on 3.10 it only affects Moodle Workplace",
+      "original_open_code": "CONFIRMED_REPRODUCTION_STEPS"
+    },
+    {
+      "issue_key": "MDL-71336",
+      "source_text": "MDL-80198 was detected during accessibility audit on learner-facing pages in Workplace. This is actually caused by the fact that all these three elements have the same id. This happens in the forms with dynamic ids that are used in modal and AJAX forms. For example, in vanilla LMS this can be found in the reportbuilder filter form.",
+      "original_open_code": "REPORTED_ACCESSIBILITY_AUDIT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-69637",
+      "source_text": "I was also able to reproduce this in Moodle 3.9.2.",
+      "original_open_code": "REPRODUCED_ARIA_LABEL_ISSUE"
+    },
+    {
+      "issue_key": "MDL-69390",
+      "source_text": "Safari appears to ignore these enhancements (in 3.9.3).",
+      "original_open_code": "REPORTED_CROSS_BROWSER_ISSUE_SAFARI"
+    },
+    {
+      "issue_key": "MDL-69116",
+      "source_text": "changing the class _sr-only_ to _d-none_ makes the multichoice questions (radio button) not keyboard accessible",
+      "original_open_code": "REPORTED_KEYBOARD_ACCESSIBILITY_ISSUE_REGRESSION"
+    },
+    {
+      "issue_key": "MDL-68963",
+      "source_text": "Could the changes here have caused MDL-69388?",
+      "original_open_code": "IDENTIFIED_POTENTIAL_REGRESSION"
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "the patch adds a new <h2> to the page making this step...to fail",
+      "original_open_code": "REPORTED_BEHAT_FAILURE_H2_ADDITION"
+    },
+    {
+      "issue_key": "MDL-68639",
+      "source_text": "I have found that a nested list added to a *forum* or a *glossery* produces proper html, where other activities have invalid html, as Michael has indicated above.",
+      "original_open_code": "IDENTIFIED_HTML_VALIDATION_INCONSISTENCY"
+    },
+    {
+      "issue_key": "MDL-68378",
+      "source_text": "I have found that this looks like the cause for the regression on non-Mac / touch devices by this change",
+      "original_open_code": "REPORTED_REGRESSION_NON_MAC_TOUCH_DEVICES"
+    },
+    {
+      "issue_key": "MDL-68353",
+      "source_text": "Just saw a lot (>100) behat failures happening with this patch applied",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_PATCH_APPLIED"
+    },
+    {
+      "issue_key": "MDL-68353",
+      "source_text": "this change broke all the Behat tests using filepicker in our theme",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_FILEPICKER_THEME"
+    },
+    {
+      "issue_key": "MDL-68353",
+      "source_text": "Failing this, it's causing hundreds of failures in classic (all the scenarios uploading files, basically).",
+      "original_open_code": "REPORTED_BEHAT_FAILURES_CLASSIC_THEME"
+    },
+    {
+      "issue_key": "MDL-68344",
+      "source_text": "We have detected some behat failures happening with your candidate branches and it seems that being outdated may be the problem.",
+      "original_open_code": "IDENTIFIED_BEHAT_FAILURE_CAUSE"
+    },
+    {
+      "issue_key": "MDL-68299",
+      "source_text": "\"the card view does not resize too nicely at very narrow widths\"",
+      "original_open_code": "REPORTED_UI_RESIZE_ISSUE_NARROW_WIDTHS"
+    },
+    {
+      "issue_key": "MDL-68299",
+      "source_text": "Another QA test relating to a narrow screen has been marked as failed",
+      "original_open_code": "REPORTED_QA_TEST_FAILURE_NARROW_SCREEN"
+    },
+    {
+      "issue_key": "MDL-68266",
+      "source_text": "FYI, while I've not properly bisected this... it seems that CI jobs are failing within some tests that may be related to this.",
+      "original_open_code": "REPORTED_BEHAT_ERRORS_CAUSING_FAILURES"
+    },
+    {
+      "issue_key": "MDL-68266",
+      "source_text": "I've been able to confirm this issue is causing some behat errors (after bisecting it using the 'Search courses and move results in bulk' scenario):",
+      "original_open_code": "CONFIRMED_BEHAT_ERRORS_CAUSING_FAILURES"
+    },
+    {
+      "issue_key": "MDL-68167",
+      "source_text": "FYI, it seems that this has caused some regressions at very least with Firefox browser.",
+      "original_open_code": "REPORTED_CROSS_BROWSER_ISSUE_FIREFOX"
+    },
+    {
+      "issue_key": "MDL-68148",
+      "source_text": "I'd say that these 37_STABLE failures look suspicious: https://ci.moodle.org/view/Testing/job/DEV.01%20-%20Developer-requested%20Behat/5077/",
+      "original_open_code": "REPORTED_BEHAT_TEST_FAILURES"
+    },
+    {
+      "issue_key": "MDL-67970",
+      "source_text": "Note we have got some failures with the master branch (goutte): https://ci.moodle.org/view/Testing/job/DEV.01%20-%20Developer-requested%20Behat/4856/",
+      "original_open_code": "REPORTED_TEST_FAILURE_BEHAT"
+    },
+    {
+      "issue_key": "MDL-67970",
+      "source_text": "And yes, the errors (master only, apparently) seem to be consistent, please, take a look to them.",
+      "original_open_code": "CONFIRMED_CONSISTENT_ERRORS_BEHAT"
+    },
+    {
+      "issue_key": "MDL-67968",
+      "source_text": "FYI, MDL-68269 has been just created to track that regression.",
+      "original_open_code": "REPORTED_REGRESSION_TRACKING"
+    },
+    {
+      "issue_key": "MDL-67863",
+      "source_text": "It seems that goutte runs are failing consistently with this patch applied, FYI",
+      "original_open_code": "REPORTED_BEHAT_TEST_FAILURE"
+    },
+    {
+      "issue_key": "MDL-67863",
+      "source_text": "this caused a regression in a bunch of our sites due to the display:none added to the nav-drawer",
+      "original_open_code": "REPORTED_REGRESSION_DISPLAY_NONE"
+    },
+    {
+      "issue_key": "MDL-67863",
+      "source_text": "It's dangerous to assume that setting an existing item to display none wont affect other themes.",
+      "original_open_code": "WARNED_THEME_COMPATIBILITY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "we are getting 3 consistent (apparently) behat failures with the patch",
+      "original_open_code": "REPORTED_BEHAT_TEST_FAILURES"
+    },
+    {
+      "issue_key": "MDL-67687",
+      "source_text": "one commit from this issue (not really related to accessibility) broke our CLI scripts. See MDL-70131",
+      "original_open_code": "REPORTED_CLI_SCRIPT_BREAKAGE"
+    },
+    {
+      "issue_key": "MDL-67969",
+      "source_text": "We are getting a good number of failures in the 37_STABLE branch: - Goutte: https://ci.moodle.org/view/Testing/job/DEV.01%20-%20Developer-requested%20Behat/4661/ - Chrome: https://ci.moodle.org/view/Testing/job/DEV.01%20-%20Developer-requested%20Behat/4662/",
+      "original_open_code": "REPORTED_TEST_FAILURES_BEHAT_37_STABLE"
+    },
+    {
+      "issue_key": "MDL-68312",
+      "source_text": "For the records, there are 3 failures (master only), that may be related with this: https://ci.moodle.org/view/Testing/job/DEV.01%20-%20Developer-requested%20Behat/6722/",
+      "original_open_code": "REPORTED_BEHAT_TEST_FAILURES"
+    },
+    {
+      "issue_key": "MDL-68542",
+      "source_text": "it seems that this is causing a couple of behat tests to fail",
+      "original_open_code": "REPORTED_BEHAT_TEST_FAILURES"
+    },
+    {
+      "issue_key": "MDL-68542",
+      "source_text": "the link above (\"CI failing\", in the badge), shows you which ones are failing",
+      "original_open_code": "IDENTIFIED_SPECIFIC_TEST_FAILURES"
+    },
+    {
+      "issue_key": "MDL-73386",
+      "source_text": "This still happens on https://qa.moodledemo.net/ too.",
+      "original_open_code": "REPORTED_DUPLICATE_ID_ISSUE"
+    }
+  ],
+  "Collaborative Solution Design": [
+    {
+      "issue_key": "MDL-80469",
+      "source_text": "I did a quick try adding a \"presentation\" or \"none\" role for fieldset tags that don't have legends.",
+      "original_open_code": "SUGGESTED_ARIA_ROLE_PRESENTATION_CLARIFICATION"
+    },
+    {
+      "issue_key": "MDL-80469",
+      "source_text": "I would suggest something a bit more meaningful such as \"Form actions\" instead of \"Action buttons\".",
+      "original_open_code": "SUGGESTED_MEANINGFUL_LEGEND_TEXT"
+    },
+    {
+      "issue_key": "MDL-80431",
+      "source_text": "I think it makes sense for them to be within a fieldset. I haven't looked at the other issue, but can't we add a \"{{sr-only}}\" label for the fieldset's legend instead?",
+      "original_open_code": "SUGGESTED_SR_ONLY_LABEL_FOR_FIELDSET"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "should we consider whether it is better to maintain the consistency, and only make the change when we are able to do it in all the drag-drop qtypes at once?",
+      "original_open_code": "SUGGESTED_CONSISTENCY_DRAG_DROP_INTERACTIONS"
+    },
+    {
+      "issue_key": "MDL-80364",
+      "source_text": "I think you can use the font awesome lightbulb version...so it gives a better contrast and set it up so it is white on the hover state with darker backgrounds",
+      "original_open_code": "SUGGESTED_COLOR_CONTRAST_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-80185",
+      "source_text": "Option 1: Update \\get_html_lang_attribute_value() to use the iso6391 langconfig string",
+      "original_open_code": "PROPOSED_LANGUAGE_CODE_UPDATE_METHODS"
+    },
+    {
+      "issue_key": "MDL-79705",
+      "source_text": "I agree that displaying a text equivalent to the checkbox's value like \"Yes\" / \"No\" will make it more accessible for users.",
+      "original_open_code": "SUGGESTED_TEXT_EQUIVALENT_ACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-83047",
+      "source_text": "[~cameron1729] we do need to address the contrast issue on the upgrade pages for accessibility compliance. However as stated the changes need to be restricted to only those pages.",
+      "original_open_code": "SUGGESTED_CONTRAST_ISSUE_RESTRICTION"
+    },
+    {
+      "issue_key": "MDL-82677",
+      "source_text": "This also far reaching and does't just address the problematic page but appeares to affect every page in the system. Any change should be restricted to the upgrade pages only.",
+      "original_open_code": "SUGGESTED_SCOPE_LIMITATION"
+    },
+    {
+      "issue_key": "MDL-79276",
+      "source_text": "we remove the </body> and </html> and emit these in the shutdown handler if the page is long running.",
+      "original_open_code": "SUGGESTED_HTML_TAG_HANDLING_SHUTDOWN_HANDLER"
+    },
+    {
+      "issue_key": "MDL-79276",
+      "source_text": "two separate regex'es extract the body and html after the theme has done its footer render",
+      "original_open_code": "SUGGESTED_REGEX_EXTRACTION_BODY_HTML"
+    },
+    {
+      "issue_key": "MDL-79276",
+      "source_text": "stash them in a buffer for the shutdown handler",
+      "original_open_code": "PROPOSED_BUFFER_SHUTDOWN_HANDLER"
+    },
+    {
+      "issue_key": "MDL-79276",
+      "source_text": "using OUTPUT in the shutdown handler should be ok as long as it checks that it exists and is ready first",
+      "original_open_code": "SUGGESTED_OUTPUT_CHECK_SHUTDOWN_HANDLER"
+    },
+    {
+      "issue_key": "MDL-79061",
+      "source_text": "The new version follows the conventions with the reactive pattern",
+      "original_open_code": "PROPOSED_REACTIVE_PATTERN_FOR_PATCH"
+    },
+    {
+      "issue_key": "MDL-79060",
+      "source_text": "[~jpataleta] in this case isn't that image purely decorative? would it not be better to mark it as such for usability reasons?",
+      "original_open_code": "SUGGESTED_IMAGE_DECORATIVE_MARKING"
+    },
+    {
+      "issue_key": "MDL-79048",
+      "source_text": "I suggest the following titles\n\n1. _View mode -_  Course: [Course name]\n\n2. _Edit mode_ - Edit course: [Course name]\n\n3. _Bulk edit mode_ - Bulk edit course: [Course name]",
+      "original_open_code": "SUGGESTED_DESCRIPTIVE_PAGE_TITLES"
+    },
+    {
+      "issue_key": "MDL-79048",
+      "source_text": "The part in italics is not part of the title, hopefully I make it more clear now:\n # View mode ---> Course: [Course name] \n # Edit mode ---> Edit course: [Course name]\n # Bulk edit mode ---> Bulk edit course [Course name]",
+      "original_open_code": "CLARIFIED_TITLE_FORMAT"
+    },
+    {
+      "issue_key": "MDL-76563",
+      "source_text": "I prefer the style of Docusaurus, with a light grey background and black text.",
+      "original_open_code": "SUGGESTED_COLOR_STYLE_CHANGE"
+    },
+    {
+      "issue_key": "MDL-76563",
+      "source_text": "I've added the UX proposal to the description along with a screenshot of the color contrast checker using the proposed new tone.",
+      "original_open_code": "PROPOSED_UX_COLOR_CONTRAST_CHECKER"
+    },
+    {
+      "issue_key": "MDL-75957",
+      "source_text": "a single general styling fix should fix the issue for all drop-downs",
+      "original_open_code": "SUGGESTED_GENERAL_STYLING_FIX"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "theme_boost_union has the desired feature (using scrollspy).",
+      "original_open_code": "SUGGESTED_SCROLL_POSITION_PERSISTENCE"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "double-scrollbars are the least worst problem",
+      "original_open_code": "PROPOSED_DOUBLE_SCROLLBAR_SOLUTION"
+    },
+    {
+      "issue_key": "MDL-74887",
+      "source_text": "What could be improved is removing the option when you first create a text field.",
+      "original_open_code": "SUGGESTED_REMOVE_OPTION_TEXT_FIELD_CREATION"
+    },
+    {
+      "issue_key": "MDL-74815",
+      "source_text": "There are a couple of coding styles violation in the new patch: {{$rtl_status}} is not a valid variable name as underscores are not permitted.",
+      "original_open_code": "SUGGESTED_CODING_STYLE_IMPROVEMENTS"
+    },
+    {
+      "issue_key": "MDL-74815",
+      "source_text": "you are changing the icon by changing the font awesome class which does the work but I think that would not be acceptable, we need to change the icons using the same moodle pix icon reference",
+      "original_open_code": "SUGGESTED_ICON_CHANGE_METHOD"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "I have removed the 'legend' tag (from element-header.mustache)",
+      "original_open_code": "SUGGESTED_REMOVE_LEGEND_TAG"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "To fix the passwordunmask error, the 'for' attribute is removed when the input is hidden and added back when the input is password.",
+      "original_open_code": "SUGGESTED_FOR_ATTRIBUTE_TOGGLE"
+    },
+    {
+      "issue_key": "MDL-74813",
+      "source_text": "I recommend the new icon be *fa-cloud-upload* (my preference) or *fa-upload* to represent upload.",
+      "original_open_code": "SUGGESTED_ICON_CHANGE_UPLOAD_REPRESENTATION"
+    },
+    {
+      "issue_key": "MDL-74740",
+      "source_text": "Another solution might be to detach these skiplinks from the drawer and adding them after the body tag using JavaScript",
+      "original_open_code": "SUGGESTED_ALTERNATIVE_IMPLEMENTATION_SKIPLINKS"
+    },
+    {
+      "issue_key": "MDL-72674",
+      "source_text": "I've prepared a patch to remove these spaces: * git fetch git@github.com:sarjona/moodle.git MDL-72674-master-fix && git merge --no-ff FETCH_HEAD",
+      "original_open_code": "PROPOSED_WHITESPACE_FIX_PATCH"
+    },
+    {
+      "issue_key": "MDL-72523",
+      "source_text": "I was just wondering if we should fix this issue in a general way. (In core/modal).",
+      "original_open_code": "SUGGESTED_GENERAL_FIX_FOR_MODAL_FOCUS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72523",
+      "source_text": "I have created a demo branch that describes my solution.",
+      "original_open_code": "PROPOSED_DEMO_BRANCH_FOR_MODAL_FOCUS_SOLUTION"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "I do not follow why you have made changes to the underlaying aria role structure within the navigation",
+      "original_open_code": "SUGGESTED_ARIA_ROLE_STRUCTURE_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "Kicking this back to dev as you should remove aria-current since we are changing it to aria-selected.",
+      "original_open_code": "SUGGESTED_ARIA_SELECTED_ATTRIBUTE_USE"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "I personally think that focusBackOnMoreMenu does not need to be a function as it is only called once",
+      "original_open_code": "SUGGESTED_FUNCTION_REFACTORING"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "Please remove unrequired usages of template literals",
+      "original_open_code": "SUGGESTED_TEMPLATE_LITERAL_REMOVAL"
+    },
+    {
+      "issue_key": "MDL-71814",
+      "source_text": "I don't think you need to set the tabindex attribute here",
+      "original_open_code": "SUGGESTED_REMOVE_TABINDEX_ATTRIBUTE"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "Thanks for proposing a fix for the failures #2 and #3... I'm going to launch a couple of jobs (boost and classic) based on it",
+      "original_open_code": "PROPOSED_FIX_COMMIT"
+    },
+    {
+      "issue_key": "MDL-71602",
+      "source_text": "I think that is the label we should be adding in the qtype_essay renderer (but from a UI point of view, I think it should be sr-only).",
+      "original_open_code": "SUGGESTED_SR_ONLY_LABEL"
+    },
+    {
+      "issue_key": "MDL-71602",
+      "source_text": "Is aria-lable on the ul really the best approach to labeling them? What about an appropriate heading instead?",
+      "original_open_code": "SUGGESTED_HEADING_INSTEAD_OF_ARIA_LABEL"
+    },
+    {
+      "issue_key": "MDL-71602",
+      "source_text": "Should this be refactored so there is a core_renderer method for this - listed in the component library - which every uses.",
+      "original_open_code": "SUGGESTED_REFACTORING_FOR_CORE_RENDERER"
+    },
+    {
+      "issue_key": "MDL-71373",
+      "source_text": "I would also advise renaming these to nextstep and previousstep. There are no steps here!",
+      "original_open_code": "SUGGESTED_STRING_RENAMING"
+    },
+    {
+      "issue_key": "MDL-71303",
+      "source_text": "The thing is that I'm convinced it would be possible to write the code like this",
+      "original_open_code": "SUGGESTED_ALTERNATIVE_CODE_IMPLEMENTATION"
+    },
+    {
+      "issue_key": "MDL-71301",
+      "source_text": "we already have the code for this, but we would like to know if there is some interest that we share it?",
+      "original_open_code": "PROPOSED_CODE_SHARING_FOR_ACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-70992",
+      "source_text": "The only thing I'd mention is that I wonder whether this should be: if (this.hasIcon && this.hasChildren()) {",
+      "original_open_code": "SUGGESTED_SPACER_ICON_CONDITION"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "One way of showing pass/fail grades is showing a tick or a cross next to them, or perhaps adding a new column to the table",
+      "original_open_code": "SUGGESTED_NONCOLOR_INDICATORS_FOR_PASS_FAIL"
+    },
+    {
+      "issue_key": "MDL-70846",
+      "source_text": "It looks like perhaps the .text-muted class needs the colour tweaked just a little bit to meet contrast requirements.",
+      "original_open_code": "SUGGESTED_COLOR_CONTRAST_ADJUSTMENT"
+    },
+    {
+      "issue_key": "MDL-70846",
+      "source_text": "Judging from the screenshot, it seems just adding a white background to all buttons with class .btn-outline-secondary should fix the issue.",
+      "original_open_code": "SUGGESTED_BACKGROUND_COLOR_FIX"
+    },
+    {
+      "issue_key": "MDL-70792",
+      "source_text": "Bas kindly helped me here and provided a patch which seems to resolve my previously stated issue.",
+      "original_open_code": "SUGGESTED_PATCH_FOR_DROPDOWN_ISSUE"
+    },
+    {
+      "issue_key": "MDL-70721",
+      "source_text": "Can you give a code example of how this helps with attributes such as aria-label?",
+      "original_open_code": "SUGGESTED_HTML_ENTITY_ESCAPING"
+    },
+    {
+      "issue_key": "MDL-70721",
+      "source_text": "Shouldn't we really be changing the old elements that are currently sending through rendered HTML to the template to instead just send the information to then be sent to a partial?",
+      "original_open_code": "PROPOSED_TEMPLATE_REFACTORING"
+    },
+    {
+      "issue_key": "MDL-69474",
+      "source_text": "I agree in that having that link is redundant but the underlying functionality dictates that is how user images are rendered out everywhere",
+      "original_open_code": "SUGGESTED_REMOVE_REDUNDANT_LINK_PROFILE_PAGE"
+    },
+    {
+      "issue_key": "MDL-69474",
+      "source_text": "we can just remove the link in case it point to the current page",
+      "original_open_code": "PROPOSED_REMOVE_LINK_CURRENT_PAGE"
+    },
+    {
+      "issue_key": "MDL-69474",
+      "source_text": "alt should always be 'picture of John Smith' no matter what they write as the description.",
+      "original_open_code": "SUGGESTED_ALT_TEXT_ALWAYS_PROFILE_PICTURE"
+    },
+    {
+      "issue_key": "MDL-69392",
+      "source_text": "Get rid of left/right layout with the grey info box (this is better on smaller screens anyway).",
+      "original_open_code": "SUGGESTED_LAYOUT_CHANGE_FOR_ACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-69392",
+      "source_text": "I can share the CSS if it helps (although a lot of the necessary CSS is undoing all the styling that the core themes apply.)",
+      "original_open_code": "PROPOSED_CSS_SHARING_FOR_THEME_SIMPLIFICATION"
+    },
+    {
+      "issue_key": "MDL-69392",
+      "source_text": "attached are two files. Probably the bits you need are at the top of question.css. Attaching mod_quiz.css in case anything there is important.",
+      "original_open_code": "PROVIDED_CSS_FILES_FOR_ACCESSIBILITY"
+    },
+    {
+      "issue_key": "MDL-69301",
+      "source_text": "we could comment out the test and I'll add a commit to 66979 to uncomment it.",
+      "original_open_code": "SUGGESTED_FIREFOX_TEST_WORKAROUND"
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "I think that we should provide a h1 title for the page.",
+      "original_open_code": "RECOMMENDED_WCAG_COMPLIANCE_H1_TITLE"
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "can you please update the patch to group the blocks together into a h2 and then give each individual block an h3?",
+      "original_open_code": "SUGGESTED_HEADER_STRUCTURE_H2_H3"
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "using H2 block headings is simpler and aligns with the way Twitter handles this.",
+      "original_open_code": "SUGGESTED_H2_BLOCK_HEADINGS"
+    },
+    {
+      "issue_key": "MDL-68541",
+      "source_text": "IN short, IMO, should be put to unlimited.",
+      "original_open_code": "SUGGESTED_UNLIMITED_ALT_TEXT_LENGTH"
+    },
+    {
+      "issue_key": "MDL-68344",
+      "source_text": "Only the <a> element is _actually_ a focusable element, so that's the one that we want to target.",
+      "original_open_code": "PROVIDED_FOCUSABLE_ELEMENT_GUIDANCE"
+    },
+    {
+      "issue_key": "MDL-68299",
+      "source_text": "Before we integrate this, do you think we can tweak the tabbed navigation to make it distinct from looking like buttons? I'm happy to share ideas with you if you like.",
+      "original_open_code": "SUGGESTED_TABBED_NAVIGATION_VISUAL_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-68266",
+      "source_text": "[~basbrands] has prepared the following patch for fixing the issues with Moodle 3.8",
+      "original_open_code": "SUGGESTED_PATCH_FOR_BEHAT_ISSUES"
+    },
+    {
+      "issue_key": "MDL-68051",
+      "source_text": "We should not need to have both d-none class and aria-hidden=\"true\" at the same time.",
+      "original_open_code": "SUGGESTED_ARIA_IMPLEMENTATION_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-67876",
+      "source_text": "My recommendation would be to have a list of links appear at the top of the form which link the user to one or more errors in the form.",
+      "original_open_code": "RECOMMENDED_ERROR_LINKS_TOP_FORM"
+    },
+    {
+      "issue_key": "MDL-67876",
+      "source_text": "integration of small incremental fixes evolves Moodle into something better much quicker than waiting for someone to come along",
+      "original_open_code": "SUGGESTED_INCREMENTAL_FIXES_AGILE_APPROACH"
+    },
+    {
+      "issue_key": "MDL-67663",
+      "source_text": "Here is a fix for the scrollbar overflow issue: https://github.com/moodle/moodle/commit/fae7df7a5be3602f0fdabe2189b0be1a4ed11abd",
+      "original_open_code": "SUGGESTED_SCROLLBAR_OVERFLOW_FIX"
+    },
+    {
+      "issue_key": "MDL-68444",
+      "source_text": "IMHO this patch is fine as-is using the sr-only tag, but we really should raise a new issue to add headings to the output and, when we do so we would need to make these aria-hidden, and to use the labelled-by anyway.",
+      "original_open_code": "RECOMMENDED_NEW_ISSUE_FOR_HEADINGS"
+    },
+    {
+      "issue_key": "MDL-70032",
+      "source_text": "Perhpas the only real solution here is to move away from using the <label> tag, and instead start using aria-labelled-by attribute or similar pointing at the choice text?",
+      "original_open_code": "SUGGESTED_ARIA_LABELLED_BY_ATTRIBUTE"
+    }
+  ],
+  "Process Guidance and Knowledge Sharing": [
+    {
+      "issue_key": "MDL-81236",
+      "source_text": "you may wish to rebase your PULL branches to simplify history and avoid any possible merge conflicts.",
+      "original_open_code": "SUGGESTED_REBASE_PULL_BRANCHES_MERGE_CONFLICT_AVOIDANCE"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "Colour-blind users do not use screen readers. So using aria attributes are not going to help them at all.",
+      "original_open_code": "IDENTIFIED_COLOR_BLINDNESS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-81236",
+      "source_text": "Please make sure that any version.php file on your patch is properly bumped up as well.",
+      "original_open_code": "RECOMMENDED_VERSION_BUMP_INTEGRATION_EASE"
+    },
+    {
+      "issue_key": "MDL-80805",
+      "source_text": "Thanks for investigating those failure Sam, I'm launching new Behat builds on this.",
+      "original_open_code": "INITIATED_BEHAT_TESTS_FIREFOX"
+    },
+    {
+      "issue_key": "MDL-79157",
+      "source_text": "Unholding this as it is a must-fix.",
+      "original_open_code": "REPORTED_MUST_FIX_ISSUE"
+    },
+    {
+      "issue_key": "MDL-78994",
+      "source_text": "Thanks Kerry for suggesting this improvement. I'm just updating the issue summary and description to clarify how it is in standard Moodle.",
+      "original_open_code": "UPDATED_ISSUE_SUMMARY_CLARIFICATION"
+    },
+    {
+      "issue_key": "MDL-77856",
+      "source_text": "it would be great if in future similar issues manual tests are added for all Moodle front-ends supporting this feature, including the mobile app",
+      "original_open_code": "SUGGESTED_MANUAL_TESTS_MOBILE_APP"
+    },
+    {
+      "issue_key": "MDL-76597",
+      "source_text": "Please remember that renderers are an API. Themes may override them and depend on the current HTML. herefore, significant changes should be documented in upgrade.txt files. (Open Univsity have had serious breakage recently caused by undocumented change in course format stuff on 'stable' branches. I am sure none of us want to cause that again!) ... but I wrote this before reading all the changes.",
+      "original_open_code": "GUIDED_RENDERER_API_DOCUMENTATION"
+    },
+    {
+      "issue_key": "MDL-74815",
+      "source_text": "I'd vote to not backport this fix to 3.11, not only that but we had to add all this new code to get around the problem of rendering the expand/collapse icons in css",
+      "original_open_code": "RECOMMENDED_NOT_TO_BACKPORT_FIX"
+    },
+    {
+      "issue_key": "MDL-72896",
+      "source_text": "We have voted on unholding this issue and agreed that it is ok to break the freeze!",
+      "original_open_code": "VOTED_UNHOLD_ISSUE_FREEZE"
+    },
+    {
+      "issue_key": "MDL-72895",
+      "source_text": "It wouldn't probably be too hard to backport this to 310 and 311, too… The actual versions could benefit from this as well.",
+      "original_open_code": "SUGGESTED_BACKPORT_VERSIONS"
+    },
+    {
+      "issue_key": "MDL-71668",
+      "source_text": "can you, please, rebase the branches, specially 310_STABLE, we are getting there some behat failures which were fixed some good weeks ago.",
+      "original_open_code": "RECOMMENDED_BRANCH_REBASE_FOR_TEST_FIXES"
+    },
+    {
+      "issue_key": "MDL-71301",
+      "source_text": "This has been in integration for a while now. Is there something we can do to help it get integrated?",
+      "original_open_code": "INQUIRED_INTEGRATION_STATUS"
+    },
+    {
+      "issue_key": "MDL-70172",
+      "source_text": "Please, review git history and leave only strictly required commits here... And don't forget to prepare proper testing instructions for checking what you have changed in the patch",
+      "original_open_code": "SUGGESTED_TESTING_INSTRUCTIONS_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-69392",
+      "source_text": "The testing instructions are not very self-explanatory. It is impossible to see what quiz settings are in use.",
+      "original_open_code": "SUGGESTED_IMPROVEMENT_FOR_TESTING_INSTRUCTIONS"
+    },
+    {
+      "issue_key": "MDL-68639",
+      "source_text": "Hi [~dobedobedoh], could you please PR the code fix? Thanks",
+      "original_open_code": "REQUESTED_CODE_FIX_PR"
+    },
+    {
+      "issue_key": "MDL-68568",
+      "source_text": "Can we please consider this issue for 3.9 as it is part of our work to improve accessibility across Moodle.",
+      "original_open_code": "SUGGESTED_ACCESSIBILITY_IMPROVEMENT_RELEASE_CONSIDERATION"
+    },
+    {
+      "issue_key": "MDL-68551",
+      "source_text": "These improvements will be master only so ok to integrate.",
+      "original_open_code": "RECOMMENDED_MASTER_ONLY_INTEGRATION"
+    },
+    {
+      "issue_key": "MDL-68548",
+      "source_text": "These improvements will be master only so ok to integrate.",
+      "original_open_code": "SUGGESTED_MASTER_ONLY_INTEGRATION"
+    },
+    {
+      "issue_key": "MDL-68353",
+      "source_text": "I know accessibility fixes are important, but is this really the type of change that should land on a 'Stable' branch? This is definitely an API change.",
+      "original_open_code": "QUESTIONED_API_CHANGE_IN_STABLE_BRANCH"
+    },
+    {
+      "issue_key": "MDL-68344",
+      "source_text": "Could you be more explicit and precise on what to focus and what to verify?",
+      "original_open_code": "REQUESTED_TEST_INSTRUCTION_CLARIFICATION"
+    },
+    {
+      "issue_key": "MDL-68344",
+      "source_text": "Can you update the test instructions on this issue to explain that more precisely?",
+      "original_open_code": "REQUESTED_TEST_INSTRUCTION_UPDATE"
+    },
+    {
+      "issue_key": "MDL-67874",
+      "source_text": "it would be great to improve the testing instructions to cover more scenarios.",
+      "original_open_code": "SUGGESTED_TESTING_INSTRUCTION_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "We recommend to make the insert + delete a transaction ($DB->start_delegated_transaction() / $transaction->allow_commit();)",
+      "original_open_code": "SUGGESTED_TRANSACTION_USE_IN_UPGRADE"
+    },
+    {
+      "issue_key": "MDL-67881",
+      "source_text": "Andrew recommended that I create an issue about it, here it is MDL-68657",
+      "original_open_code": "RECOMMENDED_ISSUE_CREATION_FOR_API_CHANGE"
+    },
+    {
+      "issue_key": "MDL-74808",
+      "source_text": "Also, I agree that in this case, it is OK not to backport to 3.11.",
+      "original_open_code": "AGREED_NO_BACKPORT_DECISION"
+    }
+  ]
+}

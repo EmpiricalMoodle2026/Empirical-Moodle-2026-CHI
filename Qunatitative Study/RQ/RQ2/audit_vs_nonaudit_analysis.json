@@ -1,0 +1,401 @@
+{
+  "attributes_analyzed": [
+    "Time Logged",
+    "Resolution Time",
+    "Fix Versions",
+    "Affected Versions",
+    "Participants",
+    "Comments",
+    "Commits",
+    "Watchers",
+    "Votes",
+    "Attachments",
+    "Description Words",
+    "Priority"
+  ],
+  "audit_issues_count": 97,
+  "non_audit_issues_count": 126,
+  "bootstrap_iterations": "N/A",
+  "statistical_results": {
+    "time_logged": {
+      "test_name": "Mann-Whitney U test",
+      "p_value": 0.0003644905712248339,
+      "effect_size": 0.2791752577319588,
+      "effect_type": "Cliff's Delta",
+      "ci_lower": 0.062144143678342145,
+      "ci_upper": 0.4962063717855754,
+      "is_normal": "False",
+      "practical_significance": "Small effect",
+      "adjusted_p_value": 0.001977043766476014,
+      "significant_after_correction": "True"
+    },
+    "resolution_time": {
+      "test_name": "Mann-Whitney U test",
+      "p_value": 0.019674596153502328,
+      "effect_size": -0.18237604320078546,
+      "effect_type": "Cliff's Delta",
+      "ci_lower": -0.399028346892488,
+      "ci_upper": 0.034276260490917115,
+      "is_normal": "False",
+      "practical_significance": "Small effect",
+      "adjusted_p_value": 0.02036101572335234,
+      "significant_after_correction": "False"
+    },
+    "fix_versions": {
+      "test_name": "Poisson Regression",
+      "p_value": 0.4732749657505274,
+      "effect_size": 1.076288659793814,
+      "effect_type": "IRR",
+      "ci_lower": 0.8803745023227318,
+      "ci_upper": 1.3158005782136037,
+      "is_overdispersed": "False",
+      "relative_change": "7.6% higher in audit issues",
+      "adjusted_p_value": 0.4732749657505274,
+      "significant_after_correction": "False"
+    },
+    "affected_versions": {
+      "test_name": "Poisson Regression",
+      "p_value": 0.03861699726289297,
+      "effect_size": 0.8281453307975702,
+      "effect_type": "IRR",
+      "ci_lower": 0.6926265585349418,
+      "ci_upper": 0.9901796003498446,
+      "is_overdispersed": "False",
+      "relative_change": "17.2% lower in audit issues",
+      "adjusted_p_value": 0.07723399452578594,
+      "significant_after_correction": "False"
+    },
+    "num_participants": {
+      "test_name": "Poisson Regression",
+      "p_value": 0.26259629204002577,
+      "effect_size": 0.942024165835275,
+      "effect_type": "IRR",
+      "ci_lower": 0.8485585072061594,
+      "ci_upper": 1.0457847296109277,
+      "is_overdispersed": "False",
+      "relative_change": "5.8% lower in audit issues",
+      "adjusted_p_value": 0.3151155504480309,
+      "significant_after_correction": "False"
+    },
+    "num_comments": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.09825851884389317,
+      "effect_size": 0.8740817334403388,
+      "effect_type": "IRR",
+      "ci_lower": 0.7451845943621751,
+      "ci_upper": 1.0252746534407533,
+      "is_overdispersed": "True",
+      "relative_change": "12.6% lower in audit issues",
+      "adjusted_p_value": 0.14738777826583976,
+      "significant_after_correction": "False"
+    },
+    "num_commits": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.0001171675977978713,
+      "effect_size": 1.4246895688547798,
+      "effect_type": "IRR",
+      "ci_lower": 1.1898791348127364,
+      "ci_upper": 1.7058374319027454,
+      "is_overdispersed": "True",
+      "relative_change": "42.5% higher in audit issues",
+      "adjusted_p_value": 0.0014060111735744558,
+      "significant_after_correction": "True"
+    },
+    "num_watchers": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.023275423218063477,
+      "effect_size": 0.8580984127684596,
+      "effect_type": "IRR",
+      "ci_lower": 0.7518347315802242,
+      "ci_upper": 0.9793813122308244,
+      "is_overdispersed": "True",
+      "relative_change": "14.2% lower in audit issues",
+      "adjusted_p_value": 0.05586101572335234,
+      "significant_after_correction": "False"
+    },
+    "num_votes": {
+      "test_name": "Hurdle Model (Binary + Truncated Count)",
+      "p_value": 0.08394798118120606,
+      "effect_size": -0.19714078922135683,
+      "ci_lower": -0.4190406645868264,
+      "ci_upper": 0.05982517564992784,
+      "binary_p_value": 0.016737842009060973,
+      "count_p_value": 0.9817959248505967,
+      "effect_type": "Hurdle Model",
+      "binary_effect_size": 0.44001318391562294,
+      "count_effect_size": -0.005405405405405406,
+      "binary_effect_desc": "2.27x less likely to have any in audit issues",
+      "count_effect_desc": "Lower magnitude in audit issues (effect size = -0.005)",
+      "audit_zeros_pct": 84.5360824742268,
+      "non_audit_zeros_pct": 70.63492063492063,
+      "summary": "Zero-inflation: 84.5% zeros in audit vs 70.6% in non-audit. 2.27x less likely to have any in audit issues. When present: Lower magnitude in audit issues (effect size = -0.005).",
+      "adjusted_p_value": 0.14391082488206752,
+      "significant_after_correction": "False"
+    },
+    "num_attachments": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.0004942609416190035,
+      "effect_size": 1.479805942995755,
+      "effect_type": "IRR",
+      "ci_lower": 1.1869930664988397,
+      "ci_upper": 1.844851238587834,
+      "is_overdispersed": "True",
+      "relative_change": "48.0% higher in audit issues",
+      "adjusted_p_value": 0.001977043766476014,
+      "significant_after_correction": "True"
+    },
+    "description": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.2898310467699604,
+      "effect_size": 0.884903695920637,
+      "effect_type": "IRR",
+      "ci_lower": 0.7056085957532258,
+      "ci_upper": 1.1097576698567642,
+      "is_overdispersed": "True",
+      "relative_change": "11.5% lower in audit issues",
+      "adjusted_p_value": 0.3161793237490477,
+      "significant_after_correction": "False"
+    },
+    "priority": {
+      "test_name": "Mann-Whitney U test",
+      "p_value": 0.1438160010812745,
+      "effect_size": 0.09016527573228604,
+      "effect_type": "Cliff's Delta",
+      "ci_lower": -0.12648702795941652,
+      "ci_upper": 0.30681757942398863,
+      "practical_significance": "Negligible effect",
+      "adjusted_p_value": 0.19175466810836603,
+      "significant_after_correction": "False"
+    }
+  },
+  "descriptive_statistics": {
+    "Time Logged": {
+      "audit": {
+        "mean": 50377.113402061856,
+        "median": 29820.0,
+        "min": 1500.0,
+        "max": 284220.0,
+        "std_dev": 58073.71249754421,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 41200.8,
+        "median": 12780.0,
+        "min": 1200.0,
+        "max": 482280.0,
+        "std_dev": 73361.79802207861,
+        "count": 125
+      },
+      "data_type": "continuous"
+    },
+    "Resolution Time": {
+      "audit": {
+        "mean": 70.38144329896907,
+        "median": 38.0,
+        "min": 1.0,
+        "max": 742.0,
+        "std_dev": 117.7359725631686,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 151.6984126984127,
+        "median": 57.5,
+        "min": 1.0,
+        "max": 1389.0,
+        "std_dev": 241.9367940546876,
+        "count": 126
+      },
+      "data_type": "continuous"
+    },
+    "Fix Versions": {
+      "audit": {
+        "mean": 1.7938144329896908,
+        "median": 2.0,
+        "min": 1.0,
+        "max": 3.0,
+        "std_dev": 0.5191769193054704,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 1.6666666666666667,
+        "median": 2.0,
+        "min": 1.0,
+        "max": 5.0,
+        "std_dev": 0.7042726744663603,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Affected Versions": {
+      "audit": {
+        "mean": 2.0309278350515463,
+        "median": 2.0,
+        "min": 1.0,
+        "max": 5.0,
+        "std_dev": 0.9731136479473022,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 2.4523809523809526,
+        "median": 2.0,
+        "min": 1.0,
+        "max": 8.0,
+        "std_dev": 1.494561569730162,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Participants": {
+      "audit": {
+        "mean": 6.257731958762887,
+        "median": 6.0,
+        "min": 5.0,
+        "max": 15.0,
+        "std_dev": 1.6474623826981598,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 6.642857142857143,
+        "median": 6.0,
+        "min": 3.0,
+        "max": 21.0,
+        "std_dev": 2.344233045460406,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Comments": {
+      "audit": {
+        "mean": 18.536082474226806,
+        "median": 16.0,
+        "min": 6.0,
+        "max": 69.0,
+        "std_dev": 11.084018013629375,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 21.206349206349206,
+        "median": 15.5,
+        "min": 2.0,
+        "max": 149.0,
+        "std_dev": 18.437925028730305,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Commits": {
+      "audit": {
+        "mean": 10.876288659793815,
+        "median": 9.0,
+        "min": 2.0,
+        "max": 45.0,
+        "std_dev": 8.129495848399266,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 7.4523809523809526,
+        "median": 6.0,
+        "min": 0.0,
+        "max": 49.0,
+        "std_dev": 6.830059610699916,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Watchers": {
+      "audit": {
+        "mean": 6.360824742268041,
+        "median": 6.0,
+        "min": 4.0,
+        "max": 20.0,
+        "std_dev": 2.359314726648703,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 7.412698412698413,
+        "median": 6.0,
+        "min": 3.0,
+        "max": 57.0,
+        "std_dev": 5.650160834907044,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Votes": {
+      "audit": {
+        "mean": 0.30927835051546393,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 6.0,
+        "std_dev": 0.9504475343036656,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 1.1031746031746033,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 71.0,
+        "std_dev": 6.377246258477858,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Attachments": {
+      "audit": {
+        "mean": 5.989690721649485,
+        "median": 4.0,
+        "min": 1.0,
+        "max": 34.0,
+        "std_dev": 6.000859045032679,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 4.0476190476190474,
+        "median": 3.0,
+        "min": 0.0,
+        "max": 25.0,
+        "std_dev": 3.86338119860237,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Description Words": {
+      "audit": {
+        "mean": 795.8865979381443,
+        "median": 637.0,
+        "min": 125.0,
+        "max": 3198.0,
+        "std_dev": 627.6695301584641,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 899.4047619047619,
+        "median": 566.5,
+        "min": 69.0,
+        "max": 24799.0,
+        "std_dev": 2217.6627631037913,
+        "count": 126
+      },
+      "data_type": "count"
+    },
+    "Priority": {
+      "audit": {
+        "mean": 2.350515463917526,
+        "median": 2.0,
+        "min": 2.0,
+        "max": 3.0,
+        "std_dev": 0.4796100219927397,
+        "count": 97
+      },
+      "non_audit": {
+        "mean": 2.3412698412698414,
+        "median": 2.0,
+        "min": 2.0,
+        "max": 5.0,
+        "std_dev": 0.7173584700853366,
+        "count": 126
+      },
+      "data_type": "ordinal"
+    }
+  }
+}

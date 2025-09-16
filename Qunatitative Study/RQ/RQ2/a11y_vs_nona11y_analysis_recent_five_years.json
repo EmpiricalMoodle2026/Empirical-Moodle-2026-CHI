@@ -1,0 +1,428 @@
+{
+  "attributes_analyzed": [
+    "Time Logged",
+    "Resolution Time",
+    "Fix Versions",
+    "Affected Versions",
+    "Participants",
+    "Comments",
+    "Commits",
+    "Watchers",
+    "Votes",
+    "Attachments",
+    "Description Words",
+    "Priority"
+  ],
+  "a11y_issues_count": 248,
+  "non_a11y_issues_count": 6139,
+  "bootstrap_iterations": 1000,
+  "statistical_results": {
+    "time_logged": {
+      "test_name": "Mann-Whitney U test",
+      "p_value": 0.0006544638514905775,
+      "effect_type": "Cliff's Delta",
+      "data_type": "continuous",
+      "effect_size": 0.21682341421247442,
+      "ci_lower": 0.07250459936727097,
+      "ci_upper": 0.3611422290576779,
+      "practical_significance": "Small effect",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.003926783108943465,
+      "significant_after_correction": "True"
+    },
+    "resolution_time": {
+      "test_name": "Mann-Whitney U test",
+      "p_value": 0.2647984804111161,
+      "effect_type": "Cliff's Delta",
+      "data_type": "continuous",
+      "effect_size": 0.07106214229968782,
+      "ci_lower": -0.07279683063199524,
+      "ci_upper": 0.2149211152313709,
+      "practical_significance": "Negligible effect",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.39719772061667413,
+      "significant_after_correction": "False"
+    },
+    "fix_versions": {
+      "test_name": "Poisson Regression",
+      "p_value": 0.053256320872689174,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 1.162945488163719,
+      "ci_lower": 1.012452628054861,
+      "ci_upper": 1.3358099746174097,
+      "relative_change": "16.3% higher in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.127815170094454,
+      "significant_after_correction": "False"
+    },
+    "affected_versions": {
+      "test_name": "Poisson Regression",
+      "p_value": 0.014944080523577267,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 1.2047586106634747,
+      "ci_lower": 1.0647771704188136,
+      "ci_upper": 1.3631458975283095,
+      "relative_change": "20.5% higher in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.044832241570731804,
+      "significant_after_correction": "True"
+    },
+    "num_participants": {
+      "test_name": "Poisson Regression",
+      "p_value": 0.5994832970710734,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 0.9876021091387227,
+      "ci_lower": 0.9216119920536442,
+      "ci_upper": 1.0583174670065154,
+      "relative_change": "1.2% lower in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.5994832970710734,
+      "significant_after_correction": "False"
+    },
+    "num_comments": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.44353034047667256,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 1.0371093926405397,
+      "ci_lower": 0.9336591269233558,
+      "ci_upper": 1.1520355665752713,
+      "relative_change": "3.7% higher in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.532236408572007,
+      "significant_after_correction": "False"
+    },
+    "num_commits": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 4.161076981632185e-07,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 1.667608857628655,
+      "ci_lower": 1.4734475399018871,
+      "ci_upper": 1.8873958596183222,
+      "relative_change": "66.8% higher in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 4.993292377958622e-06,
+      "significant_after_correction": "True"
+    },
+    "num_watchers": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.5208624763851942,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 0.9925638925579727,
+      "ci_lower": 0.9028670845519787,
+      "ci_upper": 1.0911912180316845,
+      "relative_change": "0.7% lower in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.5682136106020301,
+      "significant_after_correction": "False"
+    },
+    "num_votes": {
+      "test_name": "Hurdle Model (Binary + Truncated Count)",
+      "p_value": 0.19403258308547383,
+      "effect_type": "Hurdle Model",
+      "data_type": "count",
+      "effect_size": -0.14415818647144635,
+      "ci_lower": -0.34191948313489673,
+      "ci_upper": 0.059608480304028474,
+      "relative_change": "114.4% lower in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.34150139108820127,
+      "significant_after_correction": "False"
+    },
+    "num_attachments": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.002699168994177674,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 1.5070438737464562,
+      "ci_lower": 1.2712039365035703,
+      "ci_upper": 1.786691196809094,
+      "relative_change": "50.7% higher in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.010796675976710695,
+      "significant_after_correction": "True"
+    },
+    "description": {
+      "test_name": "Negative Binomial Regression",
+      "p_value": 0.3328679018669285,
+      "effect_type": "IRR",
+      "data_type": "count",
+      "effect_size": 1.0936465065895984,
+      "ci_lower": 0.9404522090213833,
+      "ci_upper": 1.2718151808733285,
+      "relative_change": "9.4% higher in a11y issues",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.44382386915590466,
+      "significant_after_correction": "False"
+    },
+    "priority": {
+      "test_name": "Mann-Whitney U test",
+      "p_value": 0.19920914480145074,
+      "effect_type": "Cliff's Delta",
+      "data_type": "ordinal",
+      "effect_size": 0.0608893242715921,
+      "ci_lower": -0.08296964866009096,
+      "ci_upper": 0.20474829720327517,
+      "practical_significance": "Negligible effect",
+      "bootstrap_iterations": 1000,
+      "adjusted_p_value": 0.34150139108820127,
+      "significant_after_correction": "False"
+    }
+  },
+  "descriptive_statistics": {
+    "Time Logged": {
+      "a11y": {
+        "mean": 43137.81376518219,
+        "median": 17400.0,
+        "min": 960.0,
+        "max": 482280.0,
+        "std_dev": 65711.72951004218,
+        "count": 247
+      },
+      "non_a11y": {
+        "mean": 31012.4918652424,
+        "median": 10200.0,
+        "min": 60.0,
+        "max": 3414660.0,
+        "std_dev": 85109.38930190374,
+        "count": 6085
+      },
+      "data_type": "continuous"
+    },
+    "Resolution Time": {
+      "a11y": {
+        "mean": 101.9758064516129,
+        "median": 42.5,
+        "min": 1.0,
+        "max": 1389.0,
+        "std_dev": 182.5555193110467,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 106.95324971493729,
+        "median": 37.0,
+        "min": 0.0,
+        "max": 1731.0,
+        "std_dev": 199.8545225154312,
+        "count": 6139
+      },
+      "data_type": "continuous"
+    },
+    "Fix Versions": {
+      "a11y": {
+        "mean": 1.7459677419354838,
+        "median": 2.0,
+        "min": 1.0,
+        "max": 5.0,
+        "std_dev": 0.6394455079673778,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 1.5022816166883963,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 6.0,
+        "std_dev": 0.8030065810769367,
+        "count": 6136
+      },
+      "data_type": "count"
+    },
+    "Affected Versions": {
+      "a11y": {
+        "mean": 2.2419354838709675,
+        "median": 2.0,
+        "min": 1.0,
+        "max": 8.0,
+        "std_dev": 1.2685607755109516,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 1.863799283154122,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 17.0,
+        "std_dev": 1.3464620718461144,
+        "count": 6138
+      },
+      "data_type": "count"
+    },
+    "Participants": {
+      "a11y": {
+        "mean": 6.439516129032258,
+        "median": 6.0,
+        "min": 3.0,
+        "max": 21.0,
+        "std_dev": 1.922688677016291,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 6.5294021827659225,
+        "median": 6.0,
+        "min": 1.0,
+        "max": 32.0,
+        "std_dev": 2.3214135880800244,
+        "count": 6139
+      },
+      "data_type": "count"
+    },
+    "Comments": {
+      "a11y": {
+        "mean": 19.403225806451612,
+        "median": 16.0,
+        "min": 2.0,
+        "max": 149.0,
+        "std_dev": 14.621773656286969,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 18.761361785307052,
+        "median": 15.0,
+        "min": 1.0,
+        "max": 302.0,
+        "std_dev": 14.872004108171259,
+        "count": 6139
+      },
+      "data_type": "count"
+    },
+    "Commits": {
+      "a11y": {
+        "mean": 8.733870967741936,
+        "median": 6.0,
+        "min": 0.0,
+        "max": 49.0,
+        "std_dev": 7.39143707542474,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 5.19547157517511,
+        "median": 4.0,
+        "min": 0.0,
+        "max": 212.0,
+        "std_dev": 5.491772840608297,
+        "count": 6139
+      },
+      "data_type": "count"
+    },
+    "Watchers": {
+      "a11y": {
+        "mean": 7.157258064516129,
+        "median": 6.0,
+        "min": 3.0,
+        "max": 57.0,
+        "std_dev": 4.513079029874639,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 7.2161589835478095,
+        "median": 6.0,
+        "min": 0.0,
+        "max": 87.0,
+        "std_dev": 5.401811075151662,
+        "count": 6139
+      },
+      "data_type": "count"
+    },
+    "Votes": {
+      "overall": {
+        "a11y": {
+          "mean": 0.6532258064516129,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 71.0,
+          "std_dev": 4.579560919565488,
+          "count": 248
+        },
+        "non_a11y": {
+          "mean": 1.0669490144974751,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 94.0,
+          "std_dev": 4.2828757197241965,
+          "count": 6139
+        }
+      },
+      "non_zero_only": {
+        "a11y": {
+          "mean": 3.1991935483871,
+          "median": 1.0,
+          "min": 0,
+          "max": 27,
+          "std_dev": 9.841932287773101,
+          "count": 248
+        },
+        "non_a11y": {
+          "mean": 4.132269099201824,
+          "median": 1.0,
+          "min": 0,
+          "max": 123,
+          "std_dev": 7.641932287773101,
+          "count": 6139
+        }
+      },
+      "data_type": "count",
+      "model_type": "hurdle_model"
+    },
+    "Attachments": {
+      "a11y": {
+        "mean": 4.838709677419355,
+        "median": 3.0,
+        "min": 0.0,
+        "max": 34.0,
+        "std_dev": 4.800281868873401,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 3.22690992018244,
+        "median": 2.0,
+        "min": 0.0,
+        "max": 127.0,
+        "std_dev": 4.661932287773101,
+        "count": 6139
+      },
+      "data_type": "count"
+    },
+    "Description Words": {
+      "a11y": {
+        "mean": 870.8991935483871,
+        "median": 595.5,
+        "min": 69.0,
+        "max": 24799.0,
+        "std_dev": 1654.1163871341043,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 800.2866916435902,
+        "median": 549.0,
+        "min": 17.0,
+        "max": 24801.0,
+        "std_dev": 977.1026020103736,
+        "count": 6139
+      },
+      "data_type": "count"
+    },
+    "Priority": {
+      "a11y": {
+        "mean": 2.3306451612903225,
+        "median": 2.0,
+        "min": 2.0,
+        "max": 5.0,
+        "std_dev": 0.6066003252153687,
+        "count": 248
+      },
+      "non_a11y": {
+        "mean": 2.315849486887115,
+        "median": 2.0,
+        "min": 1.0,
+        "max": 5.0,
+        "std_dev": 0.7341868139415899,
+        "count": 6139
+      },
+      "data_type": "ordinal"
+    }
+  }
+}

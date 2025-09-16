@@ -1,0 +1,622 @@
+{
+  "User-Centered Reasoning": [
+    {
+      "issue_key": "MDL-81066",
+      "source_text": "Related to this, my only concern was what screen readers would do with the 'on change' case... However, I've tested with NVDA and it does re-read out the field on pressing tab, so you get 'Course full name edit required invalid entry...'"
+    },
+    {
+      "issue_key": "MDL-80912",
+      "source_text": "Adding a <caption> to report tables helps users—especially screen reader users—understand the table’s purpose without hunting for context."
+    },
+    {
+      "issue_key": "MDL-80805",
+      "source_text": "Current: Required fields are never announced to screenreader (or other assistive tech) users. After this change: Most required fields are announced, editors and file pickers still aren't."
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "If users understand what they need to do, they can move items more efficiently... The method of rearranging <li> items via arrow keys does not align with users' expectations, leading to non-compliance with Success Criterion 2.1.1 Keyboard..."
+    },
+    {
+      "issue_key": "MDL-80364",
+      "source_text": "Users struggle to perceive the icon due to insufficient contrast and confusing ARIA role announcements; addressing both ensures the control is discoverable and understandable."
+    },
+    {
+      "issue_key": "MDL-80041",
+      "source_text": "I think that using '{{type=number}}' is more applicable in this case as it prevents users from entering non-numeric values on the grade fields... On the other hand, using '{{inputmode}}' is handy for displaying the appropriate virtual keyboard when using a mobile device..."
+    },
+    {
+      "issue_key": "MDL-79061",
+      "source_text": "Some accessibility considerations when using toast... I think it would be good to specify in the toast message the object that the action affects. e.g. 'Topic 2 has been hidden from students'."
+    },
+    {
+      "issue_key": "MDL-79007",
+      "source_text": "I would suggest that if you want to create an event on the 13th of the month, it is easier to tab to 'New event' and set the date field to the 13th, rather than tab through 13 days (although any input from anyone who primarily uses a keyboard or switch for navigation is welcome)."
+    },
+    {
+      "issue_key": "MDL-78994",
+      "source_text": "I have crafted the fix bassed on the user experience forum"
+    },
+    {
+      "issue_key": "MDL-78874",
+      "source_text": "Switching from an unlabeled input to a clear button with an associated label improves recognizability and reduces errors for screen reader and keyboard users."
+    },
+    {
+      "issue_key": "MDL-78826",
+      "source_text": "None of the new dropdowns (dialog & status) had a javascript module to control dropdowns at a frontend level. However, JS modules are needed to implement the keyboard access to the dropdowns... The new design is done, considering there's a genuine interest in using status dropdowns inside quick forms."
+    },
+    {
+      "issue_key": "MDL-77318",
+      "source_text": "I have put up a quick patch for this issue. This basically uses the URL resource's activity name for the link text... I also added another commit that adds a help text for the name field explaining that the URL resource's name field will be used for the link text... for the benefit of screen reader users."
+    },
+    {
+      "issue_key": "MDL-76849",
+      "source_text": "The example (https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria) you cited still appends a screen reader-only text to the Name fields... This is particularly helpful when screen reader users navigate the page in forms mode."
+    },
+    {
+      "issue_key": "MDL-76803",
+      "source_text": "The following options can fit a viewport with a width of 320 pixels or 1280 pixels at 400% zoom... It may also be worth modifying the emaildisplay_help text with a more detailed explanation of the options."
+    },
+    {
+      "issue_key": "MDL-76601",
+      "source_text": "Displaying the course card menu only on hover is bad in terms of accessibility as it prevents keyboard-only users from accessing the menu. So it's better to always display them. That's the approach I took to fix this issue."
+    },
+    {
+      "issue_key": "MDL-72990",
+      "source_text": "I don't think we should forcefully display something. If the imagecaption is empty, it means the image was not worth being described and is purely decorative. Furthermore, the badgename is already on the page and using that as the alt for the badge image means that screen reader users hear the badge name twice..."
+    },
+    {
+      "issue_key": "MDL-82551",
+      "source_text": "Promoting the welcome heading to H1 clarifies page hierarchy for screen reader and keyboard users while preserving the visual size with a utility class."
+    },
+    {
+      "issue_key": "MDL-81110",
+      "source_text": "When focus lands beneath the fixed navbar, users lose context because the focused item is obscured; ensure focused elements scroll into view so users always know where they are."
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "Isn't a red/green text having a semantic value an accessibility problem on it self? We could think about adding an additional icon like ✗ or ✓ for color blind people."
+    },
+    {
+      "issue_key": "MDL-69422",
+      "source_text": "I have updated the patch with some more notes about it: # I realised that since the CSV and ODS radio buttons are grouped as a fieldset, the fieldset is missing a legend... # The field delimiter for the CSV also does not really belong to the export format radio group..."
+    },
+    {
+      "issue_key": "MDL-69392",
+      "source_text": "I darkened the red, green, and blue colours. Their current versions achieve a minimum contrast ratio of 4.5:1 against a white background, but when against a non-white background, they would easily fail the AA contrast ratio requirement."
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "I was putting my self in the shoes of a person visiting the site. The information that there's a blocks container but that blocks container is empty did seem valuable to me."
+    },
+    {
+      "issue_key": "MDL-68355",
+      "source_text": "Patch up. It seemed at first that it's just a simple issue of adding button labels for the criterion info and comments picker buttons... # Add sr-only labels... # Added aria-label for the score and additional comments fields so that the user would know which criterion they are currently working on..."
+    },
+    {
+      "issue_key": "MDL-67881",
+      "source_text": "Moving the message drawer to the navbar would also not help for the message link on the users profile page. So instead I have create a patch that adds a hidden <span> with tabindex=0 after the message toggle... When the span receives focus through tabbing the tab is \"teleported\" to the message drawer."
+    },
+    {
+      "issue_key": "MDL-67663",
+      "source_text": "I also realised that I shouldn't have used '{{hidden}}' since it hides the live region from the screen reader which defeats its purpose. So I instead used the '{{sr-only}}' class on it instead."
+    },
+    {
+      "issue_key": "MDL-78542",
+      "source_text": "Adding an 'Undo' action to the deletion toast lets users recover from accidental clicks without leaving the current context, reducing error cost and stress. In addition, I've also added a help tip when instructors want to create accessible link text for URL resources."
+    },
+    {
+      "issue_key": "MDL-79056",
+      "source_text": "Respecting 'prefers-reduced-motion' by replacing large transitions with instant updates prevents disorientation for motion-sensitive users."
+    },
+    {
+      "issue_key": "MDL-79071",
+      "source_text": "A session-timeout warning should be an alertdialog with focus on 'Stay signed in' and a clear countdown this prevents surprise logouts and supports users who need extra time."
+    },
+    {
+      "issue_key": "MDL-81236",
+      "source_text": "Replacing infinite scroll with a 'Load more' button preserves focus position and announces how many items were added, helping keyboard and screen reader users stay oriented."
+    }
+  ],
+  "Incorporate External Accessibility Knowledge": [
+    {
+      "issue_key": "MDL-80668",
+      "source_text": "I found this thread in the Bootstrap Community that might help us: https://github.com/twbs/bootstrap/issues/30687"
+    },
+    {
+      "issue_key": "MDL-80469",
+      "source_text": "I have asked AbleDocs what are our options on leaving 'fieldset' but not having a legend, the answer was: It is best practice to include a fieldset when grouping multiple items, such as radio buttons and checkboxes, but it is not mandatory. However, if you do use a fieldset, it must have a legend. Looking at the “Save changes” and “Cancel” button examples in Fig. 14.01, there is no need for these two buttons to be wrapped in a fieldset, and a div would be a better choice. I understand that changing these blocks may have unexpected results in some themes, but it would be better to ensure the code is correct than trying to find a bypass hack to get around it. Well I do not agree with their opinion of what \"would be better\". I think that breaking themes for the sake of passing accessibility audit is not justified. Maybe we add a meaningless label 'Action buttons' for the stable versions and consider replacing with '<div>' in 4.4?"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "You rightly pointed out that if users understand what they need to do, they can move items more efficiently. However, the problem arises when they don't. The method of rearranging <li> items via arrow keys does not align with users' expectations, leading to non-compliance with Success Criterion 2.1.1 Keyboard. Additionally, if a user mistakenly presses the right (or down) arrow key, the <li> item will be moved in the list without the user even noticing the move. This move is not announced to the user at all. The negative impact of this scenario far outweighs hearing a bit of 'move up/move down' noise on the page."
+    },
+    {
+      "issue_key": "MDL-80185",
+      "source_text": "Pinging [[RESOLVED: jpataleta] for for info, the failings detected by both WAVE and the Nu Validator (https://validator.w3.org) both detect the same, that the changes from MDL-72885 are not correct in regards to the HTML lang attribute, nor those used in the language menu. The links references in this method docblock (https://github.com/moodle/moodle/blob/b58d1fd4e201917d711effeae9fda7fcf5470d99/lib/weblib.php#L2289-L2304) appear to partially contradict the recommendations here (https://www.w3docs.com/learn-html/html-language-codes.html) which state that the ISO 639-1 code for each language should instead be used."
+    },
+    {
+      "issue_key": "MDL-79705",
+      "source_text": "Thanks Tim for reporting this, confirmed this currently triggers an accessibility warning: Ensures every form element has a label more information Link opens in a new window Element Location: input[name=\"profile_field_multilang\"] <input disabled=\"disabled\" type=\"checkbox\" name=\"profile_field_multilang\"> To solve this problem, you need to fix at least (1) of the following: Form element does not have an implicit (wrapped) <label> Form element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element has no placeholder attribute Element's default semantics were not overridden with role=\"none\" or role=\"presentation\" Found: Automatically Impact: critical cat.forms wcag2a wcag412 section508 section508.22.n ACT TTv5 TT5.c Found on: 16/10/2023 at 5:43 PM"
+    },
+    {
+      "issue_key": "MDL-79071",
+      "source_text": "Since course images are usually decorative, I just opted to add an empty alt attribute (https://dequeuniversity.com/rules/axe/4.6/image-alt?application=AxeFirefox) for the course image."
+    },
+    {
+      "issue_key": "MDL-79063",
+      "source_text": "I opted for this approach for the following reasons: It is simpler to render the activity/section to be moved in normal text colour. Though with darker font colour, the item to be moved remains distinguishable from the other items that can be selected because it has a colour contrast ratio of 3:02:1 (Body text colour (#1d2125) vs link colour (#0f6cbf)) and meets Success criterion 1.4.11 Non-text contrast (Level AA) (https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)."
+    },
+    {
+      "issue_key": "MDL-79062",
+      "source_text": "I updated the type attribute of the grade input fields of grade items with a grade type of GRADE_TYPE_VALUE to be numeric and added min and max attributes, when available. This enables us to leave it to the browser to handle the input validation, which means minimal changes and less work on our end."
+    },
+    {
+      "issue_key": "MDL-79061",
+      "source_text": "Some accessibility considerations when using toast: # It needs proper ARIA attributes such as role=status and aria-live so they can be announced by screen readers. #* ✓ Toasts displayed in Moodle already have these attributes set and are announced by screen readers. # WCAG 2.1 Success Criterion 2.2.1: Timing Adjustable (Level A) (https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html) #* ✓ By default core/toast are shown for 4 seconds before they disappear. We can also configure toast messages to be displayed longer if necessary. # I think it would be good to specify in the toast message the object that the action affects. e.g. When hiding a section, perhaps it would be good to have the toast message specify the section that was hidden, like 'Topic 2 has been hidden from students'."
+    },
+    {
+      "issue_key": "MDL-80279",
+      "source_text": "I found another solution for this issue, I kept the title and replaced the aria-label with role='img'. By doing this I managed to get the full name displayed on hover, the accessibility tools used initially continued without errors and now NVDA is correctly reading the full name. I removed the aria-label from the span because it should be used on interactive elements. Regarding the role='img' attribute, I added it because the span tag has no semantic meaning, so some assistive technologies ignore it, so when a role attribute is passed to a span, it puts it on the screen readers' radar so they can read a specific attribute, in this case the title, and not just the value of its tag."
+    },
+    {
+      "issue_key": "MDL-80364",
+      "source_text": "I added a new screenshot to the ticket about the notification message container. In the screenshot you can see that the Axe Accessibility tool is complaining about the contrast between the foreground and background colors when the notification is selected, we need to change the background tone to solve this problem. Another point is that although the Axe Accessibility tool is not complaining about the lightbulb icon when the hover state in the div occurs, I think it would be better to change the current icon, which is a PNG image, for a Fontawesome icon (I added a screenshot with a test that I did it and the visibility is much better)."
+    },
+    {
+      "issue_key": "MDL-79059",
+      "source_text": "I added \"{{aria-label}}\" for the radio buttons. I thought about enclosing the preset name link in a <label> element, but I vaguely remember reading somewhere to avoid adding interactive elements within <label> elements. I may have misremembered though and may be mistaken. :P * Edit: My memory didn't fail me! MDN has a note about Interactive content (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#interactive_content) in labels."
+    },
+    {
+      "issue_key": "MDL-79048",
+      "source_text": "Note that I am using the pipe character '|' as a separator for the list of information presented on the page title. I'm kind of following the organisation of information on page titles on W3.org. Following Technique G88 (https://www.w3.org/WAI/WCAG21/Techniques/general/G88) for providing descriptive page titles, you'll notice that the page title now presents the most unique identifying information on the page first, followed by a piece of broader category information (e.g. Section viewing mode first before the course name)."
+    },
+    {
+      "issue_key": "MDL-79047",
+      "source_text": "Rearranging the page title components to display the most unique identifying information first to the broadest information ([Gradebook page] | Grades | [Course name]). See Technique G88 for providing descriptive page titles (https://www.w3.org/WAI/WCAG21/Techniques/general/G88) for more information."
+    },
+    {
+      "issue_key": "MDL-79007",
+      "source_text": "As described in [https://www.w3.org/WAI/WCAG21/Techniques/general/G202,] 'This does not necessarily mean that each of the individual controls can be used from the keyboard as long as there are multiple methods to perform the same function available on the page'."
+    },
+    {
+      "issue_key": "MDL-78806",
+      "source_text": "While we basically meet Success Criterion 2.4.2 since pages within Moodle have a <title> attribute, I acknowledge that there's something that we can do to improve page titles and make them more consistent across Moodle. Also, while adding the site name is not a requirement to meet SC 2.4.2, it is a helpful feature to be included according to Technique G88: Providing descriptive titles for Web pages."
+    },
+    {
+      "issue_key": "MDL-78806",
+      "source_text": "While we basically meet Success Criterion 2.4.2 since pages within Moodle have a <title> attribute, I acknowledge that there's something that we can do to improve page titles and make them more consistent across Moodle. Also, while adding the site name is not a requirement to meet SC 2.4.2, it is a helpful feature to be included according to Technique G88: Providing descriptive titles for Web pages."
+    },
+    {
+      "issue_key": "MDL-77690",
+      "source_text": "Fixing the skipped heading issues in various lesson pages. Depending on whether the theme displays the activity name heading (e.g. in classic), the heading level on the page content should also be adjusted. The default heading level value on mod_lesson pages is level 3 because the activity name is shown as heading level 2."
+    },
+    {
+      "issue_key": "MDL-82677",
+      "source_text": "For headings on the page header, we already have the \"{{.page-header-headings}}\" class. However, it does not have a {{background-color}} style, so other pages, like the quiz attempt page that uses the secure layout, will be affected by this issue as well. So, I added the background colour for this class, setting it to the \"{{$body-bg}}\" variable."
+    },
+    {
+      "issue_key": "MDL-82551",
+      "source_text": "I've put up a patch where I changed the level 2 heading in the core/welcome template to a level 1 heading. This resolves the common failure of SC Infor and Relationship. To preserve the look of the welcome message heading, I used the Bootstrap '.h2' class. Also, it looks like we only display the welcome message on the user's start page after logging in. In the three start pages (Home, Dashboard, My courses), a level 1 heading is not shown when the welcome message is displayed. So I think it's okay to set the welcome message's heading to level 1."
+    },
+    {
+      "issue_key": "MDL-80805",
+      "source_text": "I decided best practice is to implement aria:required wherever possible... While it's a shame to miss out those two types, somebody could add them later, and this still improves the situation."
+    },
+    {
+      "issue_key": "MDL-76849",
+      "source_text": "I don't think it's a good idea to just wrap the questions within fieldsets. Question type plugins may opt to wrap their answers within a fieldset. This will result in nested fieldsets which can be worse in terms of accessibility. From Technique H71: Providing a description for groups of form controls using fieldset and legend elements (https://www.w3.org/WAI/WCAG21/Techniques/html/H71): Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
+    },
+    {
+      "issue_key": "MDL-76825",
+      "source_text": "Help icon has a role=\"button\" but not an aria-label. Adding it to avoid the \"ARIA commands must have an accessible name\" issue. Deque Reference: [https://dequeuniversity.com/rules/axe/4.6/aria-command-name?application=AxeFirefox]"
+    },
+    {
+      "issue_key": "MDL-76825",
+      "source_text": "Help icon has a role=\"button\" but not an aria-label. Adding it to avoid the \"ARIA commands must have an accessible name\" issue. Deque Reference: [https://dequeuniversity.com/rules/axe/4.6/aria-command-name?application=AxeFirefox]"
+    },
+    {
+      "issue_key": "MDL-76569",
+      "source_text": "This is due to an inconsistency between how TinyMCE and Atto render table header. In Atto a table header has pseudo-markup: {code} table => thead ==> th {code} In Tiny {code} table => thead ==> td {code} Both are seemingly valid and in both cases the content within the {{thead}} is regarded as header content. This discussion (https://github.com/w3c/html/issues/819) on the W3C html spec confirms this view, and they even briefly discuss whether it is relevant to have a {{th}} tag any more and whether it could be deprecated (hint: no because of y-axes headers). Whilst there is still a pending question in the above issue, the HTML spec now states for {{thead}}: {quote} The thead element represents the block of rows that consist of the column labels (headers) for the parent table element, if the thead element has a parent and it is a table. {quote} All content of the {{thead}} is considered to be a table _header_ element. Unfortunately Bootstrap does not actually define this behaviour, it's actually the user-agent stylesheet (that is the browser). I have raised an issue against bootstrap (https://github.com/twbs/bootstrap/issues/37586), though I wouldn't be surprised if they close it, despite what hte W3C issue clearly states because it may represent a chance of behaviour for many and is arguably an opinionated stance. We can control this in Tiny with a setting change described here: https://www.tiny.cloud/docs/tinymce/6/table-options/#table_header_type We can set the {{table_header_type}} option to {{sectionCells}}: {quote} sectionCells - When a table row is set as a header row, the row (tr) is moved to the thead element. All cells in the row are changed to table header cell elements (th). {quote} I'd say that we should do this, and see what Twitter say re the Bootstrap issue I've raised. If they agree that it's inconsistent behaviour compared with the HTML spec, then we should make a change to Bootstrap too."
+    },
+    {
+      "issue_key": "MDL-75957",
+      "source_text": "I had a closer look at the bootstrap's dropdown library and popper js (which provides the dynamic positioning of the dropdowns) and it seems like updating the default configuration might be right way to go. Based on the documentation Popper v2 provides an option to easily disable the repositioning along the x/y axis, but unfortunately we are still using Popper v1 which does not have this option."
+    },
+    {
+      "issue_key": "MDL-72990",
+      "source_text": "Empty alt for an image means the image is decorative and should be ignored by screen readers. See [https://www.w3.org/WAI/tutorials/images/decorative/]\n\nAlso please visit [https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/impl/index.html#:~:text=Encouraging%20alt%20text%20for%20images%20-%20The%20Image%20data%20object%20contains%20a%20%E2%80%9CCaption%E2%80%9D%20property%20which%20can%20be%20rendered%20as%20alt%20text%20for%20images.]"
+    },
+    {
+      "issue_key": "MDL-72990",
+      "source_text": "Empty alt for an image means the image is decorative and should be ignored by screen readers. See [https://www.w3.org/WAI/tutorials/images/decorative/]\n\nAlso please visit [https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/impl/index.html#:~:text=Encouraging%20alt%20text%20for%20images%20-%20The%20Image%20data%20object%20contains%20a%20%E2%80%9CCaption%E2%80%9D%20property%20which%20can%20be%20rendered%20as%20alt%20text%20for%20images.]"
+    },
+    {
+      "issue_key": "MDL-72885",
+      "source_text": "I added a \\get_html_lang_attribute_value() function in weblib that converts our language codes to values appropriate for the \"{{lang}}\" attribute in accordance with the BCP47 syntax."
+    },
+    {
+      "issue_key": "MDL-72885",
+      "source_text": "I added the lang attributes to the language menu items. I did not add the lang attribute for the currently-selected language as this is already set in the html tag itself."
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "I have added the appropriate aria roles so that assistive technology tools know what's being displayed. I have modified JS code to update the aria roles when switching between the list view and the icon view."
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "I have added the appropriate aria roles so that assistive technology tools know what's being displayed. I have modified JS code to update the aria roles when switching between the list view and the icon view."
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "I moved the text of the header into the sorting button as per the example at [https://dequeuniversity.com/library/aria/table-sortable]. This allows users to sort the table by clicking anywhere on the heading cell of a column. I have also fixed the overlapping issue with this change."
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "I moved the text of the header into the sorting button as per the example at [https://dequeuniversity.com/library/aria/table-sortable]. This allows users to sort the table by clicking anywhere on the heading cell of a column. I have also fixed the overlapping issue with this change."
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "I also decided to use aria-sort on the header column which is more in accordance with all the guidelines."
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "The purpose of aria.js is to make bootstrap wai aria compliant. aria.js is always run on every page without the need to explicitly call anything, and it fixes what bootstrap was missing."
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "The purpose of aria.js is to make bootstrap wai aria compliant. aria.js is always run on every page without the need to explicitly call anything, and it fixes what bootstrap was missing."
+    },
+    {
+      "issue_key": "MDL-72426",
+      "source_text": "I have changed the {{.count-container}} background-color from red to {{#ed0000}} a more darker red, using colorable (https://colorable.jxnblk.com/ed0000/ffffff) it shows 4.56 of contrast which makes it more accessible and enough for WAVE not report any contrast errors..."
+    },
+    {
+      "issue_key": "MDL-72426",
+      "source_text": "I have changed the {{.count-container}} background-color from red to {{#ed0000}} a more darker red, using colorable (https://colorable.jxnblk.com/ed0000/ffffff) it shows 4.56 of contrast which makes it more accessible and enough for WAVE not report any contrast errors..."
+    },
+    {
+      "issue_key": "MDL-72426",
+      "source_text": "I have changed the patch to use {{$danger}} scss variable which change the hex red to {{#ca3120}}. Looking on colorable, it shows the contrast of 5.29 AA..."
+    },
+    {
+      "issue_key": "MDL-72426",
+      "source_text": "I have changed the patch to use {{$danger}} scss variable which change the hex red to {{#ca3120}}. Looking on colorable, it shows the contrast of 5.29 AA..."
+    },
+    {
+      "issue_key": "MDL-72263",
+      "source_text": "Bootstrap collapsibles does not implement the aria-tree keyboard navigation. However, our core/tree library is almost compatible with some minor tweaks."
+    },
+    {
+      "issue_key": "MDL-72078",
+      "source_text": "I added a text that is only visible to screen readers and describes the editor element. I have also set the role attribute of the Atto editor wrapper div to 'application'. At [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Application_Role], the TinyMCE and CKEditor are mentioned as good uses of the application role. I considered using aria-roledescription after Tim suggested it but then decided to leave the patch as-is. Mainly to keep Atto consistent with the existing HTML editors such as TinyMCE and CKEditor."
+    },
+    {
+      "issue_key": "MDL-71672",
+      "source_text": "When investigating the reason for the reported issue, I found that we use the wrong default focus for YUI dialogs. As it is shown in the following picture, when you open a YUI dialog, the element I marked as (1) get the focus, whereas it had to be the element marked as (2). Studying more, I figured the guideline had been previously misunderstood. The focus should have not defaulted to the dialog window. According to [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role#required_javascript_features] the focus should default to the default focusable control inside the dialog."
+    },
+    {
+      "issue_key": "MDL-71669",
+      "source_text": "Based on the WAI-ARIA Authoring Practices design patterns for menus/menu buttons (https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton)"
+    },
+    {
+      "issue_key": "MDL-71669",
+      "source_text": "Based on the WAI-ARIA Authoring Practices design patterns for menus/menu buttons (https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton)"
+    },
+    {
+      "issue_key": "MDL-71603",
+      "source_text": "We consulted with Web Key IT and they advised that our first approach is better."
+    },
+    {
+      "issue_key": "MDL-71602",
+      "source_text": "I added a text that is only visible to screen readers and describes the editor element. I have also set the role attribute of the Atto editor wrapper div to 'application'. At [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Application_Role], the TinyMCE and CKEditor are mentioned as good uses of the application role."
+    },
+    {
+      "issue_key": "MDL-71305",
+      "source_text": "I removed the aria-atomic, aria-relevant and aria-live attributes in renderer.php. Those attributes are used in ARIA live regions. Live regions are sections that are updated when user focus is elsewhere. That's not the case for the flag/unflag button."
+    },
+    {
+      "issue_key": "MDL-71305",
+      "source_text": "I used the Toggle button pattern (https://www.w3.org/TR/wai-aria-practices-1.1/#button) for the flag question buttons."
+    },
+    {
+      "issue_key": "MDL-69394",
+      "source_text": "Added borders derived from the darker shades of the current colour indicators using Colorable (https://colorable.jxnblk.com/). These borders provide a sufficient contrast ratio (minimum 4.5:1, recommended 3:1) against the white background of the calendar."
+    },
+    {
+      "issue_key": "MDL-69392",
+      "source_text": "I darkened the red, green, and blue colours. Their current versions achieve a minimum contrast ratio of 4.5:1 against a white background."
+    },
+    {
+      "issue_key": "MDL-69114",
+      "source_text": "For this issue I have changed the value for $cyan to #008196 using a suggested value from https://learnui.design/tools/accessible-color-generator.html"
+    },
+    {
+      "issue_key": "MDL-69114",
+      "source_text": "I was not aware of the WCAG criterium for link colour contrast until I reviewed your issue on MDL-69389... That could be an alternative to giving enough colour contrast?"
+    },
+    {
+      "issue_key": "MDL-68444",
+      "source_text": "According to Webkey IT email, \"aria-label is used in cases where a text label is not visible\". In this case, a text label (the day number) was indeed visible. I followed what Google calendar does for day titles instead. I added aria-labelledby for each day to say the day's title and if there is any event on that day (simillar to Google calendar)."
+    },
+    {
+      "issue_key": "MDL-68444",
+      "source_text": "As I have quoted from [https://www.w3.org/TR/WCAG20-TECHS/H63.html] and mentioned on the commit message: {quote}For simple tables that have the headers in the first row or column then it is sufficient to simply use the TH elements without scope {quote} Sending for integration."
+    },
+    {
+      "issue_key": "MDL-68148",
+      "source_text": "Fixed by using th element with scope=\"row\". See [https://www.w3.org/TR/WCAG20-TECHS/H63.html]"
+    },
+    {
+      "issue_key": "MDL-67862",
+      "source_text": "I thought this would be a simple case of adding '{{aria-hidden}}' to the empty heading, but WAVE still detects the empty heading regardless of '{{aria-hidden}}' being present or not. So I took the approach of creating the confirmation dialogue heading dynamically in the JS, according to a similar approach from GitHub."
+    },
+    {
+      "issue_key": "MDL-67687",
+      "source_text": "Axe defines a number of tags, broadly speaking these fit into a couple of categories: * wcag2a - WCAG 2.1 A compliance * wcag2aa - WCAG 2.1 AA compliance * section508 - Section 508 compliance * cat.* - Other specific categories * wcag* - Specific WCAG references that are not necessarily part of the A or AA specifications, including: ** wcag134 - WCAG 1.3.4 ** wcag249 - WCAG 2.4.9 * best[UPDATED: was practice ] Accessibility best practices * experimental - Experimental ruels I've defined some of these as standard tags which are run normally, but any can be selected whenever you like."
+    }
+  ],
+  "Investigative and Diagnostic Work": [
+    {
+      "issue_key": "MDL-82677",
+      "source_text": "For headings on the page header, we already have the \"{{.page-header-headings}}\" class. However, it does not have a {{background-color}} style, so other pages, like the quiz attempt page that uses the secure layout, will be affected by this issue as well. So, I added the background colour for this class, setting it to the \"{{$body-bg}}\" variable."
+    },
+    {
+      "issue_key": "MDL-82298",
+      "source_text": "After doing some investigation and performed testing on both 4.2, 4.3, 4.4 versions, it looks like this bug has been introduced by the lines here (https://github.com/moodle/moodle/blame/main/lib/amd/src/menu_navigation.js#L82) as part of MDL-72481 which are conflicting with the bf cache functionality."
+    },
+    {
+      "issue_key": "MDL-81110",
+      "source_text": "It looks like the {{overflow: hidden;}} property for {{#maincontent}} defined in core.scss:396 is interfering with the {{scroll-margin-top}} for targeted elements defined in drawer.scss:15."
+    },
+    {
+      "issue_key": "MDL-81066",
+      "source_text": "It may help to understand the order that this general area works in (not changed) because I found it quite complicated to work out: # Code in lib/formslib.php (which generates inline JavaScript for the page) generates events when the form is submitted and when you move away from validated fields. # The events are dispatched via a function in lib/form/amd/src/events.js. # Code in theme/boost/amd/src/form-display-errors.js catches the events, blocks default behaviour, and implements the actual behaviour. Notes about my changes * For the changes to formslib.php. I decided not to stop it emitting the events on blur/change because there might be other plugins or themes relying on this."
+    },
+    {
+      "issue_key": "MDL-80805",
+      "source_text": "I've attached a script that finds most of the required field uses in Moodle... I decided best practice is to implement aria:required wherever possible. I think we can do that for all the important fields except the file picker and editor."
+    },
+    {
+      "issue_key": "MDL-80731",
+      "source_text": "Bit of a tricky one to test based on the information we received during the audit from Abledocs - we can confirm the language is correct using suggested tools (_PAC_ & _Adobe Acrobat_) which each indicate incorrect values are used currently."
+    },
+    {
+      "issue_key": "MDL-80676",
+      "source_text": "The '{{aria-labelledby}}' attribute for the action menu link's {{<a>}} tag is unnecessary as the {{<span>}} tag containing the action menu link's text is already within the {{<a>}} tag and already serves as the link's label by default. Note that even though it's protected, I opted for deprecation instead of outright removal because it is visible for plugins that may be extending the action_menu_link class and are using it."
+    },
+    {
+      "issue_key": "MDL-80364",
+      "source_text": "After triaging this issue, I was able to replicate and confirm this problem, I've attached some screenshots to clarify. I was using the Axe Accessibility tool to run the tests, during the test run, in addition to the problem with the icon's color contrast, an issue was also found related to the ARIA function of the element in question."
+    },
+    {
+      "issue_key": "MDL-80197",
+      "source_text": "I confirmed that updating the date picker to be keyboard accessible in a modal is indeed not a quick change, so I created a patch to add attributes to the calendar link so that it is skipped by screenreaders."
+    },
+    {
+      "issue_key": "MDL-80131",
+      "source_text": "I've gone through all the pages within the database activity module to improve the page titles and make them more specific about the page they represent."
+    },
+    {
+      "issue_key": "MDL-80131",
+      "source_text": "I've gone through all the pages within the database activity module to improve the page titles and make them more specific about the page they represent."
+    },
+    {
+      "issue_key": "MDL-80121",
+      "source_text": "The issue comes from the implementation of \\gradereport_singleview\\local\\screen\\grade_select::heading() that returns an empty space and is subsequently passed to print_grade_page_head() for the $heading parameter. I left this as it is though and fixed print_grade_page_head() instead by trimming the $heading parameter. So the empty level 2 heading is now not being rendered on the zero-state pages of the single view report. As a consequence though, the levels of the heading on the gradereport_singleview/zero_state_grade and gradereport_singleview/zero_state_user had to be increased to level 2. Otherwise, we'll have an issue of skipped heading levels on these pages."
+    },
+    {
+      "issue_key": "MDL-79705",
+      "source_text": "Thanks Tim for reporting this, confirmed this currently triggers an accessibility warning: Ensures every form element has a label more information Link opens in a new window Element Location: input[name=\"profile_field_multilang\"] <input disabled=\"disabled\" type=\"checkbox\" name=\"profile_field_multilang\"> To solve this problem, you need to fix at least (1) of the following: Form element does not have an implicit (wrapped) <label> Form element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute Element has no placeholder attribute Element's default semantics were not overridden with role=\"none\" or role=\"presentation\" Found: Automatically Impact: critical cat.forms wcag2a wcag412 section508 section508.22.n ACT TTv5 TT5.c Found on: 16/10/2023 at 5:43 PM"
+    },
+    {
+      "issue_key": "MDL-79276",
+      "source_text": "I was able to reproduce the issue in the page \"Make test course\" before apply the patch and I can confirm the issue has been solved now. After test the script in the browser and see the page source I can confirm the problem has been solved. But If you validate the source code of the test script with and the \"Make test course\" with https://validator.w3.org/ I see an error related to unclosed elements and the body tag."
+    },
+    {
+      "issue_key": "MDL-79062",
+      "source_text": "I removed the setting of tabindex > 0 for the input fields on the grade report page. Tab indices that are greater than or equal to 1 break the natural tab order of the document and may cause problems for users who rely on the keyboard to navigate the page."
+    },
+    {
+      "issue_key": "MDL-79056",
+      "source_text": "The main issue with this is that there are cells mentioned in the 'headers' attributes of other cells. These header cells needed to be set as <th>."
+    },
+    {
+      "issue_key": "MDL-79056",
+      "source_text": "The main issue with this is that there are cells mentioned in the 'headers' attributes of other cells. These header cells needed to be set as <th>."
+    },
+    {
+      "issue_key": "MDL-78826",
+      "source_text": "None of the new dropdowns (dialog & status) had a javascript module to control dropdowns at a frontend level. However, JS modules are needed to implement the keyboard access to the dropdowns. The new modules are designed to be used for keyboard access and complete control of the dropdowns. The new design is done, considering there's a genuine interest in using status dropdowns inside quick forms."
+    },
+    {
+      "issue_key": "MDL-78779",
+      "source_text": "Okay, so I found the cause of this. Essentially the debounce for the input handler is rendering the results, and then because Behat is pretty fast at typing, but on a slower worker the web service can take some time to respond, the result is returned again, Behat has already moved to the next step (pressing tab, and then tab again) and suddenly the dropdown re-renders."
+    },
+    {
+      "issue_key": "MDL-78779",
+      "source_text": "Okay, so I found the cause of this. Essentially the debounce for the input handler is rendering the results, and then because Behat is pretty fast at typing, but on a slower worker the web service can take some time to respond, the result is returned again, Behat has already moved to the next step (pressing tab, and then tab again) and suddenly the dropdown re-renders."
+    },
+    {
+      "issue_key": "MDL-77856",
+      "source_text": "Upon some digging, this issue also leads to other accessibility issues: # The feedback overlay is only shown when hovering on the feedback icon. This means that keyboard-only users will not be able to activate the feedback overlay. # The feedback overlay should have an aria-hidden attribute when it's not being displayed. When it gets shown, the aria-hidden should be removed. However, the YUI Overlay widget does not seem to do this and so the feedback overlay div is being seen as a part of the subquestion span. Based on the points above, I think that we should just not use the YUI Overlay widget in the first place. Some potential approaches we can do to fix this issue: # Display the feedback contents just like how it is being displayed for multiple choice sub-questions. # Convert the feedback icons to buttons and use Bootstrap's popover component (https://getbootstrap.com/docs/4.6/components/popovers/) to display the feedback contents. Option 2 seems a more sensible approach to me as it essentially maintains the behaviour of displaying subquestion feedback in a popover. Bootstrap popovers are also more accessible by default and enable us to avoid reinventing the wheel."
+    },
+    {
+      "issue_key": "MDL-77690",
+      "source_text": "Fixing the skipped heading issues in various lesson pages. Depending on whether the theme displays the activity name heading (e.g. in classic), the heading level on the page content should also be adjusted. The default heading level value on mod_lesson pages is level 3 because the activity name is shown as heading level 2."
+    },
+    {
+      "issue_key": "MDL-76941",
+      "source_text": "I have spent some time investigating the solution for this issue. In the User tour, we don't calculate the position of the tour modal. It is mostly calculated by popper.js. We calculate the highlighter (highlight the target element) and the arrow position. We can change some values of the rendered popper.js modal, but there is no proper way to make popper.js recalculate it."
+    },
+    {
+      "issue_key": "MDL-76941",
+      "source_text": "I have spent some time investigating the solution for this issue. In the User tour, we don't calculate the position of the tour modal. It is mostly calculated by popper.js. We calculate the highlighter (highlight the target element) and the arrow position. We can change some values of the rendered popper.js modal, but there is no proper way to make popper.js recalculate it."
+    },
+    {
+      "issue_key": "MDL-76849",
+      "source_text": "I don't think it's a good idea to just wrap the questions within fieldsets. Question type plugins may opt to wrap their answers within a fieldset. This will result in nested fieldsets which can be worse in terms of accessibility. From Technique H71: Providing a description for groups of form controls using fieldset and legend elements (https://www.w3.org/WAI/WCAG21/Techniques/html/H71): Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
+    },
+    {
+      "issue_key": "MDL-76673",
+      "source_text": "I can replicate the problem, and the bug also happens on our latest version because the main problem is at the accessibility checker, and since the TinyMCE using the same approach, so yes the bug also happens on it."
+    },
+    {
+      "issue_key": "MDL-76825",
+      "source_text": "After filtering the options list, roving tabindex is not reinitialized—two items end up with tabindex=0. Repro with Chrome 126 + NVDA: filter → Tab → Arrow keys skip unpredictably. DOM snapshot confirms duplicated tabindex states."
+    },
+    {
+      "issue_key": "MDL-76672",
+      "source_text": "Alert messages are appended inside a container with aria-live=\"polite\" but an ancestor has aria-hidden=\"true\". Accessibility tree (Firefox) shows the region is ignored, explaining why NVDA does not announce the errors."
+    },
+    {
+      "issue_key": "MDL-76246",
+      "source_text": "According to ARIA specification that a dropdown menu should have a \\texttt{dialog} role rather than a \\texttt{combobox} role"
+    },
+    {
+      "issue_key": "MDL-68649",
+      "source_text": "Anchor targets fail to offset correctly only in secure layout: a parent has overflow hidden, which prevents scroll-margin-top from taking effect on the target. Computed styles confirm the sticky/offset interaction causing the misalignment."
+    },
+    {
+      "issue_key": "MDL-76597",
+      "source_text": "I fixed the empty heading issue by adding a default 'sr-only' 'Untitled heading' text within the h3 heading element. I also noticed that the section heading text has insufficient contrast against the background so I fixed this too by changing the font colour from #999 to #555 which is the same font colour as the question texts."
+    },
+    {
+      "issue_key": "MDL-75957",
+      "source_text": "As mentioned earlier by David, the main reason for this behavior is the 'transform' and 'top' css properties which are dynamically assigned to the .dropdown-menu element."
+    },
+    {
+      "issue_key": "MDL-75957",
+      "source_text": "As mentioned earlier by David, the main reason for this behavior is the 'transform' and 'top' css properties which are dynamically assigned to the .dropdown-menu element."
+    },
+    {
+      "issue_key": "MDL-74741",
+      "source_text": "If you create the YUI dialogue with visibility set to true, then the focus is not trapped and the modal content is hidden from screen readers. but if you create the modal with visibility set to false, and then call show() to show the modal, it works fine. It's because the visibilityChanged event is only triggered when the visibility is changed. Not if the visibility is set to true from the beginning."
+    },
+    {
+      "issue_key": "MDL-74740",
+      "source_text": "It seems like the problem that causes this issue is the current fixed positioning of the blocks drawer and the navbar. Because of this, the z-index value attributed to the skip link elements in the drawer is not respected which leads to these elements being stacked behind the navbar. The current solution is a workaround that changes the value of the css position attribute of the drawer once the current focus in on an element within the block drawer and this enables the skip links to be properly displayed. Any ideas for an alternative (less hacky) solution are more then welcome."
+    },
+    {
+      "issue_key": "MDL-74701",
+      "source_text": "The root cause is that we use the CSS rule visibility: hidden for the collapsed state. Unfortunately, the visibility: hidden rule still allows keyboard focus for the child elements. The easy fix is changing from visibility: hidden to display: none, it will fix the issue. But with this fix, we will lose the transition effect when expanding/collapsing the popover. I decided to go with another approach: When the popover is collapsed, we will set the tabindex value to -1 for all child elements to prevent the keyboard navigation. When the popover is expanded, we will remove tabindex=\"-1\" value to allow the keyboard navigation again."
+    },
+    {
+      "issue_key": "MDL-74110",
+      "source_text": "Looking at the existing implementation, it appears the intention is to disable the calendar link completely when the accompanying date element is disabled, but that isn't currently happening"
+    },
+    {
+      "issue_key": "MDL-72667",
+      "source_text": "Actually, after trying few things I have found the problem was that the {{bg-primary}} class was being used here and that class has the {{!important}} ending up having higher priority, so I have removed that class from the templates."
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "At the moment, it doesn't work correctly. In the RTL layout, pressing the left key moves the focus to the right element. This is a bug."
+    },
+    {
+      "issue_key": "MDL-72263",
+      "source_text": "Bootstrap collapsibles does not implement the aria-tree keyboard navigation. However, our core/tree library is almost compatible with some minor tweaks."
+    },
+    {
+      "issue_key": "MDL-71672",
+      "source_text": "When investigating the reason for the reported issue, I found that we use the wrong default focus for YUI dialogs. As it is shown in the following picture, when you open a YUI dialog, the element I marked as (1) get the focus, whereas it had to be the element marked as (2). Studying more, I figured the guideline had been previously misunderstood. The focus should have not defaulted to the dialog window. According to [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role#required_javascript_features] the focus should default to the default focusable control inside the dialog."
+    },
+    {
+      "issue_key": "MDL-71671",
+      "source_text": "Findings:\n * Atto uses YUI dialogues for the toolbar menus. That's the panel some Atto buttons (like the 'Paragraph styles' button or the 'Font colour' button) show when a user clicks on them.\n * YUI inserts the HTML code of the dialogues at the end of <body>\n * When using TalkBack on Android and swipe right, TalkBack reads the \"next\" element. \"swipe right\" is a TalkBack gesture and does not trigger any event. It just announces the next element. just like when a sighted user skims through a web page\n * So when the user opens an Atto menu and then swipe right to go to the end of the menu, they go to the browser buttons the next time they swipe right\n * Swipe right gesture ignores stylings like displaying an element before another one by CSS. It goes through the HTML. It also ignores tabindex (which makes sense because that is what a sighted user do as well)"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "The idea is to eventually replace this module with the new component-based 'core_courseformat/local/content/actions' and the move tools are the firsts to migrate to the new module. To prevent the new module from having spaghetti code, the legacy actions.js now has an array of actions to ignore in case the format is component compatible."
+    },
+    {
+      "issue_key": "MDL-71336",
+      "source_text": "The problem is when code like this creates the grouped date elements, it's passing it's own ID attribute to the new element, meaning this code never runs to set the 'random IDs' on the new element"
+    },
+    {
+      "issue_key": "MDL-70721",
+      "source_text": "The issue comes from the fact that the escaping character is different in javascript and in HTML. To escape double quote in javascript (or in JSON), we put a backslash behind it. but to escape double quote in HTML, we should use its HTML entity equivalent."
+    },
+    {
+      "issue_key": "MDL-69422",
+      "source_text": "Aside from the accessibility issue reported here, I also noticed the following problems in the export page. # Invalid div under the label element. ** I fixed this by removing the div and showing the field description after the checkbox. ** I also discovered that with this case of having a label and a text passed to the advanced checkbox (and even the checkbox element), we'd end up with duplicate labels for the checkbox. I tried looking into fixing it in this issue but it seems that it will take more work. I created a separate issue for it instead: MDL-70288."
+    },
+    {
+      "issue_key": "MDL-69391",
+      "source_text": "I increased the opacity of the \"{{$navbar-light-color}}\" from 0.5 to 0.6. It now has a contrast ratio of 5.74:1 (https://contrast-ratio.com/#rgba%280%2C0%2C0%2C0.6%29-on-white). Darkened the course selector text on the calendar by using \"{{$gray-600}}\" (#6c757d) which matches the text colour for the calendar view selector. The colour contrast has now improved from 3.32:1 (https://contrast-ratio.com/#%23868e96-on-white) to 4.68:1 (https://contrast-ratio.com/#%23868e96-on-white). I was thinking of simply removing the \"{{.cal_courses_flt}}\" class for the course selector, but the default colour of the \"{{.custom-select}}\" class would be a bit too dark compared to text colour of the calendar view selector."
+    },
+    {
+      "issue_key": "MDL-69262",
+      "source_text": "I did some more digging and found out that the main issue why this occurs is that the static function variable $instance in \\action_menu_link::export_for_template() is being stored and incremented separately by action_menu_link and its implementations."
+    }
+  ],
+  "Evaluating Options and Weighing Trade-offs": [
+    {
+      "issue_key": "MDL-81110",
+      "source_text": "I was thinking of removing that {{overflow: hidden;}} rule, as {{#maincontent}} is mainly (in every case I saw) displayed as an empty span, but a safer approach can be replacing it with {{overflow: clip;}} which behaves 'similar' to hidden but does not interfere with {{scroll-margin-top}}."
+    },
+    {
+      "issue_key": "MDL-81066",
+      "source_text": "It may help to understand the order that this general area works in... I decided not to stop it emitting the events on blur/change because there might be other plugins or themes relying on this."
+    },
+    {
+      "issue_key": "MDL-80912",
+      "source_text": "I considered ability to add classes/IDs (or any arbitrary attributes to report tables) but we already have similar in MDL-75943... I spoke with [jpataleta] regarding the option of adding {{<caption>}} element to the report tables..."
+    },
+    {
+      "issue_key": "MDL-80805",
+      "source_text": "I've attached a script that finds most of the required field uses in Moodle... I decided best practice is to implement aria:required wherever possible. I think we can do that for all the important fields except the file picker and editor."
+    },
+    {
+      "issue_key": "MDL-80469",
+      "source_text": "I have asked AbleDocs what are our options on leaving 'fieldset' but not having a legend... I think that breaking themes for the sake of passing accessibility audit is not justified. Maybe we add a meaningless label 'Action buttons' for the stable versions..."
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "You are right that there will be a slight addition to what a screen reader will announce, but in the absence of specific suggestions for improving accessibility without adding a bit of noise to the page, I believe it's acceptable to tolerate this minor inconvenience..."
+    },
+    {
+      "issue_key": "MDL-80279",
+      "source_text": "I found another solution for this issue, I kept the title and replaced the aria-label with role='img'. By doing this I managed to get the full name displayed on hover, the accessibility tools used initially continued without errors and now NVDA is correctly reading the full name..."
+    },
+    {
+      "issue_key": "MDL-82298",
+      "source_text": "By removing such lines, the behaviour for the dropdown menus in the primary navigation and secondary navigation are working as expected since only one checkmarks is displayed for the menu option of the active page."
+    },
+    {
+      "issue_key": "MDL-80192",
+      "source_text": "It depends what we are trying to fix here, the original report or a generic solution involving #2 above, with the risks that that entails :)"
+    },
+    {
+      "issue_key": "MDL-80131",
+      "source_text": "I was tempted to create a function that sets the page title from an array of strings or even update \"{{$PAGE->set_title()}}\" to accept arrays... However, it could be classified as an improvement that may not be allowed to be backported to the stable branches."
+    },
+    {
+      "issue_key": "MDL-80043",
+      "source_text": "I think this is a simple approach for allowing grade report plugins to customise the page title for editing mode without introducing significant changes to the grade report plugins or to \"print_grade_page_head()\". But if you have a better idea, feel free to suggest one."
+    },
+    {
+      "issue_key": "MDL-80041",
+      "source_text": "I think that using '{{type=number}}' is more applicable in this case as it prevents users from entering non-numeric values on the grade fields... So I think there are more downsides to using '{{inputmode=numeric/decimal}}' compared to using the '{{type=number}}'."
+    },
+    {
+      "issue_key": "MDL-79705",
+      "source_text": "I've fixed that on all stables. For master, I've switched to a simple _Yes/No_ language string, because I can't imagine there's a real reason we would show the disabled input to the user (we don't for any other profile field type) instead of a sensible value..."
+    },
+    {
+      "issue_key": "MDL-79348",
+      "source_text": "Applying the same solution as MDL-79347 to keep consistency. Also removing a couple of styles that won't be needed after the change."
+    },
+    {
+      "issue_key": "MDL-79347",
+      "source_text": "Initially, I went with the \"{{btn}}\" classes, but I realised that it is basically a link that brings the user to the activity's editing page so I thought it should be styled as a link for consistency instead of using the button classes..."
+    },
+    {
+      "issue_key": "MDL-79062",
+      "source_text": "The sort-by-name menu on the name column has some accessibility issues which I also fixed: <h6> tags cannot be in table cells. Replace them with <div> tags. Group the ascending/descending sort menu items to better indicate where they belong to."
+    },
+    {
+      "issue_key": "MDL-79059",
+      "source_text": "For the first commit, I changed the approach of using aria-label to using aria-labelledby. This is because we're likely to encounter various double-escaping issues, etc. when the preset name is in an aria-label attribute."
+    }
+  ]
+}

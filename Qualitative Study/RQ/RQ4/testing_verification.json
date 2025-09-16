@@ -1,0 +1,3689 @@
+[
+  {
+    "issue_key": "MDL-83255",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order and focus management",
+        "evidence_source": "test_instructions: Press tab 4 times and confirm that the first item in the 'Recommended' has been selected",
+        "details": "Verification of the fix for tab navigation by manually using the keyboard to navigate through the tabs and ensuring the correct tab is selected."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-83064",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run the chrome extension (Axe Devtools) and ensure there is no accessibility warning related to the .font-italic.text-center.w-100 element",
+        "details": "The axe DevTools browser extension is used to verify that the fix resolves the color contrast issue by ensuring no accessibility warnings are present."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-83047",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "headings background color",
+        "evidence_source": "test_instructions: Confirm that the headings don't have a white background.",
+        "details": "Manual verification by visually inspecting the headings to ensure they do not have a white background in various themes."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-82948",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "color contrast of blockquote border",
+        "evidence_source": "test_instructions: Inspect the colour of the side border for the blockquote tag. Confirm is now a bit darker and more distinguishable than before and that it has a border colour of \"{{#8f959e}}\"",
+        "details": "Verification involved checking the color contrast of the updated blockquote border to ensure it meets the required contrast ratio."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-82677",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "poor color contrast on upgrade screen",
+        "evidence_source": "test_instructions: Confirm that the headings on the upgrade pages have a white background.",
+        "details": "Verification involved checking that the headings now have a white background, ensuring good contrast against any background image."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-82551",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "missing level 1 heading",
+        "evidence_source": "description: Run axe DevTools",
+        "details": "Axe DevTools was used to identify the missing level 1 heading on the page."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Behat test",
+        "target_issue": "missing level 1 heading",
+        "evidence_source": "test_instructions: This fix is covered by Behat test.",
+        "details": "Behat tests were used to verify that the fix for the missing level 1 heading was successful."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-81236",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "MathJax accessibility features",
+        "evidence_source": "test_instructions: Right click on the displayed equation, Select 'Accessibility' > 'Explorer', Ensure that options such as 'Collapsible Math', 'Highlight' and 'Background' are enabled.",
+        "details": "Verification of MathJax accessibility features using the 'Explorer' option in the context menu."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-81110",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "Keyboard focus is off screen when Skip to Content link is used",
+        "evidence_source": "test_instructions: Press 'Tab' (Or Shift+Tab) until the 'Skip to Main Content' link shows at the top of the screen",
+        "details": "The test instructions involve using keyboard navigation to verify that the focus is correctly positioned and visible after using the 'Skip to Content' link."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-81066",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "error messages appearing prematurely",
+        "evidence_source": "test_instructions: Use the Tab key to continue through the *Course full name* and *Course short name* fields without entering any data in them",
+        "details": "Verification that error messages do not appear when tabbing through fields without entering data."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management",
+        "evidence_source": "test_instructions: The screen scrolls smoothly up to show the *Course full name* field, which is focused.",
+        "details": "Verification that the form scrolls to and focuses on the first error field upon submission."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order",
+        "evidence_source": "test_instructions: The error messages should not be included in the tab order; the Tab key from a field takes you to the next control which can be activated",
+        "details": "Verification that error messages are not included in the tab order, ensuring proper navigation."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-81029",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "page title not representative of action",
+        "evidence_source": "description: Screen reader users navigating the pages may find it confusing and could skip past the browser tab as it's not representative of the action they expect to be performed.",
+        "details": "The issue description highlights the problem for screen reader users, indicating manual testing with screen readers to validate the issue."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "page title consistency",
+        "evidence_source": "test_instructions: Confirm the title of the page is 'Adding a new Assignment | site short name'.",
+        "details": "Verification involved manually checking the page title to ensure it correctly reflects the action being performed, as per the test instructions."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80912",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "Visual Inspection",
+        "target_issue": "Download filename",
+        "evidence_source": "test_instructions: # Go to Site administration / Reports / Report builder # Create a new report # Add a new table # Add a new column # Add a new row # Add a new cell # Add a new value # Add a new filter # Add a new sort # Add a new group # Add a new summary # Add a new chart # Add a new map # Add a new table # Add a new column # Add a new row # Add a new cell # Add a new value # Add a new filter # Add a new sort # Add a new group # Add a new summary # Add a new chart # Add a new map",
+        "details": "The issue was identified by visually verifying the file name and verifying that the fix was successful."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Behat test",
+        "target_issue": "Caption changes",
+        "evidence_source": "Covered by Behat (nothing to do manually)",
+        "details": "The Behat test was used to verify that the caption changes were successful."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80805",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "NVDA",
+        "target_issue": "screen reader announcements for required form fields",
+        "evidence_source": "description: To reproduce, using NVDA (open source): # Go to Site administration / Courses / Add a new course # Tab through the controls on the page until you get to the course full name box EXPECTED: At some point it should tell you that the box is required.",
+        "details": "The NVDA screen reader was used to test if the required status of form fields is announced when navigating through the form using the tab key."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "NVDA",
+        "target_issue": "screen reader announcements for required form fields",
+        "evidence_source": "test_instructions: To do a realistic test you will need to install a screenreader such as NVDA (free, open source) that supports aria-required. The test is simple, just repeat for each supported field type (below): # Go to a form that has a required field of that type. # Use the tab key to navigate to the field. #* EXPECTED: When NVDA reads the field details, it should include the word 'required'.",
+        "details": "Verification was conducted using NVDA to ensure that the 'required' status is announced for each supported field type when navigated using the tab key."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80731",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "PAC 2021",
+        "target_issue": "Invalid /Lang attribute in PDF files",
+        "evidence_source": "test_instructions: Open the _PAC 2021_ tool on your local machine, Drag the downloaded PDF file into the program, Confirm the _Language_ field shows *en* (not *en_wp*)",
+        "details": "PAC 2021 was used to verify that the language attribute in the PDF file was set correctly to 'en' instead of 'en_wp'."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "Adobe Acrobat",
+        "target_issue": "Invalid /Lang attribute in PDF files",
+        "evidence_source": "test_instructions: Open the downloaded PDF file in _Adobe Acrobat_, Select _Menu > Document Properties > Advanced_, Confirm the _Language_ field shows *English* (not *en_wp*)",
+        "details": "Adobe Acrobat was used to manually check the document properties to ensure the language was set to 'English'."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80676",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Turn on a screen reader (NVDA or JAWS). Open the action menu and navigate through the action menu items of the edited course section or activity. Confirm that the screen reader announces the correct names of the action menu items.",
+        "details": "Screen readers NVDA and JAWS were used to verify that the fix resolved the issue, ensuring the correct announcement of action menu items."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80469",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "missing legend tags",
+        "evidence_source": "comment_2: Hi, [~marina]. I did a quick try adding a \"presentation\" or \"none\" role for fieldset tags that don't have legends. Apparently, WAVE still complains about it even though it recognises the ARIA presentation/none role on the element.",
+        "details": "WAVE was used to test the presence of legend tags in fieldsets."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "missing legend tags",
+        "evidence_source": "comment_2: Interestingly, axe DevTools and Nu HTML Validator don't really complain about missing legend tags on the mform action buttons' fieldset.",
+        "details": "axe DevTools was used to test the presence of legend tags in fieldsets."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "source code inspection",
+        "target_issue": "presence of 'legend' tag under fieldset",
+        "evidence_source": "test_instructions: # Find the buttons (\"Submit\"/\"Cancel\") in the bottom and inspect the source code # Make sure there is a 'legend' tag under the fieldset that reads \"Form actions\"",
+        "details": "Manual inspection of the source code to verify the presence of the 'legend' tag."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80431",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "fieldset tags without legends",
+        "evidence_source": "test_instructions: # Create a course and add an assign module\n# Go to the module setting and find completion conditions\n# Make sure there is no 'fieldset' tag without a legend there (see attachments)\n# Make sure the buttons \"Submit\"/\"Cancel\" also do not have a fieldset without a legend\n# On the same page the controls such as \"Allow submissions from\" should still have a fieldset tag with a legend",
+        "details": "The verification involved checking the presence or absence of fieldset tags without legends in the module settings."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80426",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Make sure that the screen reader is enabled",
+        "details": "Verification involved using a screen reader to ensure that the order change announcements are correctly spoken."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_navigation",
+        "target_issue": "mouse interaction with ordering buttons",
+        "evidence_source": "test_instructions: Test this step with both mouse and keyboard",
+        "details": "Verification included testing the ability to change the order of items using mouse navigation."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80279",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Axe Accessibility Tool",
+        "target_issue": "initials element missing alternative text",
+        "evidence_source": "test_instructions: Using the Axe Accessibility Tool, scan the page",
+        "details": "The Axe Accessibility Tool was used to verify that there were no issues related to the initials element missing alternative text after the fix was applied."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements of user initials and full name",
+        "evidence_source": "comment_14: VoiceOver and JAWS - The user profile 'picture' is being read with the user's full name; NVDA - The user profile 'picture' is being read with the initials.",
+        "details": "Screen readers VoiceOver, JAWS, and NVDA were used to verify that the user profile 'picture' was read correctly with the user's full name or initials."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80668",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "developer_tools",
+        "target_issue": "aria role in modal",
+        "evidence_source": "test_instructions: In the modal that was displayed, using the developer tools, inspect the element and confirm that the div with class .modal has the aria-modal=\"true\" attribute and the div with class .modal-dialog no longer has the attribute role=\"document\"",
+        "details": "Verification of the fix by inspecting the modal element attributes using browser developer tools."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80197",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard access to datepicker",
+        "evidence_source": "description: Tab to date form element, Press 'Enter' on the calendar icon, You can not access any dates with the keyboard",
+        "details": "The issue was identified by attempting to navigate the datepicker using keyboard-only navigation."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "keyboard accessibility of datepicker",
+        "evidence_source": "test_instructions: Open WAVE Accessibility Tool, Confirm there are no Errors or Alerts regarding the Datepicker not being accessible via the keyboard",
+        "details": "WAVE tool was used to verify that the datepicker does not have accessibility errors related to keyboard navigation."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80195",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management in datepicker",
+        "evidence_source": "test_instructions: Tab to the calendar icon and open it by pressing the enter key; Once the calendar is open, press the tab key to navigate through it; Confirm that the dropdown menu behind the calendar remains open; Select a date with the keyboard or press Esc to close the calendar; Confirm the dropdown menu remains open and that the Skip to main content link has not been activated.",
+        "details": "The test instructions involve using keyboard navigation to ensure that the focus remains within the datepicker and does not incorrectly shift to the 'Skip to main content' link."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80192",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "Fieldset missing legend",
+        "evidence_source": "test_instructions: Run WAVE scan of the page and confirm there are no alerts regarding Fieldset missing legend from the Filters form",
+        "details": "The WAVE browser extension was used to verify that the fix resolved the issue by ensuring no alerts were present for missing legends in fieldsets."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80364",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WebAIM contrast checker",
+        "target_issue": "color contrast",
+        "evidence_source": "comment_6: I used this contrast checker tool (https://webaim.org/resources/contrastchecker/) to validate the ratio.",
+        "details": "The WebAIM contrast checker was used to verify that the color contrast fix met the required accessibility standards."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Axe Accessibility Tool",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Scan the page using the Axe Accessibility Tool. Confirm there's no accessibility issue regarding color contrast on the selected notification element.",
+        "details": "The Axe Accessibility Tool was used again to verify that the color contrast issue was resolved after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80185",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu Validator",
+        "target_issue": "invalid language attribute",
+        "evidence_source": "description: Nu Validator - Error: Bad value de-kids for attribute lang on element html",
+        "details": "Nu Validator was used to identify invalid language attributes, providing detailed error messages about the issue."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "invalid language attribute",
+        "evidence_source": "test_instructions: Run WAVE accessibility tool on the page, confirm there are no warnings about invalid langs",
+        "details": "WAVE was used again after the fix to verify that the invalid language attribute warnings were resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80183",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "icon with no alt text",
+        "evidence_source": "description: People with difficulty perceiving visual content use assistive technology to read text aloud or convert it to braille.",
+        "details": "The issue was identified during an accessibility audit, indicating the use of screen readers to test the presence of alt text for icons."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "icon with no alt text",
+        "evidence_source": "test_instructions: Confirm the icon contains appropriate {{title=\"...\"}} and {{aria-label=\"...\"}} attributes.",
+        "details": "Verification involved checking the presence of title and aria-label attributes to ensure screen readers can announce the icon's purpose."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "incorrect use of ARIA label",
+        "evidence_source": "test_instructions: Confirm it's container has {{aria-labelledby=\"...\"}} attribute that points to \"sr-only\" element within the same container.",
+        "details": "Verification involved ensuring the correct use of aria-labelledby to improve screen reader accessibility."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80121",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "empty heading",
+        "evidence_source": "test_instructions: Run axe DevTools on the page",
+        "details": "Verification of the fix was done by running axe DevTools to ensure no errors related to empty headings were present."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80043",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "page title uniqueness and accuracy",
+        "evidence_source": "test_instructions: Confirm the page title is \"{{Grader report | [course name] | [site name]}}\"",
+        "details": "The verification involved checking the page titles manually to ensure they change appropriately when editing mode is toggled."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-80041",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "grade input fields accept only numeric values",
+        "evidence_source": "test_instructions: Confirm the grade input fields now accept only numeric values. Try to enter a non-numeric value (e.g. on Firefox or by copy-pasting a non-numeric text). You will get a data validation error, or it will simply ignore the non-numeric input.",
+        "details": "Verification of the fix by manually attempting to input non-numeric values and observing the validation behavior."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79705",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "missing form element labels",
+        "evidence_source": "timeline_2: Run _axe DevTools_ scan of the page",
+        "details": "Used axe DevTools to verify that there are no warnings regarding missing form element labels after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79502",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WebAIM contrast checker",
+        "target_issue": "accessibility contrast failure",
+        "evidence_source": "comment_1: That fixes contrast ratio: https://webaim.org/resources/contrastchecker/?fcolor=214F21&bcolor=D7E4D6",
+        "details": "Used WebAIM contrast checker to validate the contrast ratio of the button colors."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_development_tools",
+        "target_issue": "accessibility contrast fix",
+        "evidence_source": "test_instructions: Using browser development tools confirm that 'Done' button is displayed with the following colours",
+        "details": "Used browser development tools to verify the color contrast of the 'Done' button after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79348",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus indicator visibility",
+        "evidence_source": "test_instructions: Press tab to highlight the _Edit settings_ link in the *section* restrictions area. Confirm that it now has a blue outline.",
+        "details": "The verification involved using the Tab key to navigate and check the focus indicator's visibility on the 'Edit settings' link."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79347",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus indicator visibility",
+        "evidence_source": "test_instructions: Press tab to highlight the \"{{Edit conditions}}\" link. Confirm that it now has a blue outline.",
+        "details": "The test instructions involve using keyboard navigation to verify that the focus indicator is visible and meets the expected design."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79288",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Check the page with an accessibility checker (e.g. axe DevTools). Confirm that there are no failures related to colour contrast.",
+        "details": "Used axe DevTools to verify that the color contrast issues were resolved after applying the patch."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79283",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "iframe must have an accessible name",
+        "evidence_source": "test_instructions: Run _axe DevTools_ scan on the page",
+        "details": "The fix was verified by running axe DevTools again to confirm that the 'Frames must have an accessible name' warning was no longer present."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79250",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Axe DevTools",
+        "target_issue": "iframe accessible name",
+        "evidence_source": "comment_3: confirmed before/after with Axe DevTools that the error is now resolved (\"Ensures <iframe> and <frame> elements have an accessible name\")",
+        "details": "Used Axe DevTools to verify that the iframe elements now have accessible names after the fix."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "inspect_element",
+        "target_issue": "iframe accessible name",
+        "evidence_source": "test_instructions: Inspect the accessibility properties of the \"Support and services\" iframe. Confirm that the iframe's accessible name is set to \"Support and services\"",
+        "details": "Manual inspection of the iframe's accessibility properties using browser developer tools to verify the accessible name."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79157",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation not ARIA compliant",
+        "evidence_source": "test_instructions: Covered by behat",
+        "details": "Behat tests are used to verify that the keyboard navigation follows ARIA standards."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79071",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "missing alt text for course images",
+        "evidence_source": "test_instructions: # Run WAVE or axe DevTools to check the page",
+        "details": "WAVE was used to verify that the fix for the missing alt text issue was successful."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "missing alt text for course images",
+        "evidence_source": "test_instructions: # Run WAVE or axe DevTools to check the page",
+        "details": "axe DevTools was used to verify that the fix for the missing alt text issue was successful."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79063",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run accessibility tests on the page using WAVE or Axe DevTools",
+        "details": "WAVE was used to verify that there are no 'low/insufficient contrast' issues related to the course name link."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run accessibility tests on the page using WAVE or Axe DevTools",
+        "details": "axe DevTools was used to verify that there are no 'low/insufficient contrast' issues related to the course name link."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79062",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "accessibility issues in the main content region of the Grader report page",
+        "evidence_source": "test_instructions: Test the page using an accessibility checker (e.g. axe DevTools) *Confirm* that there are no accessibility issues related to the main content region of the Grader report page.",
+        "details": "Used axe DevTools to verify that the main content region of the Grader report page is free from accessibility issues."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order",
+        "evidence_source": "test_instructions: Tab through the grader report table *Confirm* that the tab order starts from the top of the table, going from left to right on the first row and then downwards to the next row.",
+        "details": "Manual keyboard navigation testing to verify correct tab order in the grader report table."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "input_validation",
+        "target_issue": "input validation for grade input fields",
+        "evidence_source": "test_instructions: With editing mode still turned on, try to edit a grade for a student *Confirm* that only numeric values are now accepted by the grade input fields.",
+        "details": "Manual testing to verify that grade input fields only accept numeric values and provide validation errors for non-numeric input."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79061",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements for actions",
+        "evidence_source": "test_instructions: Make sure your screen reader is turned on. Perform the following actions on the course: Confirm that you hear an announcement from the screen reader confirming the actions that you performed.",
+        "details": "Verification involved using screen readers like NVDA or JAWS to confirm that actions performed on the course page were announced correctly."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79060",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "accessibility_tree_inspection",
+        "target_issue": "descriptive link text for course images",
+        "evidence_source": "test_instructions: Inspect the course image links on the accessibility tree. (If on Firefox, just right-click on the course image and click 'Inspect Accessibility Properties')",
+        "details": "The test instructions guide the tester to verify that the course image link texts are set to their corresponding course name by inspecting the accessibility tree in Firefox."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79059",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "empty table headers and missing form labels",
+        "evidence_source": "test_instructions: Run the accessibility checker. Confirm that there are no accessibility errors related to the presets table and any of its contents.",
+        "details": "WAVE is used to verify that the accessibility issues related to empty table headers and missing form labels have been resolved."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "empty link text on the user's picture",
+        "evidence_source": "test_instructions: Run the accessibility checker on the page. Confirm that there no accessibility issues on the main content of the page, especially the empty link for the user's picture reported in this issue.",
+        "details": "axe DevTools is used to verify that the issue with empty link text on the user's picture has been fixed."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79057",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML validator",
+        "target_issue": "HTML validation errors",
+        "evidence_source": "test_instructions: Copy the HTML source code and validate it using the Nu HTML validator.",
+        "details": "The Nu HTML validator is used to ensure there are no HTML validation errors after the fix is applied."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "accessibility issues related to the main content region",
+        "evidence_source": "test_instructions: Test the page using an accessibility checker (e.g. axe DevTools)",
+        "details": "axe DevTools is used to confirm that there are no accessibility issues in the main content region of the Single view user report page."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order",
+        "evidence_source": "test_instructions: Tab through the table and confirm that the tab order of the input fields goes from left to right and from top to bottom.",
+        "details": "Manual keyboard navigation is used to verify the logical tab order of input fields in the report table."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79056",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "NU HTML Validator",
+        "target_issue": "HTML validation errors",
+        "evidence_source": "test_instructions: Copy the page source and validate using NU HTML Validator",
+        "details": "Used to confirm that there are no validation errors related to the user report table."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "accessibility errors within the user report container",
+        "evidence_source": "test_instructions: Run axe DevTools on the page.",
+        "details": "Used to confirm that there are no accessibility errors related to the elements within the user report container."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79048",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "page title clarity for screen reader users",
+        "evidence_source": "test_instructions: Check the page title on your browser's window/tab. Confirm it says 'Course: C1', 'Edit course: C1', 'Bulk edit course: C1'",
+        "details": "Manual verification of page titles to ensure they reflect the current mode, aiding screen reader users in understanding the context."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79047",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "unique page titles",
+        "evidence_source": "test_instructions: # Check the page title on the tab. # *Confirm* that it reflect the current page being displayed, followed by \"{{{}Grades{}}}\", and the course name, separated by \"|\" character.",
+        "details": "The verification involved manually checking the page titles to ensure they are descriptive and unique for each grade book page."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79045",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "heading structure in accessibility tree",
+        "evidence_source": "test_instructions: Inspect the accessibility properties of the user heading (The area with the user's picture, name, Message/Add to contact buttons) *Confirm* that the heading in the accessibility tree only contains the user's full name.",
+        "details": "Verification of the fix by checking the accessibility tree to ensure the heading only contains the user's full name, excluding other elements like 'Message' and 'Add to contacts'."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-79007",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader feedback for calendar events",
+        "evidence_source": "description: In the calendar, when tabbing to days with events when using a screen reader - the events are shown in a bubble, but there is no audible indication that the day has events and they are not read out.",
+        "details": "The issue was identified by using a screen reader to navigate the calendar and noticing the lack of audible feedback for events."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader feedback for calendar navigation",
+        "evidence_source": "test_instructions: You will need a screen reader to test these changes. Try to test on both NVDA and JAWS.",
+        "details": "Verification involved using screen readers NVDA and JAWS to ensure that the screen reader announces the correct month when navigating the calendar."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78994",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order",
+        "evidence_source": "test_instructions: Press Tab key to navigate through all form elements and verify focus is visible",
+        "details": "The test instructions provided a step-by-step guide to verify the tab order and focus management, ensuring that the guest policy link is accessible early in the tab sequence."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78874",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Log in as a student using a screen reader and verify that the 'Check' buttons are spoken by the screen-reader like 'Check question [number]'.",
+        "details": "Verification of the fix to ensure that the screen reader correctly announces the 'Check' button with the question number."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78826",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus indicator visibility",
+        "evidence_source": "test_instructions: Press the down key to focus on the first element and check the first option shows a nice thick outline around.",
+        "details": "Manual testing was conducted to verify that the focus indicator is visible and meets accessibility standards."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78813",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "help icon covering gradebook table",
+        "evidence_source": "test_instructions: Scroll all the way to the right. *Confirm* the help icon no longer covers the gradebook table.",
+        "details": "Verification involved manually scrolling to ensure the help icon does not obstruct the gradebook table."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "sticky overall average row visibility",
+        "evidence_source": "test_instructions: Scroll vertically and horizontally and *confirm* that the overall average row is pinned (sticky) to the top of the sticky footer and always visible.",
+        "details": "Verification involved manually scrolling to check the visibility and stickiness of the overall average row."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78806",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "page title accessibility",
+        "evidence_source": "description: The document title of a web page (the <title> element in the <head>) is the first thing that screen reader users and users of other assistive technologies see on a page, and it is important for navigation.",
+        "details": "The issue description highlights the importance of the page title for screen reader users, indicating manual testing with screen readers to validate the issue."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "page title format",
+        "evidence_source": "test_instructions: Check the page title (by hovering on the browser window/tab's title bar). Confirm that the page title is separated by the pipe character.",
+        "details": "Verification involved visually checking the page title format in the browser to ensure it includes the website name and is correctly formatted."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78779",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Behat",
+        "target_issue": "keyboard focus and search functionality failure",
+        "evidence_source": "test_instructions: Run the following Behat scenarion in loop (CI is fine): A teacher can set focus and search using the input are with a keyboard",
+        "details": "Behat scenarios were run in a loop to verify that the fix resolved the random failures related to keyboard focus and search functionality."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78749",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Use an accessibility tool (e.g., JAWS, NVDA) to *check* if the name of the table is being read aloud.",
+        "details": "Verification of the fix by checking if the table caption is read aloud by screen readers."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78556",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "table caption display",
+        "evidence_source": "test_instructions: The text \"{*}Caption for table{*}\" with class = inline should display.",
+        "details": "The verification involved visually checking that the table caption is displayed correctly with the specified class."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78550",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML Validator",
+        "target_issue": "HTML validation errors",
+        "evidence_source": "description: Run it in Nu HTML Validator",
+        "details": "Used to identify HTML validation errors on the gradebook setup page."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "empty headings and table header text",
+        "evidence_source": "test_instructions: Open your browser dev tools and check the page with axeDevTools.",
+        "details": "Used to verify that the fixes resolved issues related to empty headings and table header text."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-78542",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "link text readability for screen reader users",
+        "evidence_source": "description: A URL for the link text does not really provide such information and can also pose difficulties, especially for screen reader users.",
+        "details": "The issue description highlights the problem of link text being non-descriptive, which affects screen reader users. This implies that screen readers were likely used to identify the issue."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "link text readability",
+        "evidence_source": "test_instructions: Confirm that you see \"{{Click on Moodle.org to open the resource.}}\" with \"Moodle.org\" serving as the URL's link text.",
+        "details": "The test instructions involve visually confirming that the link text is descriptive and readable, ensuring the fix is correctly implemented."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-77856",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "feedback popover accessibility",
+        "evidence_source": "test_instructions: Tab through the feedback icons for each answer field (either check mark or x mark) and confirm that a popover that contains the feedback to the answer field is being shown.",
+        "details": "Verification of the fix by using keyboard navigation to ensure that the feedback popover is accessible to keyboard-only users."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-77764",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "select element missing an accessible name",
+        "evidence_source": "description: When using the content bank, the select form element for switching the current context is missing a label - this also comes up as a problem when using Axe devTools",
+        "details": "Axe DevTools was used to identify that the select element did not have an accessible name."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_inspection",
+        "target_issue": "select element missing an accessible name",
+        "evidence_source": "test_instructions: Inspect the select element for changing context with your browser and confirm it is labelled 'Choose course or category...'",
+        "details": "Manual inspection of the select element in the browser was used to verify that the label was correctly added."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-77761",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "Editor format select element does not have a label",
+        "evidence_source": "test_instructions: Inspect the select element below the 'Description' text area using your browser dev tools. Confirm that it is labelled as 'Description format'",
+        "details": "The verification involves manually checking if the select element is correctly labeled, which can be confirmed using screen reader tools or browser dev tools."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-77690",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "heading hierarchy",
+        "evidence_source": "test_instructions: Run the axe DevTools on the page. Confirm that the following issue is not reported: Heading levels should only increase by one",
+        "details": "The axe DevTools browser extension was used to verify that the heading levels on the user profile and mod_lesson pages do not skip levels, ensuring compliance with accessibility standards."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-77651",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements of decorative icons",
+        "evidence_source": "description: The arrows in the calendar, such as the left arrow \"◄\" when switching to the last month in the calendar, are read out by the screen reader as a \"left pointing pointer\".",
+        "details": "The issue was identified by observing how screen readers announce decorative icons, which should be hidden from assistive technologies."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "inspect_accessibility_properties",
+        "target_issue": "screen reader announcements of decorative icons",
+        "evidence_source": "test_instructions: Right-click on the link to the previous month and select \"Inspect accessibility properties\". Confirm that the accessible name of the link only includes the month's name. No arrow character is included.",
+        "details": "Verification involved inspecting accessibility properties to ensure that the screen reader does not announce decorative icons."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-77318",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "inspection",
+        "target_issue": "aria-label attribute without role attribute on a div",
+        "evidence_source": "test_instructions: Verify that there is a <div> with class=\"carousel-item submenu active\" that has an aria-label attribute, and that has a role=\"menu\"-attribute",
+        "details": "Verification involved checking the HTML structure after applying the patch to ensure the div element now includes a role attribute along with the aria-label."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-77052",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axeTools",
+        "target_issue": "Element with role=\"list\" must have children with role=\"listitem\"",
+        "evidence_source": "comment_6: change looks good and I confirm it fixes the previous accessibility error as reported below by axeTools",
+        "details": "AxeTools was used to verify that the fix addressed the accessibility issue related to ARIA roles."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76941",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "high_contrast_and_zoom_testing",
+        "target_issue": "user tours not resizing and repositioning with page zoom",
+        "evidence_source": "test_instructions: Set the browser's zoom to 200%. Verify that the tour will be re-rendered and resized accordingly.",
+        "details": "The test instructions involve manually setting the browser zoom to 200% and 400% to verify that the user tour resizes and repositions correctly without requiring horizontal scrolling."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76849",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "accessible label of the answer fields",
+        "evidence_source": "test_instructions: On the quiz attempt page, open your browser dev tools, and inspect the accessible label of the answer fields for each question.",
+        "details": "Verification of accessible labels using browser dev tools to ensure the question number is indicated."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76825",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "Help icon without aria-label, ID Attribute in the input must be unique, Colour contrast",
+        "evidence_source": "test_instructions: In your browser, open Axe DevTool in the Development Tools. And then click 'Scan ALL of my Page'. *Verify* that you are not seeing issues related with following: Help icon without aria-label. ID Attribute in the input must unique. Colour contrast.",
+        "details": "Axe DevTools was used to verify that the identified accessibility issues were resolved after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76803",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "high_contrast_and_zoom_testing",
+        "target_issue": "Reflow issue at 400% zoom",
+        "evidence_source": "test_instructions: Open the browser dev tools and set the browser width to 1280 pixels (you may need to detach the dev tools panel into a separate window). Zoom the page to 400%. Scroll to the Email display. Confirm that each option are displayed in full",
+        "details": "The verification involved manually adjusting the browser zoom to 400% and checking if the Email display options fit within the viewport, addressing the WCAG 2.1 Level AA Success Criterion 1.4.10 (Reflow)."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76673",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Behat",
+        "target_issue": "color contrast error",
+        "evidence_source": "test_instructions: Please run the Behat testing below: - mdk behat -r --tags=@atto_accessibilitychecker - mdk behat -r --tags=@tiny_accessibilitychecker",
+        "details": "Behat tests are used to verify that the accessibility checker does not report errors after the fix."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "accessibility_checker",
+        "target_issue": "color contrast error",
+        "evidence_source": "test_instructions: Click the Accessibility Checker button. *Verify* you will see the below information: The colours of the foreground and background text do not have enough contrast.",
+        "details": "Manual verification using the Accessibility Checker button in the text editor to ensure the color contrast issue is resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76672",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "aria-label attribute without role attribute",
+        "evidence_source": "test_instructions: In the inspect window, click the axe DevTools tab. Click the Scan ALL of my page button. After the scanning is done. Verify that there is no more an issue named 'Elements must only use allowed ARIA attributes'.",
+        "details": "Used axe DevTools to verify that the issue with aria-label attribute without role attribute is resolved after applying the patch."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76603",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader navigation and announcements",
+        "evidence_source": "test_instructions: Navigate through the page using a screen reader like JAWS or NVDA using the keyboard and without looking at the screen, as much as possible.",
+        "details": "Verification of screen reader accessibility for rubric creation/editing and grading with a rubric."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader navigation and announcements",
+        "evidence_source": "test_instructions: Confirm if you were able to successfully create/edit a rubric through the help of the screen reader only.",
+        "details": "Verification of screen reader accessibility for understanding the rubric table and performing tasks like adding/editing/deleting criteria and levels."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader navigation and announcements",
+        "evidence_source": "test_instructions: Confirm if you were able to successfully grade the rubric through the help of the screen reader only.",
+        "details": "Verification of screen reader accessibility for grading with a rubric, including navigating through levels and marking them as checked or unchecked."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader navigation and announcements",
+        "evidence_source": "test_instructions: Confirm if you were able to understand the criteria and the grading levels of the rubric.",
+        "details": "Verification of screen reader accessibility for viewing the graded rubric as a student, including understanding the criteria and grading levels."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76601",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation failure",
+        "evidence_source": "test_instructions: Confirm that you can access the course menu button by tabbing through to it.",
+        "details": "Verification involved checking that the course menu button could be accessed using the keyboard in different views."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76597",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "Empty heading h3 and version select elements without accessible names",
+        "evidence_source": "test_instructions: Ensure you are on the 'Questions' page (mod/quiz/edit.php) and run the accessibility checker. Confirm that there are no errors related to Empty h3 heading and Form elements with empty labels related to the question version.",
+        "details": "The axe DevTools browser extension was used to verify that the accessibility issues identified were resolved after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76563",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WebAIM contrast checker",
+        "target_issue": "color contrast",
+        "evidence_source": "description: When you want to display text in TinyMCE as <code> format the pink colour (#E83E8C) is not accessible against a white background: [https://webaim.org/resources/contrastchecker/?fcolor=E83E8C&bcolor=FFFFFF]",
+        "details": "Used to validate the color contrast issue with the pink color against a white background."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "comment_5: Thanks for the patch. It is working as needed (I checked with Axe devtools too).",
+        "details": "Used to verify that the color contrast issue was resolved with the new color."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76562",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "justify text button removal",
+        "evidence_source": "test_instructions: Verify. In the TinyMCE toolbar, the justify align button does not exist.",
+        "details": "The verification process involved visually checking the TinyMCE editor toolbar and menu to confirm the absence of the justify text button and submenu."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "justify text button removal in different languages",
+        "evidence_source": "test_instructions: Please repeat the above steps using French because it is the only language I know besides EN with the justify language string.",
+        "details": "The verification included checking the absence of the justify text button in the TinyMCE editor when the interface language is set to French."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76313",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "CI automated checks",
+        "target_issue": "code compliance and potential accessibility issues",
+        "evidence_source": "comment_2: Code verified against automated checks.",
+        "details": "Automated checks were used to verify that the code changes did not introduce new errors or warnings, ensuring compliance with coding standards."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual inspection",
+        "target_issue": "presence of table headers and single header title",
+        "evidence_source": "test_instructions: check that subscribers table contains headers, check that there is only one header title",
+        "details": "Manual verification was conducted by following test instructions to ensure that the subscribers table contains headers and that there is only one header title."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76246",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation through dropdown options",
+        "evidence_source": "test_instructions: Verify that you can move between options using the up and down arrow keys",
+        "details": "The test instructions specify verifying keyboard navigation through dropdown options using arrow keys."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "focus_management",
+        "target_issue": "focus management in dropdown",
+        "evidence_source": "test_instructions: Verify that the focus stays on the search box when you move up/down through the options",
+        "details": "The test instructions include verifying that the focus remains on the search box while navigating through options."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-76046",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_dev_tools",
+        "target_issue": "navigation overflow on smaller screens",
+        "evidence_source": "description: Using the browser dev tools, use the device mode and select a smaller screen like the iPhone SE's.",
+        "details": "The tester used browser developer tools to simulate a smaller screen size to reproduce the issue of navigation overflow."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_verification",
+        "target_issue": "navigation overflow on smaller screens",
+        "evidence_source": "test_instructions: Verify that the more menu will wrap but not overlap with the tertiary navigation.",
+        "details": "The verification involved visually checking that the navigation menu wraps correctly without overlapping on smaller screens."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-75957",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_size_adjustment",
+        "target_issue": "dropdown menu visibility and positioning",
+        "evidence_source": "test_instructions: # In the Gradebook, reduce the window height to <= 600px # Click on the tertiary navigation selector. ** *confirm that the dropdown menu is displayed below the element that triggered the opening of the menu.*",
+        "details": "Verification involved adjusting the screen size to test the visibility and positioning of dropdown menus."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_size_adjustment",
+        "target_issue": "dropdown menu visibility and positioning",
+        "evidence_source": "test_instructions: # Reduce the window height further more to <= 300px # Click on the 'More' item in secondary navigation. ** *confirm that the dropdown menu is displayed below the element (More) that triggered the opening of the menu.*",
+        "details": "Further verification by reducing the screen size to test the visibility and positioning of dropdown menus."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-75762",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management and tab order",
+        "evidence_source": "test_instructions: Using the keyboard start tabbing through the content in the blocks drawer",
+        "details": "Verification of focus management and tab order using keyboard navigation to ensure skip links are displayed and focus shifts correctly."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-75055",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "color_contrast_check",
+        "target_issue": "color contrast of close button",
+        "evidence_source": "test_instructions: Using the \"{{Select an element in the page}}\" button on the browser dev tools, hover on the close button's \"{{x}}\" to inspect it. Check the \"{{Contrast}}\" value.",
+        "details": "Manual verification of color contrast ratio to ensure it is greater than 3."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74822",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "CSS_disabled_testing",
+        "target_issue": "User tour modals not accessible when CSS is disabled",
+        "evidence_source": "test_instructions: Navigate to My course page with CSS disabled and verify that you will not see the user tour.",
+        "details": "Verification involved disabling CSS and checking that the user tour modals are not visible, confirming the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74821",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML Validator",
+        "target_issue": "HTML validator errors on the feedback analysis page",
+        "evidence_source": "test_instructions: Copy the page source and paste it into the Nu HTML Validator (https://validator.w3.org/nu/#textarea). Confirm that there are no errors (ignore the warnings).",
+        "details": "The Nu HTML Validator was used to confirm that the HTML validation errors were resolved after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74815",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "timeline_23: Run the axe DevTools extension and *Verify* that the expand/collapsed & course icons in the screenshoot do not have color contrast issue anymore.",
+        "details": "The axe DevTools extension was used to verify that the color contrast issue with the expand/collapse and course icons was resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74814",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML Checker",
+        "target_issue": "HTML validation errors",
+        "evidence_source": "test_instructions: Copy it at [https://validator.w3.org/nu/#textarea] and click 'Check' button. No errors should be shown.",
+        "details": "The Nu HTML Checker was used to verify that the HTML validation errors were resolved after the fix."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "Text cut-off at 400% zoom",
+        "evidence_source": "description: The text can get cut off for 'Email display' when the page is zoomed to 400%",
+        "details": "Manual zoom testing was conducted to identify text cut-off issues at high zoom levels."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74813",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "animated gif lasting more than 5 seconds",
+        "evidence_source": "test_instructions: # Drag a file over the file manager area. ## *confirm* that the static \"down arrow\" icon is still displayed when the text changes to \"{{{}Drop files here to upload{}}}\"",
+        "details": "Verification involved checking that the static icon remained when dragging a file over the course restore area."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74812",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "rubrics table accessibility",
+        "evidence_source": "test_instructions: Run axe DevTools and confirm that there are no errors related to the rubrics tables",
+        "details": "Used to verify that the rubrics table has no critical accessibility errors after the fix."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML Validator",
+        "target_issue": "HTML validation errors",
+        "evidence_source": "test_instructions: Paste it on the text area of the Nu HTML Validator and confirm you don't see any of the following errors",
+        "details": "Used to verify that HTML validation errors such as duplicate IDs and obsolete attributes are resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74802",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "notification close button label",
+        "evidence_source": "test_instructions: Using a screen reader (e.g. NVDA), tab to the x button. Confirm that the alert message is being read first and then the button gets read out as 'Dismiss this notification'",
+        "details": "Verification involved using the NVDA screen reader to ensure the close button was read correctly as 'Dismiss this notification' after the alert message."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74800",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML Validator",
+        "target_issue": "HTML validation errors",
+        "evidence_source": "description: Paste it in the text area input of the Nu HTML Validator (https://validator.w3.org/nu/#textarea) site.",
+        "details": "The Nu HTML Validator was used to identify HTML validation errors on the course homepage."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard accessibility",
+        "evidence_source": "comment_3: behat alerts that some elements are not keyboard-reachable anymore.",
+        "details": "Manual keyboard navigation testing was conducted to ensure that elements were accessible via keyboard after changes were made."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74742",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: # Install axe DevTools extension on Chrome/Firefox\n # Log in as an admin and create a course\n # Go to the course homepage and turn editing mode on.\n # Run axe DevTools\n # *Confirm* that you don't see any issues related to colour contrast regarding the add buttons.",
+        "details": "Used axe DevTools to verify that the color contrast issue with the add buttons on the course homepage was resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74741",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Verify that the screen reader announces the 'To item xyz' items and announces them as buttons rather than links",
+        "details": "Verification involved using screen readers to ensure that items were announced as buttons, not links."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management",
+        "evidence_source": "test_instructions: Keep tabbing through to the end of the list of 'To item xyz' items. Verify that you go to the close button after the last item",
+        "details": "Verification involved using keyboard navigation to ensure focus returned to the close button after the last item."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74740",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "skip links visibility",
+        "evidence_source": "test_instructions: Using the keyboard start tabbing through the content in the blocks drawer. Confirm that right before you tab through the content of a given block a skip link is displayed.",
+        "details": "Verification involved manually tabbing through the blocks drawer to ensure skip links are displayed correctly."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74701",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management",
+        "evidence_source": "test_instructions: Navigate to the notification popover button via the keyboard. Press Enter key to expand the notification popover. Verify that you can use Tab/Shift + Tab/Down arrow/Up arrow keys to navigate through the notifications. Press the Escape key to close the notification popover. Verify that the notification popover button will be focused. Press the Tab key. Verify that the messaging button will be focused.",
+        "details": "Verification involved using keyboard navigation to ensure that focus is correctly managed after the popover is closed, confirming the fix works."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74529",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "autolink styling focus",
+        "evidence_source": "test_instructions: When viewing label on course page, tab over the autolinked _Announcements_ link *Confirm* it matches link styling elsewhere",
+        "details": "Verification of the fix by manually navigating with the keyboard to ensure autolinks match the styling of normal links when focused."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74222",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_DOM_inspection",
+        "target_issue": "aria-controls attribute missing",
+        "evidence_source": "test_instructions: Using your browser DOM tools, inspect the _Expand/collapse all_ link",
+        "details": "Verification involved checking the presence of the aria-controls attribute in the DOM for the Expand/Collapse all links."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74173",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "menu items role attribute",
+        "evidence_source": "test_instructions: *Confirm* that the menu items have the \"{{role=\"menuitem\"}}\" attribute.",
+        "details": "Verification involved manually inspecting the role attribute of menu items to ensure they have the correct 'menuitem' role."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74159",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "icon display for links opening in a new window",
+        "evidence_source": "test_instructions: Check the 'Help and documentation' link displayed in the footer now displays the 'Open in a new window' icon.",
+        "details": "The verification involved visually checking if the icon indicating a new window is displayed when the setting is enabled."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_navigation",
+        "target_issue": "link opening behavior",
+        "evidence_source": "test_instructions: Click the link and check it is opened on a new tab (instead of a new window, as before the patch).",
+        "details": "The verification involved checking the behavior of the link to ensure it opens in a new tab instead of a new window."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74110",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management on calendar icon",
+        "evidence_source": "test_instructions: Confirm the Calendar icon for Course end date is disabled and cannot be interacted with (clicked/tabbed to)",
+        "details": "Verification of the fix by checking if the calendar icon is not focusable when the date functionality is disabled."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "focus management on calendar icon",
+        "evidence_source": "test_instructions: Confirm the Calendar icon for Course end date is disabled and cannot be interacted with (clicked/tabbed to)",
+        "details": "Verification of the fix by checking if the calendar icon does not change color on hover when the date functionality is disabled."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-73912",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML validator",
+        "target_issue": "invalid type attribute value for button",
+        "evidence_source": "test_instructions: Copy the page source and paste it in the text area field of the Nu Html validator (https://validator.w3.org/nu/#textarea) Confirm that you don't see the error \"Bad value # for attribute type on element button.\"",
+        "details": "The Nu HTML validator was used to verify that the fix resolved the issue by ensuring the error no longer appeared."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-73584",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "Certain ARIA roles must contain particular children",
+        "evidence_source": "test_instructions: Confirm that there are no 'Certain ARIA roles must contain particular children' errors related to the <div class=\"menubar d-flex \"",
+        "details": "Verification was conducted using axe DevTools to ensure that the fix resolved the ARIA role issues without introducing new errors."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-73142",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_dev_tools",
+        "target_issue": "color contrast compliance",
+        "evidence_source": "test_instructions: On Firefox: Right-click on the list of file extensions and click 'Inspect Accessibility Properties'. A dev tools window will show up that contains a section called 'Colour and Contrast'.",
+        "details": "Verification was also conducted using Firefox's developer tools to ensure the color contrast ratio met accessibility standards after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-73116",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management after modal actions",
+        "evidence_source": "test_instructions: Confirm that after cancelling the modal the focus is on 'X' button previously clicked",
+        "details": "Verification of focus management by manually checking if the focus returns to the correct element after cancelling a modal."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-73026",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus outline visibility and color contrast",
+        "evidence_source": "test_instructions: On the Enrol users modal, tab to focus on the close button. Check the close button's outline. Confirm that you can see the whole focus outline.",
+        "details": "The test instructions guide the tester to use keyboard navigation to verify that the focus outline is fully visible and has sufficient color contrast."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72990",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "alt text for badge images",
+        "evidence_source": "test_instructions: Inspect the badge image element. For the first badge: Verify that the alt attribute is set to what you provided as the image caption. For the second badge: Verify that the alt attribute is present, but set to an empty string",
+        "details": "Manual inspection of the badge image alt attribute to ensure it matches the image caption or is empty for decorative images."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72923",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "heading levels in messaging drawer",
+        "evidence_source": "test_instructions: VERIFY: Just before the close button at the top, you should now see a new H2 level heading.",
+        "details": "Manual verification of heading levels to ensure correct hierarchy in the messaging drawer."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72896",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "content cutoff at 400% zoom",
+        "evidence_source": "description: When zoomed to 400%, the content of the table is cut off and cannot be viewed as there is no ability to scroll.",
+        "details": "The issue was identified by testing the table's responsiveness at a 400% zoom level, which is a common accessibility requirement."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "responsive_mode_testing",
+        "target_issue": "table responsiveness and scrolling",
+        "evidence_source": "test_instructions: Turn on the developer tool of the Browser and switch to the Responsive mode window.",
+        "details": "Verification involved using the browser's responsive mode to ensure that tables can be scrolled horizontally and all data is visible."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "content visibility at 400% zoom",
+        "evidence_source": "test_instructions: Change the browser zoom to 400%. Repeat the steps from 6 to 9.",
+        "details": "Verification included checking the table's behavior at 400% zoom to ensure that the fix allows for proper scrolling and data visibility."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72895",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WebAIM contrast checker",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Carry on the test using as foreground color the icon one and as background color the color of the button.",
+        "details": "The WebAIM contrast checker was used to verify that the color contrast of the buttons is now 5.47:1, which is greater than the required 3:1."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72885",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "lang attribute missing for screen readers",
+        "evidence_source": "test_instructions: Confirm that the links have a \"{{lang}}\" attribute with the value matching the language code",
+        "details": "Manual inspection of the language menu items to ensure the lang attribute is correctly added for screen reader compatibility."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72828",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_developer_tools",
+        "target_issue": "aria labels generation failure",
+        "evidence_source": "test_instructions: In your browser, open developer tools and locate the Network XHR requests list. Look through these requests: */lib/ajax/service-nologin.php?info=core_get_string*",
+        "details": "The verification involved checking the JSON response in the browser's developer tools to ensure the error was resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72805",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "Icons missing image role",
+        "evidence_source": "test_instructions: On the axe DevTools interface, press \"{{Scan all of my page}}\"",
+        "details": "The axe DevTools was used to scan the page for accessibility issues, specifically to verify that icons have the correct image role."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72688",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "accessibility_tree_inspection",
+        "target_issue": "content bank table accessibility",
+        "evidence_source": "test_instructions: Open the browser's developer tools window and select the content bank table using inspect element",
+        "details": "Verification of the accessibility tree to ensure the content bank table is correctly recognized as a table with appropriate roles and properties."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "content overlap at 200% zoom",
+        "evidence_source": "test_instructions: Zoom the browser content to 200% and verify that the sort icons are not overlapped",
+        "details": "Verification of the content layout and overlap issues when zoomed to 200% to ensure accessibility compliance."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72687",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "missing form label and broken ARIA menu",
+        "evidence_source": "test_instructions: Using WAVE tool scan the page. Make sure the following errors are not reported: 'Missing form element' and 'Missing form label' error for 'Change user', 'Broken ARIA menu' for the 'Colour picker'.",
+        "details": "WAVE tool was used to verify that the fixes for missing form labels and broken ARIA menus were successful."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order and focus management",
+        "evidence_source": "test_instructions: Using the keyboard navigate to the 'Filter' icon and hit enter. Make sure you are able to navigate directly to the element when tabbing.",
+        "details": "Manual keyboard navigation was used to verify that the tab order and focus management were correct after the fix."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "content visibility at 200% zoom",
+        "evidence_source": "test_instructions: Zoom the page to 200%. Confirm that the action buttons do not overlap with the collapse buttons.",
+        "details": "Manual zoom testing was conducted to ensure that content was visible and not overlapping at 200% zoom level."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72674",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Using a screen reader (e.g. NVDA) navigate to the feedback link. Confirm that it is being read as \"Give feedback about this software opens in new window\"",
+        "details": "Verification of screen reader announcement for the feedback link to ensure it includes 'opens in new window'."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72673",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "duplicate element IDs",
+        "evidence_source": "test_instructions: Check the page with axe DevTools or WAVE",
+        "details": "Verified that there are no duplicate ID errors related to the Keywords select element after the fix."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "duplicate element IDs",
+        "evidence_source": "test_instructions: Check the page with axe DevTools or WAVE",
+        "details": "Verified that there are no duplicate ID errors related to the Keywords select element after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72672",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "missing form labels",
+        "evidence_source": "test_instructions: Using WAVE tool scan the page. Make sure there are no errors related to missing label for the Actions selectbox",
+        "details": "The WAVE tool is used to verify that the fix for missing form labels is effective by scanning the page for errors."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "content cut off at 400% zoom",
+        "evidence_source": "test_instructions: On the Overview report tab, zoom the page to 400% and confirm that a scrollbar will be shown right below the table to allow the user to scroll horizontally",
+        "details": "Manual zoom testing is performed to verify that the content is accessible at 400% zoom by checking for the presence of a scrollbar."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72669",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "Invalid HTML in multi-answer (Cloze) questions",
+        "evidence_source": "test_instructions: Visit https://validator.w3.org/nu/ and verify that you don't see any errors",
+        "details": "The W3C Nu Validation Service was used again to verify that the fix (changing empty option to nbsp) resolved the HTML validation error."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72668",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "WCAG errors in HTML",
+        "evidence_source": "description: Errors found using W3C Nu Validation Service and filtered to indicate WCAG errors only.",
+        "details": "The W3C Nu Validation Service was used to identify WCAG errors in the HTML of the dashboard."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "no visible keyboard focus",
+        "evidence_source": "test_instructions: Press Tab multiple times until an item in the content tree of the block is focused. Verify that you can move up/down using the keyboard.",
+        "details": "Manual keyboard navigation was used to verify that the keyboard focus is visible and functional in the 'private files' block."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE extension",
+        "target_issue": "missing alternative text",
+        "evidence_source": "test_instructions: Press the WAVE extension's button. Verify that no 'Missing alternative text' error is reported.",
+        "details": "The WAVE browser extension was used to verify that there are no missing alternative text errors in the 'Latest badges' block."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72667",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "color contrast on hover",
+        "evidence_source": "test_instructions: *Hover* onto the new notification. *Make sure* when you hover onto the notification the colour is inverted to *blue*.",
+        "details": "Verification of color contrast changes when hovering over notifications to ensure sufficient contrast."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "color contrast in messaging",
+        "evidence_source": "test_instructions: *Make sure* when you hover onto the notification the colour is inverted to *blue*. *Make sure* texts and links has enough colour contrast compared to the background color.",
+        "details": "Verification of color contrast changes in the messaging interface to ensure sufficient contrast."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "color contrast in lesson reports",
+        "evidence_source": "test_instructions: *Make sure* the the correct answer now is green and it has a 'Correct response' badge.",
+        "details": "Verification of color contrast changes in lesson reports to ensure sufficient contrast for correct answers."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "color contrast in assignment grading",
+        "evidence_source": "test_instructions: *Make sure* the *red* has enough color contrast against the background grey colour.",
+        "details": "Verification of color contrast changes in assignment grading interface to ensure sufficient contrast for 'Not graded' and 'Overdue' labels."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "color contrast in quiz attempts",
+        "evidence_source": "test_instructions: *Make sure* the *blue* has enough color contrast against the hover background grey colour.",
+        "details": "Verification of color contrast changes in quiz attempts to ensure sufficient contrast on hover."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72569",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Behat",
+        "target_issue": "ARIA tree pattern implementation",
+        "evidence_source": "description: Tested using behat tests",
+        "details": "Behat tests were used to validate the existence of the accessibility issue related to the ARIA tree pattern implementation."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Behat",
+        "target_issue": "ARIA tree pattern implementation",
+        "evidence_source": "comment_3: It works as expected and it looks nice to me. Also, as you know the Behat passes right now",
+        "details": "Behat tests were used to verify that the fix for the ARIA tree pattern implementation was successful."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72523",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management in modal dialogs",
+        "evidence_source": "test_instructions: # Press _X_ to close the modal # *Confirm* focus is still on the _New event_ button",
+        "details": "The test instructions involve using keyboard navigation to ensure that focus returns to the correct element after closing a modal."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72481",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation and focus management",
+        "evidence_source": "test_instructions: Press the right arrow key on your keyboard. It should focus on the 'Users' tab.",
+        "details": "Verification involved using keyboard navigation to ensure that focus moved correctly between tabs and sub-menus."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "focus_management",
+        "target_issue": "focus management on tab navigation",
+        "evidence_source": "test_instructions: Press the home key. The 'Site administration' tab should be focused on.",
+        "details": "Verification included checking that focus management was correctly implemented, ensuring the 'Home' key focused on the first tab."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "focus_management",
+        "target_issue": "focus management on sub-menus",
+        "evidence_source": "test_instructions: Press 'Enter key', navigate to sub-menus inside 'More' using the down arrow key.",
+        "details": "Verification involved ensuring that focus management within sub-menus was correctly implemented, allowing cyclic navigation."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72426",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE tool browser extension",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: run WAVE tool on the page. Make sure there are no Contrast Errors reported for both message and notifications count container.",
+        "details": "The WAVE tool is used to verify that the color contrast issue has been resolved by checking for any contrast errors on the page."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "colorable",
+        "target_issue": "color contrast",
+        "evidence_source": "comment_2: using colorable (https://colorable.jxnblk.com/ed0000/ffffff) it shows 4.56 of contrast which makes it more accessible and enough for WAVE not report any contrast errors.",
+        "details": "Colorable is used to verify the contrast ratio of the new color to ensure it meets accessibility standards."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72412",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "ARIA attribute usage without role='img'",
+        "evidence_source": "test_instructions: Confirm that there are no 'Elements must only use allowed ARIA attributes' errors related to the '<i>' element.",
+        "details": "Axe DevTools was used to verify that the fix correctly applied the role='img' attribute, resolving the ARIA attribute usage issue."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72286",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "form submission via Enter key",
+        "evidence_source": "test_instructions: # Go into a course and create a new Page activity, and save # Go back to the Page setting, and focus the 'Name' field # Hit the 'Enter' key # *Verify* that the form is submitted",
+        "details": "The verification involved manually testing the form submission by focusing on the 'Name' field and pressing the Enter key to ensure the form submits correctly."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72263",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "ARIA tree pattern keyboard navigation",
+        "evidence_source": "test_instructions: Navigate the course index using the keyboard and confirm that it adheres to what's described in the Keyboard interaction section mentioned in the Tree View pattern of the WAI-ARIA Authoring Practices 1.1.",
+        "details": "Verification involved ensuring the course index supports arrow key expansion and navigation as per ARIA guidelines."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72225",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual inspection",
+        "target_issue": "screen reader text 'Rich text editor' incorrectly displayed",
+        "evidence_source": "test_instructions: Confirm that each editor element (Question text, General feedback) isn't preceded by 'Rich text editor' text",
+        "details": "The verification involved visually confirming that the 'Rich text editor' text was not displayed before editor elements in the question editing form."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72223",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "ATTO editor link selection",
+        "evidence_source": "test_instructions: Highlight the word 'super' and press the Link button in the editor. Confirm the Text to display input in the modal shows 'super'.",
+        "details": "The test instructions involved manually verifying that the correct text is selected and displayed when creating a link in the ATTO editor."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72206",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run axe again. Confirm that you don't see any colour contrast errors on the page.",
+        "details": "Used axe DevTools to verify that the color contrast issues were resolved after applying the fix."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Chrome Lighthouse",
+        "target_issue": "color contrast",
+        "evidence_source": "comment_3: I verified it with Chrome Lighthouse and the issue is fixed.",
+        "details": "Used Chrome Lighthouse to confirm that the color contrast issues were resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-72078",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements for text editor",
+        "evidence_source": "test_instructions: You need a screen-reader (NVDA or ChromeVox) for this test",
+        "details": "Verification involved using NVDA or ChromeVox to ensure the screen reader announced 'application' and 'rich text editor' when navigating to the description field."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71814",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management",
+        "evidence_source": "test_instructions: Use 'tab' to choose the \"*File icons*\" mode to display the files... Verify that when the popup closes, the focus returns to the selected file",
+        "details": "Verification involved using keyboard navigation to ensure that focus returns to the selected file after closing the popup in all display modes."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71813",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation failure",
+        "evidence_source": "test_instructions: Using 'tab' to a file. Verify that when a file is in focus then press 'enter' then edit pop up appear.",
+        "details": "Verification involved using keyboard navigation to ensure that pressing 'enter' on a focused file opens the edit popup."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71674",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "error message display and focus management",
+        "evidence_source": "test_instructions: Check the following 2 errors are displayed: An image must have an url. An image must have a description, unless it is marked as decorative only.",
+        "details": "Manual verification was conducted to ensure that error messages were displayed correctly and that focus was managed appropriately when errors occurred."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71672",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "NVDA",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "description: After starting NVDA, click on this button. Normally you would select the button with the keyboard, but this is not working. When the dialog opens, NVDA says: 'Insert character close section'.",
+        "details": "NVDA was used to test if the screen reader correctly announces the dialog title when opened."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "VoiceOver",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Test with both NVDA (Windows) and VoiceOver (macOS).",
+        "details": "VoiceOver was used to verify that the screen reader reads the content of the dialog after the fix."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "ARIA reference errors",
+        "evidence_source": "test_instructions: Press the WAVE extension's button. Verify that there is no 'Broken ARIA reference' error on the page.",
+        "details": "The WAVE browser extension was used to verify that there are no broken ARIA reference errors after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71671",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "focus management and navigation with TalkBack and VoiceOver",
+        "evidence_source": "test_instructions: Enable your screen reader (either TalkBack or VoiceOver)",
+        "details": "Verification involved using TalkBack on Android and VoiceOver on iOS to ensure that the navigation through the Atto editor menu was functioning correctly and that focus could be moved to the next toolbar button."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71669",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "NVDA",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "description: Replication with NVDA: Use the Tab key until the focus is on the Atto editor. Then navigate through the buttons with Right Arrow. Once you are on the 'Paragraph Style' button, press the Enter key to open the button menu. This 'menu' is announced as a dialog box by NVDA.",
+        "details": "NVDA was used to test how the Atto editor's menu was announced by screen readers, identifying the issue with incorrect dialog role."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "incorrect ARIA roles and menu structure",
+        "evidence_source": "test_instructions: With the Paragraph styles menu opened, click the 'axe DevTools' tab in your browser's dev tools. Press 'Scan all of my page'. Confirm that you don't see the following errors: 'Certain ARIA roles must be contained by particular parents' errors.",
+        "details": "Axe DevTools was used to verify that the fix removed incorrect ARIA roles and ensured the menu structure was correct."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71668",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus indicator visibility",
+        "evidence_source": "test_instructions: Press Shift+Tab to focus on one of the Atto toolbar buttons. Use the left and right Arrow keys to move between the buttons. Verify that you see the blue focus outline around the focused button",
+        "details": "Manual keyboard navigation was used to verify that the focus indicator is visible and consistent across different buttons in the Atto toolbar."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71656",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements for color items",
+        "evidence_source": "test_instructions: A screen-reader (NVDA or ChromeVox) for this test",
+        "details": "Screen readers were used to verify that each color item in the Atto editor's color chooser had a meaningful label that was announced correctly."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation through color items",
+        "evidence_source": "test_instructions: Use your keyboard to navigate between the buttons of the Atto toolbar until you reach the Font Color button.",
+        "details": "Keyboard navigation was used to verify that users could navigate through the color items in the Atto editor's color chooser."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71604",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_verification",
+        "target_issue": "screen reader helper button visibility",
+        "evidence_source": "test_instructions: Verify that you see the 'Accessibility checker' and the 'Screenreader helper' buttons on the first row of the editor toolbar",
+        "details": "The test instructions require the tester to visually confirm the presence of the 'Accessibility checker' and 'Screenreader helper' buttons on the first row of the editor toolbar, ensuring they are visible even when advanced buttons are hidden."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71603",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management and tab order",
+        "evidence_source": "test_instructions: With the row still have the focus, press the right arrow key on the keyboard",
+        "details": "Verification of focus management and tab order by using keyboard navigation to ensure the correct element is focused."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "developer_tools",
+        "target_issue": "aria-expanded attribute",
+        "evidence_source": "test_instructions: Open the browser's developer tool window and select the <button> element that is for the ↴ button",
+        "details": "Verification of the aria-expanded attribute by inspecting the button element in the browser's developer tools."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71602",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements for text editor labeling",
+        "evidence_source": "test_instructions: *You need a screen-reader (NVDA or ChromeVox) for this test*",
+        "details": "The test instructions required using a screen reader to navigate the quiz and verify that the text editor and file manager fields were correctly announced."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71385",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run axe DevTools or WAVE",
+        "details": "Used to confirm that there are no color contrast issues on the page, especially on the table."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run axe DevTools or WAVE",
+        "details": "Used to confirm that there are no color contrast issues on the page, especially on the table."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71373",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "browser_inspector",
+        "target_issue": "aria-label localization",
+        "evidence_source": "test_instructions: Using browser inspector check the 'aria-label' value for Next or/and Previous buttons in the pagination bar.",
+        "details": "Verification involved using the browser inspector to ensure that the 'aria-label' values for 'Previous' and 'Next' buttons were correctly localized."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71352",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "pass/fail icon accessibility",
+        "evidence_source": "comment_17: the fail / pass grade is read by screen reader.",
+        "details": "Verification that the pass/fail icon with tick or cross is accessible and can be read by screen readers."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "color_contrast",
+        "target_issue": "color contrast of pass/fail grades",
+        "evidence_source": "comment_17: the contrast of the new colors is ok.",
+        "details": "Verification that the color contrast of the pass/fail grades meets accessibility standards."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71305",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: You need a screen reader for this test. Verify that the screen reader does not repeatedly announce the same thing.",
+        "details": "Verification involved using a screen reader to ensure that the flag state is announced correctly without repetition."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71303",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "HTML not escaped in the off-screen link skip quiz navigation",
+        "evidence_source": "test_instructions: Using tab key for navigation until the 'Skip Quiz navigation' is displayed *Verify* there is no HTML displayed",
+        "details": "The test instructions involve using the Tab key to navigate and verify that HTML is not displayed in the 'Skip Quiz navigation' link."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "Special characters not double escaped",
+        "evidence_source": "test_instructions: Add a HTML block and name it & ' \" ¢ £ © € ¥ ® < > *Verify* & ' \" ¢ £ © € ¥ ® < > is not double escaped",
+        "details": "The test instructions involve using the Tab key to navigate and verify that special characters in a block title are not double escaped."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71301",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "description: JAWS AND NVDA provide a function that lists all of the form controls on a page. The drop-down lists will be easier to identify.",
+        "details": "The issue was identified using screen readers JAWS and NVDA to test how form controls are announced."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: With a screen reader (e.g. NVDA) navigate to the choices via keyboard. Confirm that the select elements for the choices are announced as '{{Blank [number]}}'.",
+        "details": "Verification was conducted using NVDA to ensure that the select elements are announced correctly as '{{Blank [number]}}'."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71336",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Axe DevTools",
+        "target_issue": "duplicate ID attributes",
+        "evidence_source": "test_instructions: Run _Axe DevTools_ scan of the page - Or use Nu Html Checker",
+        "details": "Axe DevTools is used to confirm there are no reported errors related to duplicate ID attributes."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu Html Checker",
+        "target_issue": "duplicate ID attributes",
+        "evidence_source": "test_instructions: Run _Axe DevTools_ scan of the page - Or use Nu Html Checker",
+        "details": "Nu Html Checker is used to confirm there are no reported errors related to duplicate ID attributes."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-71087",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management",
+        "evidence_source": "test_instructions: Press Tab twice, type in a folder name e.g. 'test', and press Return to create the folder (the folder is created and the dialog disappears). Expected: The keyboard focus still on the create folder icon.",
+        "details": "Verification of focus management after creating a folder in the file picker dialog using keyboard navigation."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70992",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "unnecessary tab stops",
+        "evidence_source": "test_instructions: Use the keyboard to tab through it. EXPECTED: There should be exactly one tab stop per file (only one press of the TAB key to tab to next file).",
+        "details": "Verification involved using the keyboard to ensure that the fix resulted in only one tab stop per file, as expected."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70874",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements for pass/fail grades",
+        "evidence_source": "test_instructions: Verify when you choose different ones in 'Select all or one user' that the grade values are colored, there is a pass or fail icon with either a tick or a cross as well and the fail / pass grade is read by screen reader.",
+        "details": "Verification that screen readers announce pass/fail grades correctly."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "color_contrast",
+        "target_issue": "color contrast for pass/fail grades",
+        "evidence_source": "comment_9: The contrast ratio of the red and green colours over the grey background likely need to be increased, as the current one doesn't meet the WCAG 2 AA thresholds.",
+        "details": "Testing the color contrast to ensure it meets accessibility standards."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70846",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "color contrast and role attributes",
+        "evidence_source": "test_instructions: run behat a11y tests: vendor/bin/behat --format=\"pretty\" --out=\"std\" --format=\"moodle_progress\" --out=\"std\" --format=\"moodle_progress\" --out=\"./behat.log\" --config=$HOME/moodles/stable_311/moodledata_behat/behatrun/behat/behat.yml --suite=classic --profile=headlesschrome --tags '@accessibility'",
+        "details": "Verification of the fixes was conducted by running Behat tests with the axe-core tool to ensure the identified issues were resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70829",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "accessible names of buttons",
+        "evidence_source": "test_instructions: Inspect the accessible name of the Message and Add contact buttons.",
+        "details": "Manual verification using screen reader to ensure accessible names are correctly rendered and not duplicated."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "accessibility_tree_inspection",
+        "target_issue": "accessible names of elements",
+        "evidence_source": "test_instructions: Inspect the accessible name of a user from the list on the accessibility tree.",
+        "details": "Manual verification by inspecting the accessibility tree to confirm correct accessible names."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70792",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management in dropdown menu",
+        "evidence_source": "test_instructions: Navigate to the More menu with keyboard navigation (e.g. tab to the secondary navigation menubar then press right arrow keys to go to the More menu.)",
+        "details": "Verification of keyboard navigation to ensure the first item is focused when opened via keyboard."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "focus management in dropdown menu",
+        "evidence_source": "test_instructions: Click the More menu and confirm that the first nav item is not focused/highlighted",
+        "details": "Verification of mouse interaction to ensure no focus/highlight on the first item when opened via mouse."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70721",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "aria-label attribute handling",
+        "evidence_source": "test_instructions: Enable your screen reader and verify that the screen reader says the following: It's a 'close' button",
+        "details": "Screen reader testing was used to verify that aria-label attributes are correctly interpreted by assistive technologies."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "HTML validation",
+        "target_issue": "HTML entity handling in aria-label",
+        "evidence_source": "test_instructions: Visit https://validator.w3.org/nu/ and verify that you don't see any errors",
+        "details": "HTML validation was used to ensure that the HTML entities are correctly implemented and do not cause validation errors."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70288",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "duplicate labels for checkbox elements",
+        "evidence_source": "description: Run WAVE on it. Result: You'll see \"Multiple form labels\" errors.",
+        "details": "WAVE was used to identify the presence of multiple form labels, which is an accessibility issue."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "validation errors related to checkboxes and aria-described attributes",
+        "evidence_source": "test_instructions: Open your browser's dev tools. Go to the axe tab. On the test page, tab through all the form elements to show the validation errors until you reach the \"Save changes\" button. Back on the axe tab, analyse the page.",
+        "details": "Axe tool was used to verify that there are no validation errors related to the checkboxes and aria-described attributes after the fix."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML validator",
+        "target_issue": "validation errors about checkbox elements and their labels",
+        "evidence_source": "test_instructions: View the page source and validate it using the Nu HTML validator (https://validator.w3.org/nu/#textarea) *Confirm* that you don't get any validation errors about related to the checkbox elements and their labels.",
+        "details": "Nu HTML validator was used to ensure that there are no validation errors related to checkbox elements and their labels after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70274",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "WCAG compliance check",
+        "evidence_source": "test_instructions: Click the *Web Content Accessibility Guidelines (WCAG) check* link. VERIFY: The link should take you to the WAVE report for the page being tested.",
+        "details": "Verification of the new WCAG check link using the WAVE online accessibility checker."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70173",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "Missing alternative text, empty link errors, missing first level heading, and very small text alerts",
+        "evidence_source": "test_instructions: *You need to have the WAVE browser extension for this test* # Log in as a user and send a message to admin, then log out. # Log in as admin and go to the dashboard # Press the WAVE extension's button on your browser # *Verify* that ## There is no 'Missing alternative text' error. ## There is no 'Empty link' error for any visible element on the page. You might see 3 invisible ones which are ok. ## There is no 'Missing first level heading' alert ## There is no 'Very small text' alert",
+        "details": "The WAVE browser extension was used to verify that the fixes resolved the missing alternative text, empty link errors, missing first level heading, and very small text alerts."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70172",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "empty links, missing first level heading",
+        "evidence_source": "test_instructions: *You need to have the WAVE browser extension for this test*",
+        "details": "WAVE was used to verify that the fixes for empty links and missing first level heading were successful."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70169",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "Missing first level heading and redundant title text",
+        "evidence_source": "test_instructions: *You need to have the WAVE browser extension for this test*",
+        "details": "WAVE was used to verify that the issues identified were resolved after the fix was applied."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "Screen reader announcements and heading recognition",
+        "evidence_source": "test_instructions: Use a screen reader (e.g. Chromevox, NVDA or JAWS) on the login page.",
+        "details": "Screen readers were used to verify that the site name is announced correctly and recognized as a heading 1 element."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70094",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "help icon interaction",
+        "evidence_source": "test_instructions: Click '?' icon and verify that the help balloon is shown and the technical information section does not expand/collapse.",
+        "details": "Manual verification to ensure that clicking the help icon only shows the help balloon without affecting the technical information section."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70075",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe Accessibility browser extension",
+        "target_issue": "keyboard navigation and ARIA attributes",
+        "evidence_source": "test_instructions: You need the Axe Accessibility browser extension",
+        "details": "The Axe Accessibility browser extension is used to verify that there are no 'Elements must only use allowed ARIA attributes' errors and that keyboard navigation works as expected."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation in dropdown menus",
+        "evidence_source": "test_instructions: Verify that you can move between the options of the menu by pressing up and down keys on your keyboard",
+        "details": "Manual keyboard navigation testing is used to verify that users can navigate dropdown menus using the keyboard."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70004",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "Invalid role attribute in the label for the 'Clear my choice' option",
+        "evidence_source": "test_instructions: Open the axe tool on your browser's developer tools. Analyse the page using the axe tool. Confirm that there are no violations related to the 'Clear my choice' label",
+        "details": "The axe tool is used to verify that the fix for the 'Clear my choice' label issue does not produce any accessibility violations."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "Focus management and tab order for 'Clear my choice' option",
+        "evidence_source": "test_instructions: Tab onto one of the options of the multiple-choice question. This should highlight the first option but not actually select it. Tab again. Confirm that the focus goes to the 'Check' button.",
+        "details": "Manual keyboard navigation is used to verify that the focus order is correct and that the 'Clear my choice' option is accessible via keyboard."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69841",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "checkbox state change on help icon click",
+        "evidence_source": "test_instructions: Confirm that clicking on the help icon does not affect the state of the checkbox (e.g. if it's checked, it remains checked. If unchecked, it remains unchecked)",
+        "details": "Manual verification to ensure that the checkbox state remains unchanged when the help icon is clicked."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69649",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "missing form labels",
+        "evidence_source": "test_instructions: You need WAVE chrome extension",
+        "details": "The WAVE browser extension is used to verify that there are no 'Missing form label', 'Empty form label', or 'Orphaned form label' errors on any page during the restore process."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69644",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus outline consistency",
+        "evidence_source": "test_instructions: Using your keyboard, Tab down to _Privacy and policies > Contact the privacy officer_",
+        "details": "Verification of the focus outline consistency using keyboard navigation to ensure it matches other links on the page."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "modal appearance",
+        "evidence_source": "test_instructions: Using your mouse click on the _Contact the privacy officer_ link",
+        "details": "Verification that clicking the link with a mouse opens the correct modal."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69637",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "HTML inspection",
+        "target_issue": "unnecessary aria-labels added",
+        "evidence_source": "description: Using web browser's HTML inspector again, note that an aria-label property has been added.",
+        "details": "The HTML inspector is used to check for the presence of aria-label attributes after moving a section."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "HTML inspection",
+        "target_issue": "unnecessary aria-labels removed",
+        "evidence_source": "test_instructions: Verify the li element with id \"section-1\" still has no attribute \"aria-label\".",
+        "details": "The HTML inspector is used to verify that the aria-label attribute is not present after applying the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69474",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "ARC Toolkit",
+        "target_issue": "missing alt text on profile images",
+        "evidence_source": "comment_24: We use ARC Toolkit to test accessibility and the result is the same as Axe.",
+        "details": "ARC Toolkit was used to identify accessibility issues related to alt text on profile images."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Axe",
+        "target_issue": "missing alt text on profile images",
+        "evidence_source": "comment_18: Axe will now throw a warning about missing alt text on the image.",
+        "details": "Axe was used to test for missing alt text on profile images, confirming the issue."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "removal of unnecessary link on profile image",
+        "evidence_source": "test_instructions: Verify that clicking on the user picture image does nothing (it is not a link).",
+        "details": "Manual keyboard navigation was used to verify that the profile image is no longer a link, reducing unnecessary tab stops."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "developer_console",
+        "target_issue": "alt attribute on profile images",
+        "evidence_source": "test_instructions: Open the developer console then inspect user picture image. Verify that the alt attribute is included, but empty.",
+        "details": "The developer console was used to inspect the alt attribute of profile images to ensure it is correctly set as empty when no description is provided."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69422",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML validator",
+        "target_issue": "Duplicate ID and HTML parsing errors",
+        "evidence_source": "test_instructions: Paste the page source in the text input field in the Nu HTML validator (https://validator.w3.org/nu/#textarea)",
+        "details": "The Nu HTML validator was used to verify that the HTML errors, including duplicate IDs and incorrect element nesting, were resolved."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "ARIA and label uniqueness",
+        "evidence_source": "timeline_2: Run axe on the page",
+        "details": "Axe was used to confirm that there were no errors related to IDs used in ARIA and labels being unique."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69395",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "color contrast of form control borders",
+        "evidence_source": "test_instructions: On the Form verify all inputs have a border color of #8f959e",
+        "details": "Manual verification of the border color to ensure it meets the required contrast ratio."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69394",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run the WAVE or axe tool. Confirm that you don't get any colour contrast errors related to the calendar events in the main calendar.",
+        "details": "Used to verify that the color contrast issue in calendar events has been resolved."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run the WAVE or axe tool. Confirm that you don't get any colour contrast errors related to the calendar events in the main calendar.",
+        "details": "Used to verify that the color contrast issue in calendar events has been resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69392",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe tool",
+        "target_issue": "color contrast issues",
+        "evidence_source": "test_instructions: Run the axe tool. Confirm that there are no colour contrast violations related to the quiz attempt page (ignore those regarding the Quiz navigation block and select tags).",
+        "details": "The axe tool is used to verify that the color contrast issues have been resolved on the quiz attempt page."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69391",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Run the Axe analyzer and confirm that you don't get any contrast errors related to the custom menu items on the navbar.",
+        "details": "Axe tool was used to verify that the color contrast issues in the navbar and calendar course selector were resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69390",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "color contrast for keyboard focus",
+        "evidence_source": "test_instructions: verify that when using the keyboard to access the menu items the background colour is the primary (blue) colour and the text is white",
+        "details": "Verification involved checking the color contrast when navigating dropdown menus using keyboard inputs."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "mouse_interaction",
+        "target_issue": "color contrast for mouse hover",
+        "evidence_source": "test_instructions: verify that when hovering over the menu items the background colour is the primary (blue) colour and the text is white",
+        "details": "Verification involved checking the color contrast when hovering over dropdown menu items with a mouse."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69389",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe browser extension",
+        "target_issue": "color contrast between link text and normal text",
+        "evidence_source": "comment_7: I also tried this manually with the axe browser extension itself and it didn't detect this failure even without the patch.",
+        "details": "Attempted to use the axe browser extension to detect color contrast issues, but it did not identify the problem."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "developer_tools",
+        "target_issue": "color contrast between link text and normal text",
+        "evidence_source": "test_instructions: Open the browser's dev tools and inspect the colour of the normal texts",
+        "details": "Used browser's developer tools to manually verify the color values of text elements to ensure they meet the required contrast ratio."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69387",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "color_contrast_check",
+        "target_issue": "color contrast of completion checkbox images",
+        "evidence_source": "test_instructions: Right-click each SVG icon, then select \"Open image in new window\". Inspect the icon. Confirm that the part with the grey colour has the fill attribute set to \"#949494\"",
+        "details": "Manual inspection of SVG icons to verify that color changes meet the required contrast ratio."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69301",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus order in tabs",
+        "evidence_source": "test_instructions: Press the tab key multiple times until the focus reaches the tab buttons (Site administration, Users, Courses, ...)",
+        "details": "Verification involved using keyboard navigation to ensure the focus order was logical and compliant with WCAG 2.4.3."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69116",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE extension",
+        "target_issue": "missing form label",
+        "evidence_source": "test_instructions: *You need WAVE extension for this* # Create a course and a quiz in it # Add a multiple-choice question to the quiz # Preview the quiz # Press the WAVE extensions button # *Verify* that there is no 'Missing form label' error",
+        "details": "The WAVE extension was used to verify that the 'clear my choice' option in multiple-choice questions does not produce a 'Missing form label' error."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "clear my choice option functionality",
+        "evidence_source": "test_instructions: # Use the tab key to navigate to the questions # *verify* ChromeVox narrates the question answers # *verify* you can use your arrow keys to select an answer # *verify* that upon selecting an answer the Clear my choice option is shown # *verify* you can tab to the Clear my choice option and can click enter to clear the answers.",
+        "details": "Manual keyboard navigation was used to verify that the 'clear my choice' option is accessible and functional when navigating through the quiz using the keyboard."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader accessibility",
+        "evidence_source": "comment_13: A user using a screen reader can also still navigate to 'Clear my choice' when it is hidden. We should also hide this from the screen reader when it is hidden.",
+        "details": "Screen reader testing was conducted to ensure that the 'clear my choice' option is properly hidden from screen readers when it is not visible."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69115",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "missing form labels",
+        "evidence_source": "test_instructions: Run the WAVE tool and confirm that you don't see any 'Missing form label' errors.",
+        "details": "The WAVE tool is used to verify that the fix for missing form labels is effective by checking for the absence of 'Missing form label' errors."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "form elements must have labels",
+        "evidence_source": "test_instructions: Open your browser's dev tools and go to the axe tab. Analyse the page and confirm that you don't see a 'Form elements must have labels' error.",
+        "details": "The axe tool is used to verify that form elements have appropriate labels by checking for the absence of related errors."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements for checkboxes and search field",
+        "evidence_source": "test_instructions: Turn on your screen reader. Using your keyboard, navigate to the checkboxes beside each category and course. Confirm that the checkbox is being announced as something like '[name] bulk action selection'. Navigate to the Search courses field. Confirm that it is being announced as 'Search courses'.",
+        "details": "Manual screen reader testing is used to verify that checkboxes and the search field are announced correctly by screen readers."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69114",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Use some accessibility contrast checker (wave or axe)",
+        "details": "axe is used to verify that all elements in the page content pass the color contrast checks after the fix."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WebAIM contrast checker",
+        "target_issue": "color contrast",
+        "evidence_source": "comment_3: the colour contrast of .text-info texts vs links is at 1:1 (https://webaim.org/resources/linkcontrastchecker/?fcolor=20809D&bcolor=FFFFFF)",
+        "details": "WebAIM contrast checker was used to test the color contrast ratio of .text-info texts vs links, identifying a failure in contrast ratio."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69111",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "interface scrollability and usability at small viewport sizes",
+        "evidence_source": "test_instructions: Change your browser size to 320px width and 256px height. Verify the grading interface is scrollable with a sticky navbar.",
+        "details": "Verification involved resizing the browser to a small viewport to ensure the grading interface remains usable and scrollable."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69008",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "Broken ARIA menu and empty link errors",
+        "evidence_source": "description: The \"{{Show items per page}}\" menu indicates a \"{{Broken ARIA menu}}\" error on WAVE. This can be replicated by going to the dashboard and checking the timeline block that has more than 5 items.",
+        "details": "WAVE tool was used to identify accessibility issues related to ARIA menu and empty links in the pagination bar."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "Screen reader announcements for pagination elements",
+        "evidence_source": "test_instructions: Using your screen reader, tab to each of the items on the paging bar. Confirm that they are being properly announced.",
+        "details": "ChromeVox screen reader was used to verify that pagination elements are announced correctly after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68963",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus outline visibility",
+        "evidence_source": "test_instructions: On Safari try using the tab key to navigate to the question answers in the quiz. Verify you can see a focus outline around the question answers when focussed.",
+        "details": "The test instructions specify using the Tab key to navigate and verify the focus outline is visible, ensuring keyboard accessibility."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "radio and checkbox size",
+        "evidence_source": "test_instructions: Verify the radio and checkbox sizes appear to have a good size like shown in this screenshot.",
+        "details": "The test instructions include checking the size of radio buttons and checkboxes to ensure they are appropriately sized for accessibility."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68766",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "developer_tools",
+        "target_issue": "heading level",
+        "evidence_source": "test_instructions: Using your web browse's developer tools, inspect the line above the Google button that says *Log in using your account on:*.",
+        "details": "Verification of the heading level change from H6 to H3 using browser developer tools."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68765",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "developer_tools",
+        "target_issue": "duplicate class attributes in HTML",
+        "evidence_source": "test_instructions: Using your web browser's developer tools, inspect the line above the Google button...",
+        "details": "The verification involved checking the HTML structure to ensure the class attributes were combined into a single attribute."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68674",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "heading structure for screen readers",
+        "evidence_source": "test_instructions: Verify the block area has a sr-only h2 title 'Blocks'. Verify the block titles are h3 with class h5 and do look exactly like before.",
+        "details": "Manual verification using screen reader techniques to ensure headings are correctly structured for screen reader navigation."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68639",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "HTML inspection",
+        "target_issue": "invalid nested unordered lists",
+        "evidence_source": "test_instructions: Switch to the HTML view (You may need to expand the toolbar to show all items) Confirm that all list elements (<li> tags) are in the list (<ul> tag)",
+        "details": "The verification involved checking the HTML structure to ensure that nested lists are correctly placed within <li> elements."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68551",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "HTML inspection",
+        "target_issue": "Use of <del> tag instead of <strike> tag",
+        "evidence_source": "test_instructions: Verify that you are now seeing <del> tags instead of <strike> tags",
+        "details": "The verification involved manually checking the HTML output in the Atto Editor to ensure the <del> tag was used instead of the <strike> tag."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68548",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "use of <em> instead of <i> for italics",
+        "evidence_source": "test_instructions: Verify that you are now seeing <em> tags instead of <i> tags",
+        "details": "The test instructions guide the user to manually check the HTML output to ensure that <em> tags are used instead of <i> tags after performing actions in the Atto Editor."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68541",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "UI changes for alt text input",
+        "evidence_source": "test_instructions: Press the insert image button. The Image properties dialogue will appear. Verify that the text 'This image is decorative only' appears next to a checkbox.",
+        "details": "Manual verification of the UI changes to ensure the checkbox text and textarea are correctly implemented."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "Character count functionality",
+        "evidence_source": "test_instructions: Enter text in the textarea. The counter should reflect the number of characters typed.",
+        "details": "Manual verification of the character count functionality to ensure it updates correctly as text is entered."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "Character limit enforcement",
+        "evidence_source": "test_instructions: Keep entering text until you have entered more than 125 characters. Verify that you cannot enter more than 125 characters.",
+        "details": "Manual verification to ensure the character limit is enforced in the textarea."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68390",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "aria-hidden elements contain focusable elements",
+        "evidence_source": "test_instructions: # Install the 'Axe' plugin for Google Chrome or Firefox... Run Axe tool... Confirm that there are no findings of the error: 'aria-hidden elements do not contain focusable elements'",
+        "details": "The axe-core tool was used to verify that the issue with focusable elements within aria-hidden elements was resolved across various parts of the Moodle interface."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68378",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "dropdown menu focus and interaction",
+        "evidence_source": "test_instructions: Press the tab key several times until the dropdown element for 'With selected users...' get focus",
+        "details": "Verification of keyboard navigation to ensure dropdown menu can be accessed and interacted with using the keyboard."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "dropdown menu selection",
+        "evidence_source": "test_instructions: Press the down arrow key on your keyboard twice",
+        "details": "Verification of keyboard navigation to ensure dropdown menu options can be selected using the keyboard."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "modal dialog opening",
+        "evidence_source": "test_instructions: Press Enter and verify that the 'Add a new note to 1 person' modal is shown",
+        "details": "Verification that pressing Enter after selecting a dropdown option opens the correct modal dialog."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68355",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "buttons must have discernible text",
+        "evidence_source": "test_instructions: Confirm that you don't see any 'Buttons must have discernible text' error.",
+        "details": "Axe was used to verify that the fix resolved the issue of buttons lacking discernible text."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Confirm that the screen reader announces the button icon as '[CRITERION's NAME] information'.",
+        "details": "Screen readers like NVDA, JAWS, or Chromevox were used to verify that the screen reader correctly announces button icons and form fields."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68353",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "WCAG errors in course creation page",
+        "evidence_source": "description: Errors found using W3C Nu Validation Service and filtered to indicate WCAG errors only",
+        "details": "The W3C Nu Validation Service was used to identify WCAG errors in the course creation page."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "Orphaned form label and missing fieldset warnings",
+        "evidence_source": "test_instructions: Press the WAVE icon on your browser and verify that you do not see any 'Orphaned form label' warning or 'Missing fieldset' warning",
+        "details": "The WAVE browser extension was used to verify that the fix resolved the orphaned form label and missing fieldset warnings."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68344",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management after file upload",
+        "evidence_source": "test_instructions: # Press the 'Tab' key ## *Confirm that the 'Create folder' button is now selected*",
+        "details": "The test instructions guide the tester to use the Tab key to navigate through the interface and verify that the focus remains on the correct element after closing the file picker dialog."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68299",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "zoom_testing",
+        "target_issue": "UI usability at 200% and 400% zoom",
+        "evidence_source": "test_instructions: Try some of the tests on a screen size of 1280 by 1024 and zoom using the browser zoom to zoom in by 200%",
+        "details": "Verification involved manually zooming the browser to 200% to ensure the UI remains usable without horizontal scrolling or content overlap."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "responsive_design_testing",
+        "target_issue": "UI usability on small viewports",
+        "evidence_source": "test_instructions: Open the inspector for chrome (or equivalent) and enable responsive mode. Change the screen size to 320px by 256px.",
+        "details": "Verification involved using browser developer tools to simulate small viewport sizes and check for UI issues like hidden horizontal scrolls or overlapping elements."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68266",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Axe",
+        "target_issue": "color contrast",
+        "evidence_source": "timeline_16: Accessibility testing\n\n# Install a tool like the chrome plugins Axe or Wave for accessibility testing\nNote: You may see an occurrence of \"Elements must have sufficient color contrast\" for the \"{{#menuselectsortby}}\" element\nThis is not a fail. It is picked up because the Axe tool is unable to distinguish the relative size of the up/down arrows which are shown in the dropdown and therefore is unable to determine whether they are conformant or not.\nThe same applies for any other dropdown selects visible on the page\n## *Verify* the page passes the colour contrast checks",
+        "details": "Axe was used to verify that the page passes color contrast checks, with a note on potential false positives due to tool limitations."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Wave",
+        "target_issue": "color contrast",
+        "evidence_source": "timeline_16: Accessibility testing\n\n# Install a tool like the chrome plugins Axe or Wave for accessibility testing\nNote: You may see an occurrence of \"Elements must have sufficient color contrast\" for the \"{{#menuselectsortby}}\" element\nThis is not a fail. It is picked up because the Axe tool is unable to distinguish the relative size of the up/down arrows which are shown in the dropdown and therefore is unable to determine whether they are conformant or not.\nThe same applies for any other dropdown selects visible on the page\n## *Verify* the page passes the colour contrast checks",
+        "details": "Wave was used alongside Axe to verify color contrast compliance, with similar notes on potential false positives."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual inspection",
+        "target_issue": "color contrast",
+        "evidence_source": "test_instructions: Functional testing\n\n# Log in as admin\n# Navigate to Site Administration > Courses > Manage courses and categories\n# Create 3 categories \"Cat A\", \"Cat B\", \"Cat C\" with Parent category \"Top\"\n# For \"Cat A\" set the field \"Category ID number\" to be \"Cat0123\"\n# Create 2 courses in \"Cat A\" named \"Mathematics\" and \"Science\"\n## *Verify* you see a blue left border for the active category\n## *Verify* you see checkboxes for each category\n## *Verify* you see the grey text \"Cat0123\" in the row of \"Cat A\"\n# Select \"Cat B\" and choose \"Move selected categories to:\" \"Cat A\"\n## *Verify* \"Cat B\" is now a subcategory of \"Cat A\"\n# Scroll down the page to the \"Search courses\" input\n# Search for \"Math\"\n## *Verify* you see course \"Mathematics\"\n## *Verify* you see a checkbox for course \"Mathematics\"",
+        "details": "Manual visual inspection was used to verify the presence of a blue left border, checkboxes, and grey text, ensuring color contrast improvements were visible."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68200",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "HTML compliance and WCAG errors",
+        "evidence_source": "test_instructions: Visit https://validator.w3.org/nu/ and verify that you don't see any errors",
+        "details": "The W3C Nu Validation Service was used to verify that the HTML source of the forum pages did not contain errors after the fix."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "high_contrast_and_zoom_testing",
+        "target_issue": "Visual layout issues at 400% zoom in Internet Explorer",
+        "evidence_source": "test_instructions: Zoom the page to 400% and verify that the footer is not covering the content",
+        "details": "Manual testing was conducted in Internet Explorer to ensure that the page layout remained intact at 400% zoom."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68196",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "autocomplete suggestion list behavior",
+        "evidence_source": "test_instructions: Press Tab to verify that the suggestion list is closed",
+        "details": "Manual testing was conducted to ensure that the suggestion list behaves correctly when navigating with the keyboard."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68189",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "section name update in drag and drop menu",
+        "evidence_source": "test_instructions: Verify that the title of navigation menu is 'Move Custom name'",
+        "details": "Manual verification by navigating through the drag and drop menu to ensure the section name updates correctly."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68167",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard navigation failure",
+        "evidence_source": "test_instructions: Verify that you can move between the options of the menu by pressing up and down keys on your keyboard",
+        "details": "Manual keyboard navigation was used to verify that the fix allows users to navigate between dropdown options using the keyboard."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Axe Accessibility browser extension",
+        "target_issue": "ARIA attribute errors",
+        "evidence_source": "test_instructions: Open the developer console and go to the axe tab, and then Analyze the page",
+        "details": "Axe was used to verify that the 'Elements must only use allowed ARIA attributes' error was resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68148",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "WCAG errors in HTML structure",
+        "evidence_source": "test_instructions: Visit https://validator.w3.org/nu/ and verify that you don't see any errors except the followings.",
+        "details": "The W3C Nu Validation Service was used to verify that the HTML structure issues were resolved, except for known issues fixed in other tickets."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68135",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "missing alt attributes and incorrect role values on images",
+        "evidence_source": "test_instructions: Verify that you don't see any of the following errors: Element img is missing required attribute alt. Bad value presentation for attribute role on element img",
+        "details": "The W3C Nu Validation Service was used to verify that the fixes for missing alt attributes and incorrect role values on images were successful."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68051",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "semantic issues with list elements",
+        "evidence_source": "description: Axe is reporting the following violation about the tab list: <li> elements must be contained in a <ul> or <ol>",
+        "details": "Axe was used to identify semantic issues with list elements in the tab list."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: make sure the Screen reader announces the name of the focused tab, whether the tab is activated, and the total number of visible tabs.",
+        "details": "Verification involved using a screen reader to ensure it announced the correct number of tabs and their status after the fix."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab focus",
+        "evidence_source": "test_instructions: After the 'Activities' tab panel is displayed, press 'Tab' and make sure the focus moves to the first item in the 'Activities' tab panel.",
+        "details": "Verification involved using keyboard navigation to ensure the focus moved correctly between tabs and tab panels after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68014",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "redundant alt text",
+        "evidence_source": "test_instructions: Inspect the preconfigured tool using an accessibility tool (e.g. axe, wave)",
+        "details": "Axe was used to verify that the fix for the redundant alt text issue was successful."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE",
+        "target_issue": "redundant alt text",
+        "evidence_source": "test_instructions: Inspect the preconfigured tool using an accessibility tool (e.g. axe, wave)",
+        "details": "WAVE was used to verify that the fix for the redundant alt text issue was successful."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67970",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "Orphaned form label warning",
+        "evidence_source": "test_instructions: Press the WAVE icon on your browser. Verify that you do not see any 'Orphaned form label' warning",
+        "details": "The WAVE browser extension was used to verify that the fix resolved the issue of orphaned form labels."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "Validation errors (stray end tag input, duplicate attribute id, etc.)",
+        "evidence_source": "test_instructions: Visit https://validator.w3.org/nu/ and verify that you don't see any of the following errors: Stray end tag input, Duplicate attribute id, etc.",
+        "details": "The W3C Nu Validation Service was used to verify that the HTML validation errors were resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67968",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Enable the screen reader and verify that the screen reader announces full week day names",
+        "details": "Screen reader was used to verify that full weekday names are announced correctly."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "orphaned and empty form labels",
+        "evidence_source": "test_instructions: Verify that you do not see any 'Orphaned form label' alert",
+        "details": "WAVE was used to verify that there are no orphaned or empty form labels after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67902",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "missing form label",
+        "evidence_source": "test_instructions: You'd need the WAVE browser extension for this test",
+        "details": "Used to verify that there are no 'Missing form label' or 'Empty form label' errors on the calendar page."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Enable the screen reader and verify that the screen reader announces the day link like 'Wednesday, 1 January events'",
+        "details": "Used to verify that the screen reader correctly announces the day link with events."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67901",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "No label for clear my choice option",
+        "evidence_source": "description: 2 errors were found using W3C Nu Validation Service and filtered to indicate WCAG errors only.",
+        "details": "The W3C Nu Validation Service was used to identify WCAG errors related to the lack of a label for the 'clear my choice' option."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "ChromeVox",
+        "target_issue": "Screen reader announcements",
+        "evidence_source": "test_instructions: You need to install and enable ChromeVox extension to test this bit.",
+        "details": "ChromeVox was used to verify that the screen reader narrates the question answers and that the 'clear my choice' option is accessible."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "Keyboard accessibility of 'clear my choice' option",
+        "evidence_source": "test_instructions: Use the tab key to navigate to the questions",
+        "details": "Keyboard navigation was used to verify that the 'clear my choice' option can be accessed and activated using the keyboard."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67881",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management and tab order",
+        "evidence_source": "test_instructions: Use your keyboard to tab to the messaging button, Hit enter to open the message drawer, Verify you can hit enter again to close the message drawer",
+        "details": "Verification involved using keyboard navigation to ensure the message drawer could be opened and closed, and that focus management was correct."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67876",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus management and scrolling to invalid form fields",
+        "evidence_source": "test_instructions: Verify that you are taken to the first invalid field (question name) - that means both browser window scroll and focus. Press tab a few times. Verify that you can move keyboard focus to below question text.",
+        "details": "The test instructions involve manually verifying that the focus is correctly managed and that the user is scrolled to the invalid form field when attempting to submit a form with errors."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67874",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus visibility",
+        "evidence_source": "test_instructions: Navigate to the following pages and use the tab key to navigate. When you tab to the different elements please check if: Buttons have a clear outline border with an inset white border. Links have a thick dark underline and a light blue background colour.",
+        "details": "Verification involved using the Tab key to ensure that all focusable elements had a visible outline, meeting the accessibility guidelines for focus visibility."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "color_contrast_check",
+        "target_issue": "color contrast",
+        "evidence_source": "comment_4: I have also darkened the focus colour in the default presets for boost and classic to make it more accessible. Since it is a rgba colour I used this site (https://contrast-ratio.com/#rgba%2817%2C119%2C209%2C.75%29-on-white) to check if it is AA Accessible.",
+        "details": "The developer used a color contrast checker to ensure that the focus color met the AA accessibility standards."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67865",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "Broken ARIA reference",
+        "evidence_source": "test_instructions: You'd need the WAVE browser extension for this test. Verify that you do not see any 'Broken ARIA reference' error",
+        "details": "The WAVE browser extension was used to verify that the fix for the broken ARIA reference issue was successful by checking for the absence of 'Broken ARIA reference' errors."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67863",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order",
+        "evidence_source": "test_instructions: On page load, use your tab key to navigate to the page",
+        "details": "Verification of the tab order to ensure it follows a logical sequence: Navbar > Nav drawer > Page content > Footer for Boost theme and Navbar > Header > Main content > Blocks left > Blocks right for Classic theme."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67862",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "empty heading",
+        "evidence_source": "test_instructions: Press the WAVE icon on your browser. On the WAVE panel, click on the \"Details\" tab. Confirm that there's no \"Empty heading\" error.",
+        "details": "The WAVE browser extension was used to verify that the fix removed the empty heading error."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67853",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "comment_8: If you are using a screen reader you hear a series of button states but are left with no idea what they are for.",
+        "details": "Testing was conducted to identify issues with screen reader announcements on the Notification Preferences page."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "color_contrast",
+        "target_issue": "insufficient color contrast",
+        "evidence_source": "comment_8: There is insufficient colour contrast in the buttons. This can easily be fixed with the following CSS.",
+        "details": "Testing identified insufficient color contrast in buttons, which was suggested to be fixed with CSS."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "keyboard accessibility",
+        "evidence_source": "comment_71: When accessing notification preferences the settings are not keyboard accessible - I can't use tab to reach checkboxes.",
+        "details": "Verification was conducted to ensure keyboard accessibility, specifically checking if settings could be accessed using the Tab key."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "comment_78: Also there is still an issue with screenreader when you change value browser reads same 'checkbox not check'.",
+        "details": "Verification was conducted to ensure screen reader correctly announces checkbox states when toggled."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67687",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "WCAG A and WCAG AA compliance",
+        "evidence_source": "description: The Axe tool has a JS API which lets us verify the WCAG compliance of pages at various points.",
+        "details": "The axe-core tool is used to verify that the pages meet WCAG A and AA compliance standards after fixes are applied."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Behat",
+        "target_issue": "WCAG compliance verification integration",
+        "evidence_source": "test_instructions: Re-initialise behat with the {{--axe}} flag and run behat on the new tests, using the correct tag.",
+        "details": "Behat tests are run with the axe-core integration to ensure that accessibility checks are performed during the testing process."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67684",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "invalid markup in nested <ul> elements",
+        "evidence_source": "test_instructions: Open the axe - Web accessibility testing tool and run the analyzer",
+        "details": "The axe tool was used to verify that the fix resolved the issue of nested <ul> elements not directly containing <li>, <script>, or <template> elements."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67663",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements",
+        "evidence_source": "test_instructions: Test on the following browser-screen reader combinations | IE 11, Microsft Edge | JAWS | Firefox | NVDA | Chrome | Chromevox | Safari | Voice Over",
+        "details": "Verification of screen reader announcements using various screen readers to ensure the fix works across different platforms."
+      },
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "focus order",
+        "evidence_source": "test_instructions: Tab through the forum grading UI. Confirm that the focus order is in the following order: Navigation header > Forum posts panel > Grading panel",
+        "details": "Verification of the correct focus order using keyboard navigation to ensure the fix addresses the focus management issue."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67577",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "keyboard_navigation",
+        "target_issue": "tab order",
+        "evidence_source": "test_instructions: Use the tab key on your keyboard to navigate the items in the top navbar and verify the tab order is search -> notification -> messages -> user dropdown",
+        "details": "Verification involved using the Tab key to ensure the tab order was corrected to match the expected sequence."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67544",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe-core",
+        "target_issue": "minor ARIA bugs",
+        "evidence_source": "test_instructions: Using Chrome, install the 'Axe' tool from https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd",
+        "details": "The Axe tool was used to verify that the fixes for the ARIA bugs were effective by confirming that only known issues remained."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67491",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "visual_inspection",
+        "target_issue": "text readability on dark background",
+        "evidence_source": "test_instructions: As user A, open the right 'messages' popover and acknowledge that: The little box right of the 'Contacts' icon has a clear text on dark background",
+        "details": "The verification involves manually checking the text readability against a dark background after changing the theme's primary color."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68444",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "screen_reader",
+        "target_issue": "screen reader announcements for calendar days and events",
+        "evidence_source": "test_instructions: You need a screen-reader to test this",
+        "details": "The test instructions specify using a screen reader to verify that the screen reader reads all days and announces the number of events on each day."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67899",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe extension",
+        "target_issue": "emoji picker button lacks discernible text",
+        "evidence_source": "test_instructions: Open the browser’s Developer Tools, navigate to the axe tab, and run an analysis on the page",
+        "details": "The axe extension was used to verify that the error 'Buttons must have discernible text' was not present for the emoji picker button."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-67969",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe extension",
+        "target_issue": "duplicate IDs in ARIA labels",
+        "evidence_source": "test_instructions: You'd need axe extension for this test for the browser being used.",
+        "details": "The axe extension was used to verify that the error 'IDs used in ARIA and labels must be unique' no longer appeared after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68312",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "WCAG parsing errors",
+        "evidence_source": "test_instructions: Visit https://validator.w3.org/nu/ and verify that you don't see any errors",
+        "details": "The W3C Nu Validation Service was used to verify that the WCAG parsing errors were resolved after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68343",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "W3C Nu Validation Service",
+        "target_issue": "WCAG parsing errors",
+        "evidence_source": "description: Error found using W3C Nu Validation Service and filtered to indicate WCAG errors only.",
+        "details": "The W3C Nu Validation Service was used to identify WCAG parsing errors in the gradebook single view."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "WAVE browser extension",
+        "target_issue": "Empty form label and multiple form labels errors",
+        "evidence_source": "test_instructions: Press the WAVE icon on your browser and verify that you do not see any 'Empty form label' error or 'Multiple form labels' error.",
+        "details": "The WAVE browser extension was used to verify that the 'Empty form label' and 'Multiple form labels' errors were resolved."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-68542",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "HTML inspection",
+        "target_issue": "use of <strong> instead of <b> for bold text",
+        "evidence_source": "test_instructions: Verify that you are now seeing <strong> tags instead of <b> tags",
+        "details": "The verification involved manually checking the HTML output in the Atto Editor to ensure the correct tags were used."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-69262",
+    "testing_methods": [
+      {
+        "method_type": "manual",
+        "tool_or_technique": "Nu HTML validator",
+        "target_issue": "duplicate element IDs",
+        "evidence_source": "test_instructions: Validate the HTML using the Nu HTML validator (https://validator.w3.org/nu/#textarea). Confirm that there are no \"{{Duplicate ID}}\" errors linked to the action menu items.",
+        "details": "The Nu HTML validator was used to confirm that the fix resolved the duplicate ID errors in the HTML source."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-70032",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML Validator",
+        "target_issue": "Invalid HTML structure with div inside label",
+        "evidence_source": "description: View the page source, copy it and paste it on Nu HTML Validator.",
+        "details": "Used to validate the HTML structure of the multi-choice question to identify errors related to div elements inside label tags."
+      },
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe",
+        "target_issue": "Accessibility violations related to radio button and label",
+        "evidence_source": "test_instructions: Run the axe tool on the quiz page with the multiple-choice question.",
+        "details": "Used to confirm that there are no accessibility violations related to the radio button and label of the answers after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-73386",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "axe DevTools",
+        "target_issue": "duplicate ID error",
+        "evidence_source": "test_instructions: Run axe DevTools on the page and confirm that there is no duplicate ID error related to \"{{mod_quiz_navblock_title}}\"",
+        "details": "The test instructions specified using axe DevTools to verify that the duplicate ID issue was resolved after the fix."
+      }
+    ]
+  },
+  {
+    "issue_key": "MDL-74808",
+    "testing_methods": [
+      {
+        "method_type": "automated",
+        "tool_or_technique": "Nu HTML Checker",
+        "target_issue": "HTML attribute errors and structure issues",
+        "evidence_source": "test_instructions: You will need to validate some parts of the code on Nu Html Checker (https://validator.w3.org/nu/#textarea)",
+        "details": "The Nu HTML Checker was used to verify that the fixes applied resolved the HTML validation errors initially identified."
+      }
+    ]
+  }
+]

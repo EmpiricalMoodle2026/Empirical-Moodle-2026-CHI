@@ -1,0 +1,1257 @@
+{
+  "Mediating Conflicting User Needs": [
+    {
+      "issue_key": "MDL-74800",
+      "source_text": "Moving the title to the icon is not advisable as the icon may have a smaller area than the span/button itself. So sighted users would need to exactly hover over the icon before the title tooltip gets shown. ",
+      "original_open_code": "HARM_USABILITY_OF_SIGHTED_USERS"
+    },
+    {
+      "issue_key": "MDL-69116",
+      "source_text": "A user using a screen reader can also still navigate to \"Clear my choice\" when it is hidden. We should also hide this from the screen reader when it is hidden.",
+      "original_open_code": "VISUALLY_HIDDEN_BUT_FOCUSABLE_ELEMENT"
+    },
+    {
+      "issue_key": "MDL-72206",
+      "source_text": "Do not visually hide the previous course information when navigating to the next course I can still access the previous course information using screen reader.",
+      "original_open_code": "VISUALLY_HIDDEN_BUT_SCREEN_READER_ACCESSIBLE_ELEMENT"
+    },
+    {
+      "issue_key": "MDL-71656",
+      "source_text": "Autosave using aria-live=\"assertive\" interrupts screen reader flow it announces so aggressive. \"polite\" can be missed by some users however. Any other thoughts on this?",
+      "original_open_code": "ANNOUNCEMENT_URGENCY_TRADEOFF"
+    },
+    {
+      "issue_key": "MDL-71301",
+      "source_text": "Since the subquestion text can become quite long, adding the question text as part of the label for the answer select element might not be ideal as labels need to be concise.",
+      "original_open_code": "SCREEN_READER_ANNOUNCEMENT_TOO_LONG"
+    },
+    {
+      "issue_key": "MDL-69841",
+      "source_text": "The wrapping of the review option sections doesn't work properly as a result of this change.",
+      "original_open_code": "UI_LAYOUT_PROBLEMS"
+    },
+    {
+      "issue_key": "MDL-69395",
+      "source_text": "Border color is on strike through text using Classic theme when on the developer mode of Chrome browser.",
+      "original_open_code": "BORDER_COLOR_ISSUE_NOT_APPLIED_TO_CLASSIC_THEME"
+    },
+    {
+      "issue_key": "MDL-69111",
+      "source_text": "The problem though is that on bigger viewports, the grading panel does not scroll anymore.",
+      "original_open_code": "SCROLLING_ISSUE_ON_LARGE_VIEWPORTS"
+    },
+    {
+      "issue_key": "MDL-68889",
+      "source_text": "With the patch incorporated, the right border of the card appears cut off when viewing on a 230*921 viewport.",
+      "original_open_code": "UI_LAYOUT_PROBLEMS"
+    },
+    {
+      "issue_key": "MDL-72523",
+      "source_text": "Enforcing a maximum-contrast palette across all themes improves legibility for some users but for many sighted users prolonged use produces glare and eye strain. Perhaps provide a 'High contrast' toggle?",
+      "original_open_code": "GLOBAL_HIGH_CONTRAST_GLARE_RISK"
+    },
+    {
+      "issue_key": "MDL-70288",
+      "source_text": "You tightened the modal focus trap so screen reader users can’t escape which is good but the scroll lock means I can’t reference the page behind or copy text into the dialog, which slows review workflows.",
+      "original_open_code": "MODAL_SCROLL_LOCK_BLOCKS_REFERENCE"
+    },
+        {
+      "issue_key": "MDL-82677",
+      "source_text": "it will break 100% of themes where the page background colour doesn't match the headder colour it is bad for usability",
+      "original_open_code": "THEME_INCOMPATIBILITY_USABILITY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-79288",
+      "source_text": "However, it introduces a significant change in the UI and we should not proceed with this for the sake of ux/usability.",
+      "original_open_code": "UI_CHANGE_USABILITY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-79056",
+      "source_text": "I spotted a couple differences between the unpatched and patched pages. accordion header, last row background",
+      "original_open_code": "DIFFERENCE_BETWEEN_PATCHED_AND_UNPATCHED_CODE"
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "Adding a heading in empty block regions makes sense for screen reader navigation, but it adds unnecessary visual noise for sighted users. I don't think we need to add a heading for the case where the block region does not have any blocks to show. It should be 'sr-only' if we do add it.",
+      "original_open_code": "UNNECESSARY_HEADING_FOR_EMPTY_BLOCK_REGION"
+    },
+    {
+      "issue_key": "MDL-68299",
+      "source_text": "The nav header moves up and out of the view along with the rest of the page although I can still access it using NVDA, it's bad for sighted users.",
+      "original_open_code": "NAV_DRAWER_REFLOW_ISSUE_FOR_SIGHTED_USERS"
+    },
+    {
+      "issue_key": "MDL-72896",
+      "source_text": "as this change will affect tables created through html_writer, it is quite a risky change",
+      "original_open_code": "RISKY_CHANGE_FOR_STABLE_BRANCHES"
+    },
+    {
+      "issue_key": "MDL-71674",
+      "source_text": "This is not how we show error messages in Moodle forms. IF we want to change this, then this needs to be changed in all forms (IE the mform as well), and not just the Atto dialogues. Therefore, I'd say that showing error message next to the field that has error is fine in Atto",
+      "original_open_code": "ERROR_MESSAGE_DISPLAY_INCONSISTENCY"
+    },
+    {
+      "issue_key": "MDL-68299",
+      "source_text": "The question list in the quiz editing UI is broken, and there is horizontal scrolling.",
+      "original_open_code": "UI_REFLOW_ISSUE_REQUIRE_HORIZONTAL_SCROLLING"
+    },
+    {
+      "issue_key": "MDL-67874",
+      "source_text": "After increasing focus contrast for keyboard visibility, some links pick up a different style than buttons and menus. Users might read them as different affordances. We should unify focus tokens across components.",
+      "original_open_code": "FOCUS_CONTRAST_VS_VISUAL_COHERENCE"
+    }
+  ],
+  "Ambiguity in Defining Success": [
+    {
+      "issue_key": "MDL-80279",
+      "source_text": "I noticed some inconsistencies of the announcement... better to use an approach that will work consistently with different screen readers",
+      "original_open_code": "SCREEN_READER_INCONSISTENCY"
+    },
+    {
+      "issue_key": "MDL-80192",
+      "source_text": "\"Filters\" does not seem to give much information about the fieldset containing the \"Apply\" and \"Reset all\" buttons.",
+      "original_open_code": "FORM_LABEL_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-79007",
+      "source_text": "I tested on VoiceOver, NVDA, and JAWS, but I cannot hear the name of the new month being mentioned when the calendar gets reloaded. ",
+      "original_open_code": "SCREEN_READER_ANNOUNCEMENT_SUGGESTION"
+    },
+    {
+      "issue_key": "MDL-76849",
+      "source_text": "That is a horrible hack... What we need here is an extra bit of information - and 'option' if you like - about how the question is *displayed*.",
+      "original_open_code": "ACCESSIBILITY_LABEL_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "I also think we can tidy up the content name cell for screen readers by: removing the title attribute for the content name link as it's redundant and the same as the link text. I also feel like the thumbnail is redundant and should only be set as decorative (e.g. remove role=img and aria-label).",
+      "original_open_code": "TIDY_UP_SCREEN_READER_ANNOUNCEMENTS"
+    },
+    {
+      "issue_key": "MDL-80469",
+      "source_text": "Could you please take a look and find a better way to add this legend, even though the current implementation is acceptable.",
+      "original_open_code": "IMPROPER_LEGEND_IMPLEMENTATION"
+    },
+    {
+      "issue_key": "MDL-72669",
+      "source_text": "I don't actually see how a non-breaking space helps screen-readers, or, indeed, anyone.",
+      "original_open_code": "HTML_VALIDATOR_WORKAROUND_QUESTIONED"
+    },
+    {
+      "issue_key": "MDL-71656",
+      "source_text": "The colour labels at the moment are formatted like 'White background colour #FFFFFF selected'. They are long and contain some redundant information.",
+      "original_open_code": "ACCESSIBILITY_LABELS_TOO_LONG"
+    },
+    {
+      "issue_key": "MDL-71373",
+      "source_text": "I think I understand why you use 'previous' and 'next' strings because the previous aria-label values were 'Previous' and 'Next', but do you think will be worthy to change to 'previouspage' and 'nextpage'",
+      "original_open_code": "STRING_REFINMENT_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-71301",
+      "source_text": "I think the lable should be 'Blank N', not 'Answer N'.",
+      "original_open_code": "LABEL_NAMING_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "I disagree with the approach taken here on this issue... I think that we should provide a clearer title for the page.",
+      "original_open_code": "DIFFERENT_A11Y_APPROACH_SUGGESTED"
+    },
+    {
+      "issue_key": "MDL-69422",
+      "source_text": "I just have a minor suggestion for how to display the description of fields. It might not be clear enough that the field type and the field description are 2 different pieces of data.",
+      "original_open_code": "FIELD_DESCRIPTION_DISPLAY_IMPROVEMENT"
+    }
+  ],
+  "Specialized, Multi-layered Knowledge": [
+    {
+      "issue_key": "MDL-79347",
+      "source_text": "this has affected basically every page of some of our sites with no warning",
+      "original_open_code": "GLOBAL_CONTRAST_ISSUE"
+    },
+    {
+      "issue_key": "MDL-81110",
+      "source_text": "when editing mode is turned off, the first focusable element when pressing Tab is the secondary navigation, which is obscured",
+      "original_open_code": "WCAG_FOCUS_MANAGEMENT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-80805",
+      "source_text": "using the {{required}} attribute means that the default browser validation will also be triggered",
+      "original_open_code": "REQUIRED_ATTRIBUTE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-80469",
+      "source_text": "I tested on 403 but found out that the legend 'Form actions' was not found in the create course form page.",
+      "original_open_code": "LEGEND_MISSING_IN_FORM"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "Should the icons and button names be flipped for RTL languages... contrast ratio requirement for non-text elements.",
+      "original_open_code": "RTL_LANGUAGE_SUPPORT_AND_CONTRAST_ISSUES"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "The move-up/down buttons do not make sense out of context. For example, when a keyboard-only user who uses a screen reader tabs through the question, they'll only hear 'Move up' or 'Move down'.",
+      "original_open_code": "INSUFFICIENT_BUTTON_LABELS"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "The grip icons seem to have an insufficient contrast ratio against the white background.",
+      "original_open_code": "CONTRAST_RATIO_ISSUES"
+    },
+    {
+      "issue_key": "MDL-80197",
+      "source_text": "I'd like to get the opinion of []jpataleta], particularly on the {{tabIndex=\"-1\"}} attribute",
+      "original_open_code": "ARIA_HIDDEN_TABINDEX_ISSUE"
+    },
+    {
+      "issue_key": "MDL-80192",
+      "source_text": "The remaining task is adding a legend/label to the submit-cancel button group.",
+      "original_open_code": "FIELDSET_LEGEND_ISSUE"
+    },
+    {
+      "issue_key": "MDL-79288",
+      "source_text": "With a lighter background colour, the contrast issue of the course item's contents against the background is now fixed. However, the lighter background will now have a poorer contrast ratio against the page's white background.",
+      "original_open_code": "CONTRAST_ISSUE_IN_STABLE_BRANCHES"
+    },
+    {
+      "issue_key": "MDL-79276",
+      "source_text": "validate the source code of the test script with and the 'Make test course' with https://validator.w3.org/ I see an error related to unclosed elements",
+      "original_open_code": "HTML_VALIDATION_ERRORS"
+    },
+    {
+      "issue_key": "MDL-79059",
+      "source_text": "I changed the approach of using aria-label to using aria-labelledby.This is because we're likely to encounter various double-escaping issues, etc. when the preset name is in an aria-label attribute. ",
+      "original_open_code": "ARIA_LABEL_ISSUE"
+    },
+    {
+      "issue_key": "MDL-79057",
+      "source_text": "There is a Validation error when the source code of 401 is checked by the Nu HTML Validator",
+      "original_open_code": "VALIDATION_ERROR_IN_SOURCE_CODE"
+    },
+    {
+      "issue_key": "MDL-79056",
+      "source_text": "what should the 'header' attribute reference? Should it be the first cell in the row, which you have done?",
+      "original_open_code": "HEADER_ATTRIBUTE_REFERENCE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-79007",
+      "source_text": "I think it needs more work... I don't think we should assign an alert role for the popover's contents. The alert role is for important, and usually time-sensitive, information. The alert is a type of status processed as an atomic live region.",
+      "original_open_code": "ALERT_ROLE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-78874",
+      "source_text": "When is it ever correct to add a <label> to a button in HTML? Hint: never.",
+      "original_open_code": "HTML_STANDARD_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76849",
+      "source_text": "you can't do {{$questionnumber . get_string('selectone', 'qtype_truefalse')}}",
+      "original_open_code": "LANGUAGE_STRING_CONCATENATION"
+    },
+    {
+      "issue_key": "MDL-76597",
+      "source_text": "There were some lang strings missing on stable_400",
+      "original_open_code": "LANG_STRINGS_MISSING"
+    },
+    {
+      "issue_key": "MDL-76597",
+      "source_text": "There is an accessibility error (serious) detected on that same page. It is caused by the <li> item having role=region assigned to it. Is the role label necessary in this case?",
+      "original_open_code": "INCORRECT_ARIA_ROLE"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "I agree with @Andrew Lyons that the layout of the current drawers has several collaterals damages that should be fixed: It breaks the keyboard navigation",
+      "original_open_code": "KEYBOARD_NAVIGATION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "The 'Skip XXX block' on the left hand side of the page is now displayed on top of the nav bar but not by using absolute positioning.",
+      "original_open_code": "ACCESSIBILITY_CONCERNS_WITH_SKIP_LINK"
+    },
+    {
+      "issue_key": "MDL-75762",
+      "source_text": "On RTL, the scrollbar remains on the right side of the browser.",
+      "original_open_code": "RTL_ISSUE"
+    },
+    {
+      "issue_key": "MDL-74815",
+      "source_text": "Those expand/collapse icons does not have enough color contrast because it's still using our svg icons instead of more modern FA, and to make things even more complicated, those are controlled by this background-image css property",
+      "original_open_code": "SVG_ICON_CONTRAST_ISSUE"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "Jun also commented that adding an aria-label for a hidden input doesn't seem correct ",
+      "original_open_code": "INCORRECT_ARIA_LABEL_FOR_HIDDEN_INPUT"
+    },
+    {
+      "issue_key": "MDL-74813",
+      "source_text": "The \"{{.text-secondary}}\" class's contrast against a white background is very low (1:49:1) and does not meet the 3:1 requirement for non-text contrast",
+      "original_open_code": "CONTRAST_TOO_LOW"
+    },
+    {
+      "issue_key": "MDL-74800",
+      "source_text": "I'm afraid we can't simply assign a role of menu to core/action_menu. Action menus can be displayed as a menubar (menu items listed side by side) or as a dropdown menu or as a combination of both.",
+      "original_open_code": "ARIA_ROLE_ACTION_MENU_ISSUE"
+    },
+    {
+      "issue_key": "MDL-73584",
+      "source_text": "In Moodle 3.11, the user menu in the navbar seems a good candidate to keep the menubar role. What do you think? Probably that menu is not really an action one. After removing the 'menubar' role, a new 'Certain ARIA roles must be contained by particular parents' comes up. The action elements in the categories list have the 'menuitem' role, which requires a parent element with a role like 'menu', 'menubar', 'group'",
+      "original_open_code": "ARIA_ROLE_ASSIGNMENT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72990",
+      "source_text": "I did a bit of research and aparently alt and caption have different purposes. This makes sense to me and I guess that's why it is a separated field Image caption on the badge form",
+      "original_open_code": "IMAGE_ALT_TEXT_CAPTION_DIFFERENCE"
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "it's recommended to have a 'caption' (e.g. via aria-label) when the content bank is displayed in table mode.",
+      "original_open_code": "ARIA_ATTRIBUTES_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "I think that it would be better to set aria-hidden=true for the default sort icons. But if I hear the word 'Sort' attached to the column name for columns that are not sorted, it does not quite make sense and feels confusing.",
+      "original_open_code": "AIRA_HIDDEN_USAGE_SUGGESTED"
+    },
+    {
+      "issue_key": "MDL-72687",
+      "source_text": "'alt' is not an appropriate attribute for <a> tags. I think the report only mentioned the term 'alt' because the previous/next icons are being treated as images.",
+      "original_open_code": "ALT_ATTRIBUTE_MISUSE"
+    },
+    {
+      "issue_key": "MDL-72687",
+      "source_text": "With the <ul> tag serving as a menu, the <li> elements containing the menu items have become 'invalid' as list item elements need to belong in a list.",
+      "original_open_code": "WCAG_INFO_AND_RELATIONSHIPS"
+    },
+    {
+      "issue_key": "MDL-72687",
+      "source_text": "The select element is being enhanced to become an autocomplete element. So in order for the autocomplete element to be properly labelled when it's rendered, we need a label associated with the plain select element instead of an aria-label.",
+      "original_open_code": "WCAG_MISSING_INPUT_LABEL"
+    },
+    {
+      "issue_key": "MDL-72672",
+      "source_text": "The id of all the checkboxes was equal to 'answer[0]' there.",
+      "original_open_code": "DUPLICATE_ID_ATTRIBUTES"
+    },
+    {
+      "issue_key": "MDL-72668",
+      "source_text": "should an aria-label be applied to the tree? Screen readers only announce it as 'tree' so it might make sense to add a proper label for it.",
+      "original_open_code": "ARIA_LABEL_ADDITION"
+    },
+    {
+      "issue_key": "MDL-72668",
+      "source_text": "I noticed that when I pressed enter on a folder, it triggers a file download. e.g. I have a structure of 'Folder 1 > Sub-folder 1 > File.txt', when I press enter on Folder 1, File.txt gets downloaded.",
+      "original_open_code": "WCAG_ON_INPUT_VIOLATION"
+    },
+    {
+      "issue_key": "MDL-72668",
+      "source_text": "Checking out the Figures sheet, I noticed a screenshot about missing alt text in the Latest badges block",
+      "original_open_code": "MISSING_ALT_TEXT"
+    },
+    {
+      "issue_key": "MDL-72667",
+      "source_text": "So I recommend that we add a visual indicator that the answer is correct. e.g. a check icon at the end of the correct answer text with an alt text (title/aria-label) of 'Correct answer'.",
+      "original_open_code": "WCAG_ERROR_INDICATION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72667",
+      "source_text": "nd since by default, the primary colour is blue, which is also used by links, we need to make sure that the colour of links is distinguishable against normal text.",
+      "original_open_code": "COLOR_CONTRAST_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72667",
+      "source_text": "In addition to this, we'll need to make sure that the focus outline is visible as well to keyboard users know which item is currently focused on.",
+      "original_open_code": "WCAG_FOCUS_VISIBLE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72569",
+      "source_text": "When the modal is closed, focus is moved to the body. It should be returned to the item which opened the modal, otherwise this can confuse the user as they are now 'lost' in the document and the screenreader loses context.",
+      "original_open_code": "WCAG_FOCUS_ORDER_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "Keyboard navigation in the primary navigation menu doesn't work in RTL.",
+      "original_open_code": "KEYBOARD_NAVIGATION_BROKEN_RTL"
+    },
+    {
+      "issue_key": "MDL-72481",
+      "source_text": "All the links with class '.nav-link' in the primary menu now have an aria-current=\"page\" attribute. I think only the active item should have that attribute",
+      "original_open_code": "ARIA_ATTRIBUTE_INCORRECT"
+    },
+    {
+      "issue_key": "MDL-72412",
+      "source_text": "The title attribute should be on the button, not on the icon.",
+      "original_open_code": "TITLE_ATTRIBUTE_PLACEMENT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72412",
+      "source_text": "It would also be semantically wrong. It is the button that shows the footer, not the icon.",
+      "original_open_code": "HTML_SEMANTICS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72263",
+      "source_text": "However, the course index is loaded after the page is ready and when \"core/tree\" is applied, it adds tabindex=\"0\" to the first section which violates an wcag143 accessibility rule.",
+      "original_open_code": "INCORRECT_TABINDEX_USAGE"
+    },
+    {
+      "issue_key": "MDL-71674",
+      "source_text": "There are other accessibility issues in the \"insert image\" dialogs that are not directly reported in the current issue, but they are related and easy to fix. The \"Alignment\" label in the \"insert image\" dialog has a wrong \"for\" atribute",
+      "original_open_code": "WRONG_FOR_ATTRIBUTE"
+    },
+    {
+      "issue_key": "MDL-71674",
+      "source_text": "Also, form fields can not have multiple label elements because multiple label elements is not widely supported in assistive technologies.",
+      "original_open_code": "MULTIPLE_LABELS_FOR_ONE_FIELD"
+    },
+    {
+      "issue_key": "MDL-71674",
+      "source_text": "There are accessibility issues in this dialogue. There are still elements with duplicate IDs.",
+      "original_open_code": "ACCESSIBILITY_ISSUES_IN_DIALOGUE_DUPLICATE_IDS"
+    },
+    {
+      "issue_key": "MDL-71672",
+      "source_text": "Why include \"{{not([tabindex=0])}}\"? Won't this exclude interactive elements with tabindex=0?",
+      "original_open_code": "TABINDEX_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71672",
+      "source_text": "dialog is being read as something like \"xx Close\" because the close button is being read as part of the dialog's label.",
+      "original_open_code": "DIALOG_HEADER_MARKUP_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71602",
+      "source_text": "Is aria-lable on the ul really the best approach to labeling them? What about an appropriate heading instead? (Which could even be visible to everyone).",
+      "original_open_code": "INCORRECT_ARIA_LABEL_USAGE_ON_UL"
+    },
+    {
+      "issue_key": "MDL-71373",
+      "source_text": "introduction of the aria-label is incorrect - especially given it matches the button text.",
+      "original_open_code": "ARIA_LABEL_USAGE_INCORRECT"
+    },
+    {
+      "issue_key": "MDL-71305",
+      "source_text": "Thank you for removing the aria-atomic, aria-relevant and aria-live attributes in renderer.php. Those attributes are used in ARIA live regions. we should not re-add them in js.",
+      "original_open_code": "ARIA_ATTRIBUTE_REIMPLEMENTATION"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "I'm further failing this because it is inaccessible!  We must not convery information through colour alone, and we should not introduce new technical debt with the approach of \"we'll fix it tomorrow\", or \"someone else's problem\".",
+      "original_open_code": "WCAG_USE_OF_COLOUR_VIOLATION"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "Screen-reader users do not see/hear anything about a grade being a pass or fail grade",
+      "original_open_code": "SCREEN_READER_ANNOUNCEMENT_MISSING"
+    },
+    {
+      "issue_key": "MDL-70874",
+      "source_text": "Colour-blind users do not use screen readers. So using aria attributes are not going to help them at all. They also need to be catered here.",
+      "original_open_code": "COLOUR_BLIND_USERS_NOT_CONSIDERED"
+    },
+    {
+      "issue_key": "MDL-70846",
+      "source_text": "we are currently setting {{role=\"treeitem\"}} on {{<p>}} tag instead of {{<li>}}, moving {{role}} attribute to {{<li>}} fixes it",
+      "original_open_code": "INCORRECT_ROLE_ATTRIBUTE_USAGE"
+    },
+    {
+      "issue_key": "MDL-70846",
+      "source_text": "treeview {{aria-labelledby}} errors, two causes: settings block doesn't set an id on some labels settings and navigation blocks generate duplicated IDs on tree nodes, we could add a suffix to HTML id to fix it, but it's a bit risky to update all ids",
+      "original_open_code": "TREEVIEW_ARIA_LABELLED_BY_ERRORS"
+    },
+    {
+      "issue_key": "MDL-70721",
+      "source_text": "Marking the issue as failed as there are some errors detected in Test 2 and Test 8.",
+      "original_open_code": "HTML_VALIDATION_ERRORS"
+    },
+    {
+      "issue_key": "MDL-70172",
+      "source_text": "a new alert appears, 'Redundant alt text', as the alt text in the logo image is the same as the adjacent heading.",
+      "original_open_code": "REDUNDANT_ALT_TEXT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-70169",
+      "source_text": "It looks like there's a h2 that also needs updating to h1 in the logourl section. In the hasidentityproviders section, there's a h3 which looks like it needs to be updated to h2.",
+      "original_open_code": "HEADING_STRUCTURE_BROKEN"
+    },
+    {
+      "issue_key": "MDL-69474",
+      "source_text": "Axe will now throw a warning about missing alt text on the image. You're right about the warning, I'm going to put this back to dev - at a closer look of the code, if $alt is empty then it doesn't output an alt tag at all. This is incorrect, it should output alt=''.",
+      "original_open_code": "OUTPUT_ALT_TAG_FOR_DECORATIVE_IMAGES"
+    },
+    {
+      "issue_key": "MDL-69392",
+      "source_text": "Axe raises colour contrast issues in the select tag of the multichoice question.",
+      "original_open_code": "CONTRAST_ISSUES_IN_CLASSIC_THEME"
+    },
+    {
+      "issue_key": "MDL-69390",
+      "source_text": "\"{{aria-current}}\" being duplicated in the dropdown items in the template.",
+      "original_open_code": "ARIA_CURRENT_DUPLICATION"
+    },
+    {
+      "issue_key": "MDL-69301",
+      "source_text": "Failing this issue as it is causing behat failures related to keyboard focus on the user menu",
+      "original_open_code": "KEYBOARD_FOCUS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-69116",
+      "source_text": "changing the class _sr-only_ to _d-none_ makes the multichoice questions (radio button) not keyboard accessible",
+      "original_open_code": "KEYBOARD_ACCESSIBILITY_CONCERN"
+    },
+    {
+      "issue_key": "MDL-69114",
+      "source_text": "This will fail though for texts that use text-info combined with links, as demonstrated by the test page resource...",
+      "original_open_code": "LINK_COLOR_CONTRAST_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68674",
+      "source_text": "there are two block regions that have the heading 'Blocks'. This might confuse screen reader users.",
+      "original_open_code": "DUPLICATE_HEADINGS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68390",
+      "source_text": "I'm still seeing the \"{{ARIA hidden element must not contain focusable elements}}\" error",
+      "original_open_code": "ARIA_HIDDEN_ELEMENTS_CONTAIN_FOCUSABLE_ELEMENTS"
+    },
+    {
+      "issue_key": "MDL-68390",
+      "source_text": "the \"aria-hidden elements do not contain focusable elements\" is still displayed on axe",
+      "original_open_code": "ARIA_HIDDEN_ELEMENTS_CONTAIN_FOCUSABLE_ELEMENTS"
+    },
+    {
+      "issue_key": "MDL-68353",
+      "source_text": "could you please remove the size property for the element-advcheckbox-inline.mustache template as we discussed because the size property is not valid for a checkbox.",
+      "original_open_code": "SIZE_PROPERTY_NOT_VALID_FOR_CHECKBOX"
+    },
+    {
+      "issue_key": "MDL-68344",
+      "source_text": "A standard {{div}} is not focusable, and we should not change the {{widget-focusafterclose}} module to believe that it is.",
+      "original_open_code": "DIV_IS_NOT_FOCUSABLE"
+    },
+    {
+      "issue_key": "MDL-68189",
+      "source_text": "I did notice the aria-labelledby did not match the current section. I think you need to replace $section->id with $section->section. when looking at the DOM it looks like a mistake.",
+      "original_open_code": "ARIA_LABEL_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68167",
+      "source_text": "I'm getting an invalid ARIA attribute related to the aria-activedescendant.",
+      "original_open_code": "ARIA_ATTRIBUTE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68167",
+      "source_text": "A <span> is not allowed as a child element of <ul>. Please move this out of the <ul> tag.",
+      "original_open_code": "HTML_SEMANTIC_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68051",
+      "source_text": "We should not change the list item to a set of divs without good reason, and if we are to do so, we should ensure that the correct WCAG roles are present.",
+      "original_open_code": "HTML_SEMANTIC_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68051",
+      "source_text": "WRT aria-hidden, it should be either be {{aria-hidden=\"true\"}} or not set  instead of setting it to 'false'.",
+      "original_open_code": "ARIA_ATTRIBUTE_INCORRECT"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "The aria-label should be added to the checkboxes. Remember to verify the new UI is accessible",
+      "original_open_code": "ARIA_LABEL_ASSIGNMENT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-67663",
+      "source_text": "It's not clear to me why you added a separate region here... I'm thinking why not add {{aria-live=\"polite\"}} to the existing region",
+      "original_open_code": "ARIA_ATTRIBUTE_ISSUES"
+    },
+    {
+      "issue_key": "MDL-67544",
+      "source_text": "in the grader interface there are still a couple of aria-role=\"assertive\" typo occurrences",
+      "original_open_code": "ARIA_ROLE_TYPO_ISSUE"
+    },
+    {
+      "issue_key": "MDL-67544",
+      "source_text": "\"IDs used in ARIA and labels must be unique\" is reflected after changing the display mode",
+      "original_open_code": "ARIA_ID_UNIQUENESS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68444",
+      "source_text": "We need to add \"aria-hidden=\"true\"\" to the blank cells so screen reader users won't have to navigate to these as they might cause confusion.",
+      "original_open_code": "ARIA_HIDDEN_ATTRIBUTE_SUGGESTION"
+    },
+    {
+      "issue_key": "MDL-68312",
+      "source_text": "I'm still seeing failures via the validator. An img element must have an alt attribute...",
+      "original_open_code": "VALIDATOR_ISSUES"
+    },
+    {
+      "issue_key": "MDL-69262",
+      "source_text": "when I tested on 3.8, I was seeing duplicates, even with the uniqids",
+      "original_open_code": "DUPLICATE_ELEMENT_IDS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-70032",
+      "source_text": "Error: Element p not allowed as child of element span in this context.",
+      "original_open_code": "HTML_VALIDATION_ERRORS"
+    },
+    {
+      "issue_key": "MDL-74808",
+      "source_text": "It is not allowed to have a 'div' element inside a 'label' element.",
+      "original_open_code": "HTML_STRUCTURE_ISSUE"
+    }
+  ],
+  "Regressions and Side Effects": [
+      {
+        "issue_key": "MDL-82677",
+        "source_text": "it will break 100% of themes where the page background colour doesn't match the headder colour",
+        "original_open_code": "THEME_INCOMPATIBILITY"
+      },
+      {
+        "issue_key": "MDL-80805",
+        "source_text": "Hey [~quen], it seems that these changes are causing Behat failures.",
+        "original_open_code": "JAVASCRIPT_BEHAT_FAILURES"
+      },
+      {
+        "issue_key": "MDL-79056",
+        "source_text": "Looks like that master change is also breaking aria.js, as I see console errors when filtering by groups in the gradebook.",
+        "original_open_code": "ARIA_JS_CONSOLE_ERROR"
+      },
+      {
+        "issue_key": "MDL-80197",
+        "source_text": "we need to make the same/similar change in a couple of other places too because of a recent fix (can you also ensure they are covered by manual testing please?):",
+        "original_open_code": "SIMILAR_CHANGES_IN_OTHER_FILES_REGRESSION"
+      },
+      {
+        "issue_key": "MDL-79060",
+        "source_text": "there are two other templates suffering the same issue because of regression.",
+        "original_open_code": "ADDITIONAL_TEMPLATE_ISSUES_REGRESSION"
+      },
+      {
+        "issue_key": "MDL-78550",
+        "source_text": "I found the following on the same page (although not specific to Gradebook, probably affects all course page when 'Download course content' is enabled)",
+        "original_open_code": "ADDITIONAL_ISSUES_IDENTIFIED_NO_SPACE_BETWEEN_ATTRIBUTES"
+      },
+      {
+        "issue_key": "MDL-72687",
+        "source_text": "I noticed these issues while running WAVE and axe DevTools after applying the patch.",
+        "original_open_code": "ADDITIONAL_ISSUES_FOUND_BY_CHECKERS_AFTER_PATCH"
+      },
+      {
+        "issue_key": "MDL-72481",
+        "source_text": "note these failures with behat: Boost and Classic. In addition, keyboard navigation in the primary navigation menu doesn't work in RTL.",
+        "original_open_code": "INTEGRATION_CONFLICTS"
+      },
+      {
+        "issue_key": "MDL-71671",
+        "source_text": "This approach makes sense to me. However, we also need to address the menu generated by the table button. To reproduce:",
+        "original_open_code": "ADDITIONAL_UI_COMPONENTS_REQUIRED"
+      },
+      {
+        "issue_key": "MDL-71385",
+        "source_text": "I got here both 310_STABLE and master conflicting. And, curiously, 311_STABLE (in the middle), merged ok.",
+        "original_open_code": "INTEGRATION_CONFLICTS"
+      },
+      {
+        "issue_key": "MDL-69637",
+        "source_text": "However it does not apply anymore to 4.0 as the new course templates are not compatible with that topics/weeks format js.",
+        "original_open_code": "COMPATIBILITY_ISSUE_WITH_NEW_COURSE_TEMPLATES"
+      },
+      {
+        "issue_key": "MDL-69474",
+        "source_text": "Expected behaviour: the profile image is a link to the profile page. Current behaviour (with the patch): the profile image doesn't link to the profile page.",
+        "original_open_code": "LINK_BEHAVIOR_ISSUE"
+      },
+      {
+        "issue_key": "MDL-69390",
+        "source_text": "Should the dropdown for the autocomplete elements be fixed as well, we need to keep the behavior change as previous verions?",
+        "original_open_code": "DROPDOWN_FOR_AUTOCOMPLETE_ELEMENTS_SHOULD_ALSO_BE_FIXED_REGRESSION"
+      },
+      {
+        "issue_key": "MDL-69301",
+        "source_text": "As we dropped support for IE 11 in 3.10, that branch and above can be changed to use event.key instead of event.which",
+        "original_open_code": "DEPRECATED_BROWSER_SUPPORT_ISSUE"
+      },
+      {
+        "issue_key": "MDL-68541",
+        "source_text": "CiBoT now passing, I think the previous run was caught by a big upgrade we have performed @ CIs.",
+        "original_open_code": "INTEGRATION_CONFLICTS"
+      },
+      {
+        "issue_key": "MDL-75762",
+        "source_text": "And the 'Skip Recently accessed courses' is not displayed in safari, though i am not sure if it's because i am using browser stack",
+        "original_open_code": "TEXT_NOT_DISPLAYED_IN_SAFARI"
+      },
+      {
+        "issue_key": "MDL-74822",
+        "source_text": "Reload the page again. The browser seems to hang",
+        "original_open_code": "BROWSER_PERFORMANCE_ISSUE"
+      },
+      {
+      "issue_key": "MDL-74529",
+      "source_text": "After merging the contrast fix, NVDA now announces each toast twice due to duplicate live regions; this did not occur on 4.3.",
+      "original_open_code": "ASSISTIVE_TECH_DOUBLE_ANNOUNCEMENT_REGRESSION"
+      },
+      {
+        "issue_key": "MDL-70829",
+        "source_text": "But when I click 'Add to contacts', it changes the text to 'Remove from contacts' and it does show twice.",
+        "original_open_code": "TEXT_RENDERING_TWICE_ISSUE"
+      },
+      {
+        "issue_key": "MDL-70792",
+        "source_text": "Actual result: From now on, the first element will be focused all the time, no matter what you are opening the More menu by mouse or keyboard.",
+        "original_open_code": "FOCUS_BEHAVIOR_BUG"
+      },
+      {
+        "issue_key": "MDL-68148",
+        "source_text": "My main concern here is the introduction of a new custom event (accessibleChange), and the potential for any breakage due to change in behaviour.",
+        "original_open_code": "INTEGRATION_CONCERNS_NEW_CUSTOM_EVENT"
+      },
+      {
+        "issue_key": "MDL-67902",
+        "source_text": "it only picked up the second event I created and it didnt seem to know it was one of two events",
+        "original_open_code": "EVENT_NOT_PICKED_UP"
+      },
+      {
+        "issue_key": "MDL-67876",
+        "source_text": "Uncaught TypeError: Cannot read property 'closest' of null. This has cased the page to not load properly.",
+        "original_open_code": "JS_ERROR_UNDEFINED_ELEMENTS"
+      },
+      {
+        "issue_key": "MDL-67874",
+        "source_text": "It seems that we also need to fix the language menu and the custom menus on the navigation bar because of this regression.",
+        "original_open_code": "ADDITIONAL_UI_COMPONENTS_NEEDED_REGRESSION"
+      }
+    ],
+  "Quality and maintainability requirements": [
+    {
+      "issue_key": "MDL-80912",
+      "source_text": "PHPDoc should be updated (?? string|null) Worth add an extra text-note here...",
+      "original_open_code": "DOCUMENTATION_AND_PHPDOC_ISSUES"
+    },
+    {
+      "issue_key": "MDL-80426",
+      "source_text": "In theory, each class instance belongs to only one list so could we not use this.orderList.children.length instead of this lookup?",
+      "original_open_code": "CODE_QUALITY_ISSUES"
+    },
+    {
+      "issue_key": "MDL-80279",
+      "source_text": "we just need backports before sending this one forwards",
+      "original_open_code": "BACKPORTS_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-80043",
+      "source_text": "I have one minor suggestion and I will leave it up to you to decide whether it needs to be actioned or not.I feel the following logic (same here) where string concatenation is used to generate the appropriate string identifier, can be simplified by using a ternary operator.",
+      "original_open_code": "STRING_CONCATENATION_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-80041",
+      "source_text": "The example context json is missing the new params. Unused import.",
+      "original_open_code": "MISSING_CONTEXT_AND_UNUSED_IMPORT"
+    },
+    {
+      "issue_key": "MDL-79705",
+      "source_text": "Why $checked = intval($this->data) === 1; return $checked ? get_string('yes') : get_string('no'); ? Why not just $this->data ? get_string('yes') : get_string('no'); ?",
+      "original_open_code": "UNNECESSARY_LOGIC_IN_CODE"
+    },
+    {
+      "issue_key": "MDL-79705",
+      "source_text": "I actually wonder if the master fix would be better on all branches. I cannot see any merit in the current behviour, and we have made bigger HTML changes to fix acesibility bugs?",
+      "original_open_code": "BACKPORTS_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-79283",
+      "source_text": "Instead of \"{{mod_url}}\", \"{{core}}\" may be a more appropriate code area for the commit message",
+      "original_open_code": "COMMIT_MESSAGE_CODE_AREA_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-79157",
+      "source_text": "the naming of enablePreview was a bit misleading to me, I would choose something like 'showPreviewOnHover', 'IsPreviewEnabled'",
+      "original_open_code": "NAMING_CONVENTION_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-79157",
+      "source_text": "Could we please update description to reflect the most recent requirements? I see issue was split in 3 trackers, but it is not reflected in title or description or testing instruction.",
+      "original_open_code": "DESCRIPTION_UPDATE_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-79061",
+      "source_text": "CiBoT complaining about grunt failures... worth slightly changing the description not referring to 'Toast' notifications",
+      "original_open_code": "COMMIT_MESSAGE_AND_GRUNT_FAILURES"
+    },
+    {
+      "issue_key": "MDL-79061",
+      "source_text": "I think this language string should be: Section {$a->name} is highlighted. With extra space between Secton and name.",
+      "original_open_code": "SECTION_LABEL_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-79048",
+      "source_text": "I would let params, bulkEditTitle and editingTitle in an 'else'. Do we really need to await for a getString we are not using?",
+      "original_open_code": "CODE_LOGIC_AND_STRING_USAGE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-78994",
+      "source_text": "We'll need to revert the tool_policy changes introduced by MDL-79076.",
+      "original_open_code": "REVERT_TOOL_POLICY_CHANGES"
+    },
+    {
+      "issue_key": "MDL-78826",
+      "source_text": "Typo in dialog.js:24'can we removed' -> 'can be removed'",
+      "original_open_code": "WORDING_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-78813",
+      "source_text": "I couldn't understand the reason for this change as the visual effect is pretty much identical",
+      "original_open_code": "UNNECESSARY_CSS_CHANGE"
+    },
+    {
+      "issue_key": "MDL-78813",
+      "source_text": "Minor comment is func naming - notifyStickyFooterToggled. By name it seems it shouldn't care about whether footer is enabled or disabled",
+      "original_open_code": "NAMING_CONVENTION_SUGGESTION"
+    },
+    {
+      "issue_key": "MDL-78556",
+      "source_text": "change the condition and use guard clause in the render_caption, update the unitest",
+      "original_open_code": "NAMING_AND_TESTING_ISSUES"
+    },
+    {
+      "issue_key": "MDL-78556",
+      "source_text": "Sorry about the error in that file. I have changed the function name from the code review but I forgot to update that file.",
+      "original_open_code": "FORGOTTEN_FILE_UPDATE"
+    },
+    {
+      "issue_key": "MDL-78542",
+      "source_text": "I believe this doc is not necessary, rather than changing, better to remove",
+      "original_open_code": "UNNECESSARY_DOCUMENTATION"
+    },
+    {
+      "issue_key": "MDL-77761",
+      "source_text": "we're now using internal identifiers instead of human-readable _values_ for those fields",
+      "original_open_code": "BEHAT_TEST_READABILITY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-77761",
+      "source_text": "we are both asserting what the current value _is_ and also what it _isn't_ (the latter is redundant)",
+      "original_open_code": "REDUNDANT_ASSERTIONS"
+    },
+    {
+      "issue_key": "MDL-77052",
+      "source_text": "Please could you address the []cibot] errors reported above? See the following docs for help formatting your commits",
+      "original_open_code": "CODE_QUALITY_STANDARDS"
+    },
+    {
+      "issue_key": "MDL-76849",
+      "source_text": "I think your upgrade.txt instructions could be better. Imaging sitting down with a qtype developer... What would you say to them so that they know what they need to do to their qtype to make it more accessible?",
+      "original_open_code": "UPGRADE.TXT_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-76672",
+      "source_text": "I need your help to rebase your PULL branches to simplify history and avoid any possible merge conflicts.",
+      "original_open_code": "REPOSITORY_REBASE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76603",
+      "source_text": "I'm just not sure about the commit \"MDL-76603 mod_assign: Improve how grader name is hidden\". It seems unrelated to the accessibility issue.",
+      "original_open_code": "UNRELATED_COMMIT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76569",
+      "source_text": "Note: Could you please rebase the branches to the latest codebase to help the integrator?",
+      "original_open_code": "CODEBASE_OUTDATED_REBASE_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-76562",
+      "source_text": "I couldn't help think there was a better way to do it... Can we create a new function in there to remove them? If we do it this way, we will have a tool we can use again.",
+      "original_open_code": "REUSABLE_FUNCTIONS_NEEDED"
+    },
+    {
+      "issue_key": "MDL-76562",
+      "source_text": "Change all uses of variable removedSubmenuText to submenuitem to be consistent with how other ones were defined in other functions. Reads a bit better.",
+      "original_open_code": "CODE_STYLE_CONSISTENCY"
+    },
+    {
+      "issue_key": "MDL-76246",
+      "source_text": "I've raised the web service code with the iteam and the consensus seems to be that this should follow the normal deprecation policy, as it is indeed published, public code. ",
+      "original_open_code": "DEPRECATION_POLICY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-76046",
+      "source_text": "I see there is a small spelling issue, I think here instead of 'hight' should be height",
+      "original_open_code": "SPELLING_ISSUE_IN_CODE"
+    },
+    {
+      "issue_key": "MDL-74887",
+      "source_text": "Please make sure to bump version.php as well to match the version in the upgrade step.",
+      "original_open_code": "VERSION_BUMP"
+    },
+    {
+      "issue_key": "MDL-74887",
+      "source_text": "It would also be great to indent the SQL statement according to our coding guidelines.",
+      "original_open_code": "CODING_STYLE_SQL_INDENTATION"
+    },
+    {
+      "issue_key": "MDL-74869",
+      "source_text": "Re the patch, it's currently incomplete. We need to update the component library too... and there are more docs on building that here: https://moodledev.io/general/development/tools/component-library...",
+      "original_open_code": "COMPONENT_LIBRARY_DOCUMENTATION_UPDATE_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-74815",
+      "source_text": "There are a couple of coding styles violation in the new patch: {{$rtl_status}} is not a valid variable name...",
+      "original_open_code": "CODING_STYLE_VIOLATIONS"
+    },
+    {
+      "issue_key": "MDL-74814",
+      "source_text": "We're avoiding using jQuery as much as possible.",
+      "original_open_code": "JAVASCRIPT_USAGE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-74802",
+      "source_text": "Just a side comment, since we are pretty much copying the same html for button content to 4 different templates I'm wondering if we should create a template notification_button.mustache for that button? I'll leave up to you.",
+      "original_open_code": "CODE_TEMPLATE_REUSE_SUGGESTED"
+    },
+    {
+      "issue_key": "MDL-74800",
+      "source_text": "The upgrade note must be under the appropriate Moodle version (e.g. for master it should be 4.1 and for 400, it should be 4.0.3).",
+      "original_open_code": "UPGRADE.TXT_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-74377",
+      "source_text": "The patch works, but I wonder if instead of using the '.dimmed_text' class and overriding it for dropdowns, perhaps it would be better to use '.text-muted'?",
+      "original_open_code": "DIFFERENT_CLASS_SUGGESTED"
+    },
+    {
+      "issue_key": "MDL-73142",
+      "source_text": "The first issue is that all of /boost/scss/bootstrap is a copy of the third-party boostrap library... We cannot modify that directly see https://docs.moodle.org/dev/Third_Party_Libraries",
+      "original_open_code": "THIRD_PARTY_LIBRARY_MODIFICATION"
+    },
+    {
+      "issue_key": "MDL-73142",
+      "source_text": "The second issue is that, the preferred option in Moodle is to style things using standard boostrap classes, and not invent custom selectors like form-filetypes-descriptions .muted.",
+      "original_open_code": "CUSTOM_SELECTORS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-73116",
+      "source_text": "I just noticed this typo here... And it would be great if you can add a comment here too regarding the new param",
+      "original_open_code": "TYPO_AND_COMMENT_MISSING"
+    },
+    {
+      "issue_key": "MDL-73026",
+      "source_text": "The *3.10 branch* is missing, could you please provide that?",
+      "original_open_code": "MISSING_BRANCH"
+    },
+    {
+      "issue_key": "MDL-72923",
+      "source_text": "The only thing that is missing is the patch for versions 4.2 and 4.3. Could you provide it?",
+      "original_open_code": "ADDITIONAL_PATCHES_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-72896",
+      "source_text": "We need to add a note about the change in upgrade.txt.",
+      "original_open_code": "UPDATE_UPGRADE_TXT"
+    },
+    {
+      "issue_key": "MDL-72876",
+      "source_text": "There's a typo 'Boostrap' 👻 - sounds scary, apparently it's not even uncommon we call it that throughout Moodle",
+      "original_open_code": "TYPO_IN_GIT_COMMIT"
+    },
+    {
+      "issue_key": "MDL-72688",
+      "source_text": "You forgot to add the area code to the commit message",
+      "original_open_code": "COMMIT_MESSAGE_AREA_CODE_MISSING"
+    },
+    {
+      "issue_key": "MDL-72674",
+      "source_text": "The 'Illegal whitespace (master)' job is failing because some extra spaces were added in that issue",
+      "original_open_code": "ILLEGAL_WHITESPACE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72673",
+      "source_text": "it would be good if we can add the extra space in here to make the Cibot happy.",
+      "original_open_code": "CODE_STYLE_IMPROVEMENT_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-72672",
+      "source_text": "you have disabled='disabled' twice here",
+      "original_open_code": "UNNECESSARY_DISABLED_ATTRIBUTE"
+    },
+    {
+      "issue_key": "MDL-72672",
+      "source_text": "Removing the nowrap for the table works because the table is being enclosed in a div with .no-overflow class.",
+      "original_open_code": "CODE_QUALITY_SUGGESTED"
+    },
+    {
+      "issue_key": "MDL-72668",
+      "source_text": "could you please add the missing {{$isroot}} parameter and also the missing {{$tree}} and {{$dir}} parameters to {{htmllize_tree()}} function phpDoc?",
+      "original_open_code": "CODE_DOCUMENTATION_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-72667",
+      "source_text": "Thanks @Simey Lameze for working on this, there is an linting error towards this line: ",
+      "original_open_code": "CSS_LINTING_ERROR"
+    },
+    {
+      "issue_key": "MDL-72569",
+      "source_text": "Can we reduce the jQuery usage - it should only be necessary for the toggler itself... When the modal is closed, focus is moved to the body.",
+      "original_open_code": "JQUERY_USAGE_AND_FOCUS_MANAGEMENT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-72426",
+      "source_text": "But the colour #ed0000 looks a bit random to me. Why not use $red or even $danger?",
+      "original_open_code": "COLOR_VARIABLE_SUGGESTION"
+    },
+    {
+      "issue_key": "MDL-72263",
+      "source_text": "I do not think that the changes to the {{local/aria-hidden}} module are appropriate.",
+      "original_open_code": "ARIA_MODULE_INAPPROPRIATE_CHANGE"
+    },
+    {
+      "issue_key": "MDL-71669",
+      "source_text": "We should correctly document the event detail for better jsdoc.",
+      "original_open_code": "JSDOC_BLOCK_DOCUMENTATION_INCOMPLETE"
+    },
+    {
+      "issue_key": "MDL-71669",
+      "source_text": "Under what condition is attoButton not set that this will defer to the document?",
+      "original_open_code": "UNNECESSARY_EVENT_DISPATCH_DEFERRAL"
+    },
+    {
+      "issue_key": "MDL-71668",
+      "source_text": "Error: The MDL-71668-310 branch at git://github.com/rezaies/moodle.git is very old (>60 days ago). Please rebase against current MOODLE_310_STABLE.",
+      "original_open_code": "OUTDATED_BRANCH_REQUIRES_REBASE"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "Error: The MDL-71663-master branch at git://github.com/ferranrecio/moodle.git does not apply clean to origin/master",
+      "original_open_code": "REBASE_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-71663",
+      "source_text": "Firstly, I notice that you like to add a random empty line after the start of the function?",
+      "original_open_code": "CODING_STYLE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71656",
+      "source_text": "Please fix the coding style issue on lib.php files (indent with 4 characters instead of 8)",
+      "original_open_code": "CODING_STYLE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71656",
+      "source_text": "provide backports for 310 and 311.",
+      "original_open_code": "BACK_AND_FORTH_CODE"
+    },
+    {
+      "issue_key": "MDL-71604",
+      "source_text": "Is it safer to be this? $sametoolbar = str_replace([\"\\r\\n\", \"\\n\", \"\\r\"], '', get_config('editor_atto', 'toolbar')) == $oldtoolbar;",
+      "original_open_code": "LINE_ENDING_CONSISTENCY_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71603",
+      "source_text": "false should be string value \"false\" right? alternatively you could do: this.buttons[button].setAttribute('aria-pressed', highlight.toString());",
+      "original_open_code": "CODE_CONSISTENCY_IMPROVEMENT"
+    },
+    {
+      "issue_key": "MDL-71602",
+      "source_text": "Why not be less confusing use the other issue to submit this? I agree with Tim, so I push the patch to another issue.",
+      "original_open_code": "INITIAL_PATCH_SHOULD_PUSH_TO_ANOTHER_ISSUE"
+    },
+    {
+      "issue_key": "MDL-71301",
+      "source_text": "For master, it would be great to have the lang string deprecation on a separate commit.",
+      "original_open_code": "COMMIT_SEPARATION_REQUEST"
+    },
+    {
+      "issue_key": "MDL-71336",
+      "source_text": "I would like to make a suggestion: In the new {{getAttributesForFormElement}} function...",
+      "original_open_code": "CODE_IMPROVEMENT_SUGGESTION"
+    },
+    {
+      "issue_key": "MDL-71089",
+      "source_text": "wonder if the presets for the Classic theme have been omitted... updating the 'Example context' section",
+      "original_open_code": "THEME_PRESETS_AND_CONTEXT_UPDATE"
+    },
+    {
+      "issue_key": "MDL-71087",
+      "source_text": "as this is a bugfix I think it should also be applied to the 3.9 branch",
+      "original_open_code": "ADDITIONAL_BRANCH_SUPPORT_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-70992",
+      "source_text": "you do need to update the readme_moodle.txt in that directory to describe the change made",
+      "original_open_code": "DOCUMENTATION_OF_CHANGES_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-70846",
+      "source_text": "git message, below the subject, and rebase to latest version.",
+      "original_open_code": "GIT_MESSAGE"
+    },
+    {
+      "issue_key": "MDL-70846",
+      "source_text": "grunt errors about files modified but not uploaded.",
+      "original_open_code": "GRUNT_ERRORS"
+    },
+    {
+      "issue_key": "MDL-70721",
+      "source_text": "[~rezaie9] just noticed cibot notices regarding phpcs, would be good we could fix that",
+      "original_open_code": "PHPCS_ISSUES_IDENTIFIED"
+    },
+    {
+      "issue_key": "MDL-70721",
+      "source_text": "A comment should be added into lib/upgrade.txt to mention that a new method has been added to the mustache helper API.",
+      "original_open_code": "UPGRADE_TXT_COMMENT_MISSING"
+    },
+    {
+      "issue_key": "MDL-70274",
+      "source_text": "One minor thing, could you please update the commit message adding the area code?",
+      "original_open_code": "COMMIT_MESSAGE_UPDATE_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-70173",
+      "source_text": "Just a tiny suggestion: would be possible to add spaces between the concat operator and {{$user->fullname}}?",
+      "original_open_code": "CODE_STYLE_ISSUES"
+    },
+    {
+      "issue_key": "MDL-70173",
+      "source_text": "commit 'MDL-70173 message: Fix empty link' is slightly different for branches 3.9/3.10 vs 3.11/master.",
+      "original_open_code": "COMMIT_DIFFERENCES_ACROSS_BRANCHES"
+    },
+    {
+      "issue_key": "MDL-70172",
+      "source_text": "Do we really need to declare this sitename variable? I guess we could simply shift that format_string() call directly to alt attribute.",
+      "original_open_code": "CODE_QUALITY_IMPROVEMENT_SUGGESTION"
+    },
+    {
+      "issue_key": "MDL-70094",
+      "source_text": "Just one thing to fix first: as CiBoT points out, the commit comment needs to be fixed.",
+      "original_open_code": "COMMIT_COMMENT_ISSUE"
+    },
+    {
+      "issue_key": "MDL-70094",
+      "source_text": "We also need patches for the 311 and 310 branches, by the way.",
+      "original_open_code": "ADDITIONAL_PATCHES"
+    },
+    {
+      "issue_key": "MDL-70094",
+      "source_text": "Almost there. We just need to improve the upgrade.txt note. Perhaps something like this would be better?",
+      "original_open_code": "UPGRADE_TXT_COMMENT_MISSING"
+    },
+    {
+      "issue_key": "MDL-69841",
+      "source_text": "Please add a branch for 3.8 also as the problem exists there and this version is currently in support.",
+      "original_open_code": "BRANCH_REQUIREMENTS_UPDATE"
+    },
+    {
+      "issue_key": "MDL-68766",
+      "source_text": "Everything looks good to me. I just think it needs a rebase before it goes to integration.",
+      "original_open_code": "REBASE_REQUIRED_BEFORE_INTEGRATION"
+    },
+    {
+      "issue_key": "MDL-68765",
+      "source_text": "Would you be able to provide a 3.8 branch as well?",
+      "original_open_code": "ADDITIONAL_BRANCH_REQUESTED"
+    },
+    {
+      "issue_key": "MDL-68765",
+      "source_text": "Fails against automated checks.",
+      "original_open_code": "AUTOMATED_CHECK_FAILURES"
+    },
+    {
+      "issue_key": "MDL-68639",
+      "source_text": "However, I still wonder if this code is as simple as it could be...",
+      "original_open_code": "CODE_CLARITY_AND_SIMPLIFICATION_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68568",
+      "source_text": "It would be great though if we can add an upgrade step to update the defaults so that sites that are upgrading to 3.9 will also benefit from this improvement.",
+      "original_open_code": "UPGRADE_STEP_SUGGESTION"
+    },
+    {
+      "issue_key": "MDL-68551",
+      "source_text": "It seems the minified versions of the JS files do not match the file in src. could you try running 'grunt shifter' again and update the patch.",
+      "original_open_code": "MINIFIED_JS_FILES_MISMATCH"
+    },
+    {
+      "issue_key": "MDL-68551",
+      "source_text": "For this issue the commit message should be something like 'MDL-68551 atto_strike: change strike tag to del tag'. Could you update that?",
+      "original_open_code": "COMMIT_MESSAGE_INCORRECT"
+    },
+    {
+      "issue_key": "MDL-68548",
+      "source_text": "It appears to need the same fixes as MDL-68548; an updated commit message and recompiled JS files.",
+      "original_open_code": "COMMIT_MESSAGE_AND_JS_ISSUES"
+    },
+    {
+      "issue_key": "MDL-68541",
+      "source_text": "I do think it would be better to use bootstrap utility classes instead of inline styles.",
+      "original_open_code": "SUGGESTED_UTILITY_CLASSES"
+    },
+    {
+      "issue_key": "MDL-68390",
+      "source_text": "Thanks, Andrew. Patch pulled in. Sending back to testing!",
+      "original_open_code": "FORGOT_TO_PULL_IN_PATCH"
+    },
+    {
+      "issue_key": "MDL-68355",
+      "source_text": "Failing this at Jun's request so he can update lang strings.",
+      "original_open_code": "LANG_STRING_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68353",
+      "source_text": "The changes seem a little bit hard to read. I'd probably move the code to the bottom of the file.",
+      "original_open_code": "HARD_TO_READ_CODE"
+    },
+    {
+      "issue_key": "MDL-68344",
+      "source_text": "I think it would possible to omit the commit message string length warning by changing the area to filepicker.",
+      "original_open_code": "COMMIT_MESSAGE_AND_TESTING_INSTRUCTIONS_ISSUE"
+    },
+    {
+      "issue_key": "MDL-68266",
+      "source_text": "After discussion with the iTeam we feel that it would make sense to backport this change to stables.",
+      "original_open_code": "BACKPORT_TO_STABLES"
+    },
+    {
+      "issue_key": "MDL-68200",
+      "source_text": "I updated the code and added a context variable for the class attribute.",
+      "original_open_code": "CODE_UPDATE_REQUIRED"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "I noticed that you didn't explain all the deprecations and core changes in message/upgrade.txt, you should mention there everything is relevant for developers",
+      "original_open_code": "DOCUMENTATION_NEEDED"
+    },
+    {
+      "issue_key": "MDL-67853",
+      "source_text": "Just a few comments for what I noticed: ... you should mention there everything is relevant for developers",
+      "original_open_code": "CODE_QUALITY_STANDARDS"
+    },
+    {
+      "issue_key": "MDL-67687",
+      "source_text": "1) For sure this will need some docs, I've added the corresponding label.",
+      "original_open_code": "DOCUMENTATION"
+    },
+    {
+      "issue_key": "MDL-67687",
+      "source_text": "Worth fixing the phpdoc missing params reported by CiBoT, I think.",
+      "original_open_code": "PHPDOC_MISSING_PARAMS"
+    },
+    {
+      "issue_key": "MDL-67663",
+      "source_text": "The attribute in line 1043 here seems redundant to me... the div element you added that into is already hidden",
+      "original_open_code": "REDUNDANT_CODE_ISSUES"
+    },
+    {
+      "issue_key": "MDL-67544",
+      "source_text": "I'd just like to ask if there's a particular reason why we're using single quotes",
+      "original_open_code": "QUOTE_USAGE_INCONSISTENCY"
+    },
+    {
+      "issue_key": "MDL-74808",
+      "source_text": "You didn't really need to replace {{*checked=\"checked\"*}} by {*}{{checked}}{*}.",
+      "original_open_code": "ATTRIBUTE_USAGE_ISSUE"
+    },
+    {
+      "issue_key": "MDL-74808",
+      "source_text": "So it looks like a new parameter is added there, but the developer always has to pass *FORMAT_HTML* to it. I think it was enough to replace those *<span>* tags with *<div>* tags.",
+      "original_open_code": "CODE_QUALITY_ISSUE"
+    }
+  ]
+}
